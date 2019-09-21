@@ -1,6 +1,7 @@
 import React from 'react';
-import profilePic from '../assets/profile-pic.jpg';
+import profilePic from '../assets/profile-pic.png';
 import { rhythm } from '../utils/typography';
+import { STATICS } from './statics';
 
 class Bio extends React.Component {
   render() {
@@ -13,18 +14,16 @@ class Bio extends React.Component {
       >
         <img
           src={profilePic}
-          alt={`Dan Abramov`}
+          alt={STATICS.owner}
           style={{
             marginRight: rhythm(1 / 2),
             marginBottom: 0,
-            width: rhythm(2),
             height: rhythm(2),
             borderRadius: '50%',
           }}
         />
         <p style={{ maxWidth: 310 }}>
-          Personal blog by{' '}
-          <a href="https://mobile.twitter.com/dan_abramov">Dan Abramov</a>.{' '}
+          Personal blog by <a href={STATICS.ownerTwitter}>{STATICS.owner}</a>.{' '}
           I&nbsp;explain with words and code.
         </p>
       </div>
