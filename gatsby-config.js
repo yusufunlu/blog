@@ -3,12 +3,12 @@ module.exports = {
     title: 'Overreacted',
     author: 'Dan Abramov',
     description: 'Personal blog by Dan Abramov. I explain with words and code.',
-    siteUrl: 'https://overreacted.io',
+    siteUrl: 'https://yusufunlu.github.io/Personal-Blog/',
     social: {
       twitter: '@dan_abramov',
     },
   },
-  pathPrefix: '/',
+  pathPrefix: '/Personal-Blog',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
