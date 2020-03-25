@@ -1,4 +1,85 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[yusufunlu]]></title><description><![CDATA[Personal blog is taken from Dan Abramov.]]></description><link>https://yusufunlu.github.io/blog/</link><generator>RSS for Node</generator><lastBuildDate>Wed, 25 Mar 2020 10:42:04 GMT</lastBuildDate><item><title><![CDATA[First post and this blog]]></title><description><![CDATA[Gatsby and Github Pages]]></description><link>https://yusufunlu.github.io/blog//ilk-post/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//ilk-post/</guid><pubDate>Fri, 24 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This blog is being hosted on &lt;a href=&quot;https://github.com/yusufunlu/blog&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/yusufunlu/blog&lt;/a&gt; adress I guess :) It can be move to somewhere else though. The blog infrastructure has been taken from Dan Abramov’s this project : &lt;a href=&quot;https://github.com/gaearon/overreacted.io&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/gaearon/overreacted.io&lt;/a&gt;&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[yusufunlu]]></title><description><![CDATA[Personal blog is taken from Dan Abramov.]]></description><link>https://yusufunlu.github.io/blog/</link><generator>RSS for Node</generator><lastBuildDate>Wed, 25 Mar 2020 14:37:38 GMT</lastBuildDate><item><title><![CDATA[Spring Security Architecture]]></title><description><![CDATA[Authentication and Authorization(Access Control)]]></description><link>https://yusufunlu.github.io/blog//Spring Security Architecture/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//Spring Security Architecture/</guid><pubDate>Sat, 25 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Uygulama güvenliği birkaç bağımsız problemle ilgilidir. Bunlar : Authentication(kim?) ve authorization (neye iznin var?). Bu iki kelime birbirine benzediği için authorization yerine access control da kullanılır bazen.&lt;/p&gt;
+&lt;h2 id=&quot;authentication&quot;&gt;&lt;a href=&quot;#authentication&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Authentication&lt;/h2&gt;
+&lt;p&gt;Authentication için ana strateji arayüzü AuthenticationManager interface’idir.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;AuthenticationManager&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+  Authentication &lt;span class=&quot;token function&quot;&gt;authenticate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Authentication authentication&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    throws AuthenticationException&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;AuthenticationManager&lt;/strong&gt; &lt;strong&gt;authenticate&lt;/strong&gt; ile 3 şey yapar&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Eğer inputlar valid ise bir &lt;strong&gt;Authentication&lt;/strong&gt; nesnesi döner. &lt;strong&gt;authenticated=true&lt;/strong&gt; olarak.&lt;/li&gt;
+&lt;li&gt;Eğer inputlar invalid ise &lt;strong&gt;AuthenticationException&lt;/strong&gt; fırlatır.&lt;/li&gt;
+&lt;li&gt;Girdiler valid olduğuna emin olamazsa &lt;strong&gt;null&lt;/strong&gt; döner.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;AuthenticationException&lt;/strong&gt; bir runtime exception’dır. Bu exception’ı siz handle etmeseniz bile HTTP 401 dönecektir, &lt;strong&gt;WWW-Authenticate&lt;/strong&gt; ile veya değil.&lt;/p&gt;
+&lt;p&gt;AuthenticationManager’ın en çok kullanılan implementation’u ProviderManager’dır. ProviderManager da sorumluluğu AuthenticationProvider instance’larına dağıtır. Her AuthenticationProvider biraz AuthenticationManager gibidir. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;AuthenticationProvider&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+	Authentication &lt;span class=&quot;token function&quot;&gt;authenticate&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Authentication authentication&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+			throws AuthenticationException&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+	boolean &lt;span class=&quot;token function&quot;&gt;supports&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Class&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; authentication&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;supports()&lt;/strong&gt; methodu &lt;strong&gt;authenticate()&lt;/strong&gt; methoduna geçecek bir paremetreyi destekleyip desteklemediğini anlamak için kullanılır.
+&lt;strong&gt;ProviderManager&lt;/strong&gt; AuthenticationProviders zincirini kullanarak farklı auth mekanizmalarını destekleyebilir.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;https://yusufunlu.github.io/blog//blog/static/19992a59bb9ffbc0b14ed45613139986/c283c/ProviderManager.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 70.50420168067227%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAADNUlEQVQ4y4VSW2gTaRT+Z0ZbdFn1wRv4sF4Qn7xQn/RRfPDFXW1j2kymM5M2xpTaenkQQYNkLyrogqsiCltEUVGh9YKKWkRhuxbrg9oLycykk8mkuc9MMplMbNPas5O0loWiPZzDOfznnI9zvv8gNC02m63iP2QWVDzABvzfLHH2mYQ/fi7jt1/I+J2nIt7Zo8279VFfsLJcc/vxTzhAOzJjNBpPMFNAR3QNefUs1jJaxDyqgvnVJ7iFZqmT6DWw890J9KjjDd57vQd/2xVAna/T6F63jFZOz0F8HegU1CIoutEcAhhCx62R/6ialXnfMH/v9tVLAAAD+G3eTOJYIbvweDG19leYXOP7oq31jWXW+8a1DadzgeWufct/3LR1/aqjJ3b8UK4tJOmaMd3F51L0oGVDaryxHPfraZrLp5kXk2rTMtSqqXZHQjP3BMLpXwZCys8fuXQtL5eoUTg9TaalbqwclqKeFQWN7Qnx9YoYaoiFQw1xccoSI7IzAaZ7M2q6eW7dP+qVS33aX1feaRcvv1MvXO5VL10VC2f8kGPqXnUdWFQG9b/+21pbweYiCblq0GLIkSKUaChqJJTyTvicdcDnfKNFTyuUNHpOpmeJmW3dGJVYlxRmncMCTckSS0VlFxUX9jH9xoVtdFxxNUdEL8sFW9yi4PXGwoeP6qm9kFmKq2YbYeRbiQmjifiiNeGo4+7O765RB7C6WcnI5PBwlOSCURs3zO0OyqKjAB3fbEqN+3HoRfg3j0fqtA7YtG4OkDzE1oDZ4gbD4wTTQ0LRssJ+hxUzkHNvQYdMo9LkA1jkSaduUAJ/nxwcvEcODtylOK7Lk8v+6bU+5atEh+xtAAehWHABTOyHidFmmBhzA0x6QE3SxgzgSYAlB9TMAzoiPad4/hnFc08bQ0J3i567BsLLKoCz2NQR/16tx1mbzDuZcNBRJwQaqFiEokTeQWVGaLIC5v/fBLPWTe65Wsyymp5hwnmFkS0vGSozYGqsWMq6nLMa2kaLM6CMHCFq+/qIXQ8fEb4HJ6rL74bibo9KJM8H7Z8Evr6fC9oHIpKjPyTUx5Rk4/kKDSmqig/YieQIhf8HUons7VvnOw8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;ProviderManager isteğe bağlı olarak başka bir ProviderManager parent&apos;a sahip olabilir&quot;
+        title=&quot;&quot;
+        src=&quot;https://yusufunlu.github.io/blog//blog/static/19992a59bb9ffbc0b14ed45613139986/fb8a0/ProviderManager.png&quot;
+        srcset=&quot;/blog/static/19992a59bb9ffbc0b14ed45613139986/1a291/ProviderManager.png 148w,
+/blog/static/19992a59bb9ffbc0b14ed45613139986/2bc4a/ProviderManager.png 295w,
+/blog/static/19992a59bb9ffbc0b14ed45613139986/fb8a0/ProviderManager.png 590w,
+/blog/static/19992a59bb9ffbc0b14ed45613139986/526de/ProviderManager.png 885w,
+/blog/static/19992a59bb9ffbc0b14ed45613139986/fa2eb/ProviderManager.png 1180w,
+/blog/static/19992a59bb9ffbc0b14ed45613139986/c283c/ProviderManager.png 1190w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;ProviderManager isteğe bağlı olarak başka bir ProviderManager parent’a sahip olabilir. Eğer &lt;strong&gt;AuthenticationProviders&lt;/strong&gt; null parent’a düşer bu istek.
+Uygulamamız &lt;strong&gt;/api/&lt;/strong&gt; path’ine göre farklı logic resource gruplardan oluşabilir. Her grup kendi dedicated &lt;strong&gt;AuthenticationManager&lt;/strong&gt; ‘ına yani &lt;strong&gt;ProviderManager&lt;/strong&gt;‘a sahiptir. Bunlar da ortak bir parent’a sahiptir ve buna global denir. Tüm provider’lar buraya düşer.&lt;/p&gt;
+&lt;h2 id=&quot;customizing-authentication-managers&quot;&gt;&lt;a href=&quot;#customizing-authentication-managers&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Customizing Authentication Managers&lt;/h2&gt;
+&lt;p&gt;Spring Security, bize temel authentication manager özelliklerini ayarlamamız için bazı helper class’lar verir. Bunlardan en çok kullanılanı &lt;strong&gt;AuthenticationManagerBuilder&lt;/strong&gt;. Bu class bize in-memory, JDBC ya da LDAP kullanıcı detayları ya da custom UserDetailsService için kolaylık sağlar.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Aşağıda global &lt;strong&gt;AuthenticationManager&lt;/strong&gt; ayarlamak için örnek kodlar vardır.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;@Configuration
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ApplicationSecurity&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;WebSecurityConfigurerAdapter&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+
+   &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// web stuff here&lt;/span&gt;
+
+  @Autowired
+  &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;AuthenticationManagerBuilder builder&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; DataSource dataSource&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    builder&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;jdbcAuthentication&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;dataSource&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;dataSource&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;withUser&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;dave&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;secret&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;roles&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;USER&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog//Spring Security Architecture/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
+              </content:encoded></item><item><title><![CDATA[First post and this blog]]></title><description><![CDATA[Gatsby and Github Pages]]></description><link>https://yusufunlu.github.io/blog//ilk-post/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//ilk-post/</guid><pubDate>Fri, 24 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This blog is being hosted on &lt;a href=&quot;https://github.com/yusufunlu/blog&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/yusufunlu/blog&lt;/a&gt; adress I guess :) It can be move to somewhere else though. The blog infrastructure has been taken from Dan Abramov’s this project : &lt;a href=&quot;https://github.com/gaearon/overreacted.io&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/gaearon/overreacted.io&lt;/a&gt;&lt;br&gt;
 Bu blog şu anda &lt;a href=&quot;https://github.com/yusufunlu/blog&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/yusufunlu/blog&lt;/a&gt; adresinde host ediliyor. Bloğu oluşuturan kod altyapısı Dan Abramov’un şu kütüphanesinden alındı : &lt;a href=&quot;https://github.com/gaearon/overreacted.io&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/gaearon/overreacted.io&lt;/a&gt;&lt;/p&gt;
                 &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog//ilk-post/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
               </content:encoded></item><item><title><![CDATA[Writing Resilient Components]]></title><description><![CDATA[Four principles to set you on the right path.]]></description><link>https://yusufunlu.github.io/blog//writing-resilient-components/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//writing-resilient-components/</guid><pubDate>Sat, 16 Mar 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;When people start learning React, they often ask for a style guide. While it’s a good idea to have some consistent rules applied across a project, a lot of them are arbitrary — and so React doesn’t have a strong opinion about them.&lt;/p&gt;
