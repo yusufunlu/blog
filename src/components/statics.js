@@ -1,5 +1,5 @@
 export const STATICS = {
   owner: 'Yusuf Unlu',
-  ownerTwitter: 'https://mobile.twitter.com/yufusunlu',
+  ownerTwitter: 'https://twitter.com/yufusunlu',
   ownerGithub: 'https://github.com/yusufunlu',
 };

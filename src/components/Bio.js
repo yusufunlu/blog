@@ -24,7 +24,7 @@ class Bio extends React.Component {
         />
         <p style={{ maxWidth: 310 }}>
           Personal blog by <a href={STATICS.ownerTwitter}>{STATICS.owner}</a>.{' '}
-          I&nbsp;explain with words and code.
+          What I learnt about code and history mostly
         </p>
       </div>
     );

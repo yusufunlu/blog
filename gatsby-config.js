@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: 'Overreacted',
-    author: 'Dan Abramov',
-    description: 'Personal blog by Dan Abramov. I explain with words and code.',
-    siteUrl: 'https://yusufunlu.github.io/Personal-Blog/',
+    title: 'yusufunlu',
+    author: 'Yusuf Unlu',
+    description: 'Personal blog is taken from Dan Abramov.',
+    siteUrl: 'https://yusufunlu.github.io/blog/',
     social: {
-      twitter: '@dan_abramov',
+      twitter: '@yufusunlu',
     },
   },
-  pathPrefix: '/Personal-Blog',
+  pathPrefix: '/blog',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -126,7 +126,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: "Dan Abramov's Overreacted Blog RSS Feed",
+            title: "Yusuf Unlu's Personal Blog RSS Feed",
           },
         ],
       },
@@ -134,8 +134,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Overreacted`,
-        short_name: `Overreacted`,
+        name: `yusufunlu`,
+        short_name: `Yusufunlu`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffa7c4`,
