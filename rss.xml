@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[yusufunlu]]></title><description><![CDATA[Personal blog is taken from Dan Abramov.]]></description><link>https://yusufunlu.github.io/blog/</link><generator>RSS for Node</generator><lastBuildDate>Sat, 28 Mar 2020 22:39:04 GMT</lastBuildDate><item><title><![CDATA[Spring Security Architecture]]></title><description><![CDATA[Authentication and Authorization(Access Control)]]></description><link>https://yusufunlu.github.io/blog//Spring Security Architecture/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//Spring Security Architecture/</guid><pubDate>Sat, 25 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Uygulama güvenliği birkaç bağımsız problemle ilgilidir. Bunlar : Authentication(kim?) ve authorization (neye iznin var?). Bu iki kelime birbirine benzediği için authorization yerine access control da kullanılır bazen.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[yusufunlu]]></title><description><![CDATA[Personal blog is taken from Dan Abramov.]]></description><link>https://yusufunlu.github.io/blog/</link><generator>RSS for Node</generator><lastBuildDate>Sat, 11 Jul 2020 00:06:55 GMT</lastBuildDate><item><title><![CDATA[Neo4J Graph Db nedir ve Spring ile örnek]]></title><description><![CDATA[Neo4J Graph Db nedir ve Spring ile örnek]]></description><link>https://yusufunlu.github.io/blog//Neo4J Graph Db/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//Neo4J Graph Db/</guid><pubDate>Mon, 15 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;graph-database-nedir&quot;&gt;&lt;a href=&quot;#graph-database-nedir&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Graph Database Nedir&lt;/h2&gt;
+&lt;p&gt;Graph veritablanları daha çok ilişki ve bağlantı odaklı veritabanlarıdır. Odakları burasıdır ve verilerin birbiri ile ilişkisi konusunda bize daha çok özellik(feature) sunarlar.  Graph veri yapısı kullanarak bunları bize sağlarlar. Genelde node ve edge 2 temel yapı üzerine kuruldur. Nodelar temel veri için iken edge’ler ise ilişkiler içindir. Graph veritabanları NoSql’dir ve Rdbms yani Sql(teoride yanlış bir kelime) tabanlı veritabanlarının problemlerini aşmak için oluşturuldu. Çünkü isminden (relational database management system - ilişkisel veritabanı yönetim sistemi) anlaşılacağı gibi onlarda da ilişkiler vardır.  Bazı graph db’ler relational engine yani ilişki motoru ve graph veri tutarken bazıları da key-value ve dokuman odaklıdır. Mesela OrientDB dokuman odaklı bir graph database’dir. Graph odaklı olanlarda bir döküman diğerine pointer içerir ki buna da edge denir, aslında ilişkidir bu pointer. Bu sayede retrieve yani veri getirme operasyonu hızlandırır.
+Graph databaselerden veri çekmek için SQL kullanılamaz. Bu işi görecek farklı query(sorgulama) dilleri vardır ama hiçbiri SQL’de olduğu tek bir standart hale gelememiştir. Bazıları : Gremlin, SPARQL ve Cypher. &lt;/p&gt;
+&lt;p&gt;coming soon…&lt;/p&gt;
+                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog//Neo4J Graph Db/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
+              </content:encoded></item><item><title><![CDATA[Spring Security Architecture]]></title><description><![CDATA[Authentication and Authorization(Access Control)]]></description><link>https://yusufunlu.github.io/blog//Spring Security Architecture/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//Spring Security Architecture/</guid><pubDate>Sat, 25 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Bu yazı &lt;a href=&quot;https://spring.io/guides/topicals/spring-security-architecture&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://spring.io/guides/topicals/spring-security-architecture&lt;/a&gt; adresindeki referans dökümandan yararlanacarak oluşturulmuştur.
+Uygulama güvenliği birkaç bağımsız problemle ilgilidir. Bunlar : Authentication(kim?) ve authorization (neye iznin var?). Bu iki kelime birbirine benzediği için authorization yerine access control da kullanılır bazen.&lt;/p&gt;
 &lt;h2 id=&quot;authentication&quot;&gt;&lt;a href=&quot;#authentication&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Authentication&lt;/h2&gt;
 &lt;p&gt;Authentication için ana strateji arayüzü AuthenticationManager interface’idir.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;AuthenticationManager&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -27,7 +33,7 @@
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;https://yusufunlu.github.io/blog//blog/static/19992a59bb9ffbc0b14ed45613139986/c283c/ProviderManager.png&quot;
+    href=&quot;https://yusufunlu.github.io/blog//static/19992a59bb9ffbc0b14ed45613139986/c283c/ProviderManager.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -46,13 +52,8 @@
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;ProviderManager isteğe bağlı olarak başka bir ProviderManager parent&apos;a sahip olabilir&quot;
         title=&quot;&quot;
-        src=&quot;https://yusufunlu.github.io/blog//blog/static/19992a59bb9ffbc0b14ed45613139986/fb8a0/ProviderManager.png&quot;
-        srcset=&quot;/blog/static/19992a59bb9ffbc0b14ed45613139986/1a291/ProviderManager.png 148w,
-/blog/static/19992a59bb9ffbc0b14ed45613139986/2bc4a/ProviderManager.png 295w,
-/blog/static/19992a59bb9ffbc0b14ed45613139986/fb8a0/ProviderManager.png 590w,
-/blog/static/19992a59bb9ffbc0b14ed45613139986/526de/ProviderManager.png 885w,
-/blog/static/19992a59bb9ffbc0b14ed45613139986/fa2eb/ProviderManager.png 1180w,
-/blog/static/19992a59bb9ffbc0b14ed45613139986/c283c/ProviderManager.png 1190w&quot;
+        src=&quot;https://yusufunlu.github.io/blog//static/19992a59bb9ffbc0b14ed45613139986/fb8a0/ProviderManager.png&quot;
+        srcset=&quot;https://yusufunlu.github.io/blog//static/19992a59bb9ffbc0b14ed45613139986/1a291/ProviderManager.png 148w,https://yusufunlu.github.io/blog//static/19992a59bb9ffbc0b14ed45613139986/2bc4a/ProviderManager.png 295w,https://yusufunlu.github.io/blog//static/19992a59bb9ffbc0b14ed45613139986/fb8a0/ProviderManager.png 590w,https://yusufunlu.github.io/blog//static/19992a59bb9ffbc0b14ed45613139986/526de/ProviderManager.png 885w,https://yusufunlu.github.io/blog//static/19992a59bb9ffbc0b14ed45613139986/fa2eb/ProviderManager.png 1180w,https://yusufunlu.github.io/blog//static/19992a59bb9ffbc0b14ed45613139986/c283c/ProviderManager.png 1190w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -79,17 +80,13 @@ Uygulamamız &lt;strong&gt;/api/&lt;/strong&gt; path’ine göre farklı logic r
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
-&lt;li&gt;Aşağıdaki kodlar da &lt;strong&gt;Override&lt;/strong&gt; ve &lt;strong&gt;configure&lt;/strong&gt; olduğundan yalnızca local &lt;strong&gt;AuthenticationManager&lt;/strong&gt; build eder.&lt;/li&gt;
+&lt;li&gt;Aşağıdaki kodlar da &lt;strong&gt;Override&lt;/strong&gt; ile &lt;strong&gt;configure&lt;/strong&gt; methodunu kullandığından yalnızca local &lt;strong&gt;AuthenticationManager&lt;/strong&gt; build eder.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;@Configuration
 &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ApplicationSecurity&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;WebSecurityConfigurerAdapter&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
 
   @Autowired
   DataSource dataSource&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-
-
-
 
    &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// web stuff here&lt;/span&gt;
 
@@ -98,12 +95,183 @@ Uygulamamız &lt;strong&gt;/api/&lt;/strong&gt; path’ine göre farklı logic r
     builder&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;jdbcAuthentication&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;dataSource&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;dataSource&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;withUser&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;dave&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
       &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;secret&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;roles&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;USER&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Spring boot bize tek kullanıcı için bir &lt;strong&gt;AuthenticationManager&lt;/strong&gt; bizim için hazır getirir. Ta ki AuthenticationManager’ınızı implement edene kadar.  &lt;/p&gt;
+&lt;h2 id=&quot;authorization-or-access-control&quot;&gt;&lt;a href=&quot;#authorization-or-access-control&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Authorization or Access Control&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;authentication tamamlanınca authorization’a geçebiliriz. Buradaki temel strateji &lt;strong&gt;AccessDecisionManager&lt;/strong&gt; dir. Aynen &lt;strong&gt;ProviderManager&lt;/strong&gt;‘ın &lt;strong&gt;AuthenticationProviders&lt;/strong&gt; zincirine(chain) sorumluluğu verilmesi gibi burada da sorumluluk &lt;strong&gt;AccessDecisionVoter&lt;/strong&gt; zincirine verilir.  Burada 3 tip implementasyon vardır.
+&lt;strong&gt;AccessDecisionVoter&lt;/strong&gt; principal’ı temsil eden &lt;strong&gt;Authentication&lt;/strong&gt;‘a ve &lt;strong&gt;ConfigAttributes&lt;/strong&gt; ile tanımlanan secure &lt;strong&gt;Object&lt;/strong&gt;‘a ihtiyaç duyar. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;boolean &lt;span class=&quot;token function&quot;&gt;supports&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ConfigAttribute attribute&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
+boolean &lt;span class=&quot;token function&quot;&gt;supports&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Class&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; clazz&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+int &lt;span class=&quot;token function&quot;&gt;vote&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Authentication authentication&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;S&lt;/span&gt; object&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        Collection&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ConfigAttribute&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt; attributes);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;//todo buraya ekleme yapılacak&lt;/p&gt;
+&lt;h2 id=&quot;web-security&quot;&gt;&lt;a href=&quot;#web-security&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Web Security&lt;/h2&gt;
+&lt;p&gt;Spring security web’de Servlet Filter’lara göre çalışır.
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;https://yusufunlu.github.io/blog//static/0c63cd2617c6907c1b30ef37802886cd/c283c/filters.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 70.50420168067227%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAACJ0lEQVQ4y2NgwAFO/WdgZMADCMmjgDM/WcCKz3xhsz7zh3nxsa/Ms7Y9YJ51+BPzLCB/6ZlvbOEQdaxMRBl48ScDWOHFLwyul/4yHDj7nWHrmnMM+4++Zdh66R/DoYvfGNKQ1REEBi//g2mzZ//ZdF//FzJ4DsTt27U9/v8X1HryX9js5X8ukLwhVB1BkP3zGzOIzvvyISH/////6d+//I26fu1/6qcPfwqA/Nxvn/tA8jlQdQRB4ae3YLr03Uu+/M/v1Qu+f1b1XjDXKvfDG9X8rx80it+/EgXJF0HVEQQ537+BIyX/0wfNrN+/CtO/fM4OPXqkEkQD+cV5Xz/bQNR9JS6mM3/9BAd2ztfPwen//r5I/fnjdvi1q4+Tv365lfHv36vsH9+qQfJZv34S9rL51ssM/xPADmD4n+7C+C/MiPV/cwKru4eT3P8FVaw/g/RY/6c6gi38H2/NoLTnEX4DlfY9Zcj4/QusIevLl+i0v/9+pnz//jr82vX3SV++vEr/9+9P5vdvbeDI+/2Lmev4N8Jervz8Bhw2u/4/EWn//9mr9f83t6R9W2Ja/n92a/v/xWfx/1eKIPmY158Ih6Hm7vtAv0DSF/Phr9EMh36VMmx/nccw7VAtw+Zn+UB+IeOhb5nKR15yg9QIHX6P30CNPQ/hBnKc/LGI5ey/B6yHPl5m3XjnCuve11eA/FscJ3/uk9r/UgCkRuDoJyLz9H8icsF9TDUAr88Y5djyOr0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Bir web client request attığında container hangi filter ve servlet çalışacağına request URI&apos;ye göre karar verir.&quot;
+        title=&quot;&quot;
+        src=&quot;https://yusufunlu.github.io/blog//static/0c63cd2617c6907c1b30ef37802886cd/fb8a0/filters.png&quot;
+        srcset=&quot;https://yusufunlu.github.io/blog//static/0c63cd2617c6907c1b30ef37802886cd/1a291/filters.png 148w,https://yusufunlu.github.io/blog//static/0c63cd2617c6907c1b30ef37802886cd/2bc4a/filters.png 295w,https://yusufunlu.github.io/blog//static/0c63cd2617c6907c1b30ef37802886cd/fb8a0/filters.png 590w,https://yusufunlu.github.io/blog//static/0c63cd2617c6907c1b30ef37802886cd/526de/filters.png 885w,https://yusufunlu.github.io/blog//static/0c63cd2617c6907c1b30ef37802886cd/fa2eb/filters.png 1180w,https://yusufunlu.github.io/blog//static/0c63cd2617c6907c1b30ef37802886cd/c283c/filters.png 1190w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Bir web client request attığında container hangi filter ve servlet çalışacağına request URI’ye göre karar verir. Çoğunlukla bir servlet request’i handle eder ama filter’lar sıralı bir zincir oluşturur. Bir filter kendisinden sonraki filteri devre dışı bırakabilir eğer requesti kendisi kullanmak isterse.  Ayrıca filtre request ve response objelerini değiştirebilir. Filtrelerin sırası önemlidir. Sıra 2 lekilde sağlanabilir. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Filter’in &lt;strong&gt;@Beans&lt;/strong&gt;‘i &lt;strong&gt;@Order&lt;/strong&gt; alabilir veya &lt;strong&gt;Ordered&lt;/strong&gt;‘ı implement eder.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;FilterRegistrationBean **‘ın bir parçası olarak.
+Bazı hazır filtreler hangi sırada olduğunu kendisi belirlemek ister. Mesela **SessionRepositoryFilter ** önlerde olmak ister ama kendinden öncekileri zorlamaz.
+Spring Security yalnız tek bir filtre olarak yüklenir ve bunun tipi de **FilterChainProxy&lt;/strong&gt;‘dir .
+Spring Boot uygulamarında security filter &lt;strong&gt;ApplicationContext&lt;/strong&gt; içinde bir &lt;strong&gt;@Bean&lt;/strong&gt; olarak çalışır ve bu filter her requeste uygulanır. Bu filtrenin sırası &lt;strong&gt;SecurityProperties.DEFAULT&lt;em&gt;FILTER&lt;/em&gt;ORDER&lt;/strong&gt; ile belirlenir.
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;https://yusufunlu.github.io/blog//static/3f60f83afd640295241ce31d230f60e8/c283c/security-filters.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 70.50420168067227%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAADmklEQVQ4y4WUf0wTdxTAX3vtUAa0MMYcrtXwa2qZOOeccSYbC8zQqKhhaPlRqQ7a0nalTC0sG4vJ/mBblv2hiXHBbfFXsgQNYYl20zhXMplaQH5oLNIWlnkF22tLTX/Q6/XtrlSSJfvxkpf3Lp93n9z3Xu4AUmFB+M+4y3Gx719545kYlNd3AYx4s5Zkd6LCtqEEce76Y+KU5U/im1sLRI8tJuixBZ9Z9fTGwpICUVHZBpH05RJRyfpXRKvXrBUXyNaJl8wTFAG/poSjUfhsHOHGL4/gp74xuDZCw+VRGiyjQSjmeF33d9mFKzZLpctlEsmzMsmq5WukkrTSfEn6Wkn5+z05qlOjfKhwsTZcNL76B2aWIYpLT4ekW85MFW9DzCp1Yc6WOSQ4vuPwFdFHiHntiFIT4ksdbLJVakbM3/v11dxdzecF0Em5YXVKqI+GLEZEVM2S8YaHdtQyNOroBTTOU5s4nguS59R+aszAzjSRJN3odDJaJo5aOhbTj9hfS0q63NPwZkpomveu7EIsVtpule3u/eH1Y4gFptB8yWlEIYuJtw+cEBnmHknbGbpYNTEm23nh/OYPkSlqiwYL9528liNvOEtAp8cNmSmhLhjYpXQ62urGx0z7h4eOKl2uVrXPa6j5sY9bCq9iz7fp+kioVsfETQdcTqNiZNjM9nr2FNpDV4YkebCVB2bfY8hICbWR8Pf109OzCrvdoZicnFE4HFOHfJSzbvDmVo6/AS1p2oVonwbRrZx1T9U5HDPqRMKpYeJ2re1BWVIS11SyO1kU+o27BWzP1zXsyX5vr3wF2/OCHzcKk3CZSFDV0Z+Fqo0E6rcRnxubMna++9aLeOIggXIgqtvOZVZ/elkAJq9naSmaaLS3BTGmdM96FA+nfC1MglLTtF8bCGzkeB4U5bYE/ANaxCdKkpyrdzq97BN6NQmGbB2e3JCUIHZCtmdReBI967uRqTo8fa9ac/tG7ZeIFd0J33ZEexrH36k5nmUIBrbropFGNeXd1+wm9+siYYU+Fqltuji4ctOyDj6IrH4eN/yC1ZMP1sgRGIgb4ML9o9DzeydcD+nAumBOH3hSxc1UHrNks4X/T59eueqsuParqwSIfwsmhc9bKZnwNn1PaGPuC38mJ4T9jgnhzfA4ez2TMRjuSh2H9wH3jtlsxgT/IIaTfSubf9eT//Nn4IJC+EJuBvmRi2xegiq2Ps0d5ktQ2d4LNZ/0w1/4wNQLDDLNqQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;FilterChainProxy &quot;
+        title=&quot;&quot;
+        src=&quot;https://yusufunlu.github.io/blog//static/3f60f83afd640295241ce31d230f60e8/fb8a0/security-filters.png&quot;
+        srcset=&quot;https://yusufunlu.github.io/blog//static/3f60f83afd640295241ce31d230f60e8/1a291/security-filters.png 148w,https://yusufunlu.github.io/blog//static/3f60f83afd640295241ce31d230f60e8/2bc4a/security-filters.png 295w,https://yusufunlu.github.io/blog//static/3f60f83afd640295241ce31d230f60e8/fb8a0/security-filters.png 590w,https://yusufunlu.github.io/blog//static/3f60f83afd640295241ce31d230f60e8/526de/security-filters.png 885w,https://yusufunlu.github.io/blog//static/3f60f83afd640295241ce31d230f60e8/fa2eb/security-filters.png 1180w,https://yusufunlu.github.io/blog//static/3f60f83afd640295241ce31d230f60e8/c283c/security-filters.png 1190w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Yukarıdaki şekle bakınca farklı dursa da aslında bir fiziksel filter vardır.  Bu filtre &lt;strong&gt;FilterChainProxy ** içerir. FilterChainProxy  bir bean’dir ve içerdiği tüm filtreler de Servlet’ten gelen **Filter ** interface’ini implement eder.  Her birinin de zincirin gerisini veto etme hakkı vardır.
+Spring Security filter birden fazla filter zinciri içerebilir ve gelen request’i eşleşen ilk zincire gönderir.
+Aşağıda /foo/&lt;/strong&gt; adresine gelen request’i /** zincirine dağıtması gösteriliyor. Ama en önemlisi bir request’i yalnızca bir chain yakalıyor.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;https://yusufunlu.github.io/blog//static/95561c170de539398957b14db5d3318a/c283c/security-filters-dispatch.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 70.50420168067227%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAADFUlEQVQ4y2NgQAJ5//8zMhAAJd8/MxAFcr5/YwIb+uuHb/LrV1Pj7t/rjH/8qCvuwf2upFeverO+f20p+fxeGKSm4MtHxpCQENyG8fDwMOT++MYMYuf/+pGV8vrV6airV3bHXL1yOPrSxUOxt28dyvzyeWvZz29SYEufPWYMDg5mMDQ0BOv///8/g4SEBMQwy9T5DF4VmxhkgOzoU9fxelmPgYExom0SXI2Q81QGq4AiBr+GfQwexatRFbcCww9kU9iZPaxRKxdyMCgwgDUG7VnHalyYwVH2/z9T2q5VLLEmXEwJCc7MKYc3s+T//8XUC9TXDg17h7TlDAxeU3YyuGYt44WaywfE4HByL13L55q0CCzOw8AgCaQ4QGyPig18TpEzYeq5YQ5yK1zFA3dd5ILD4jk/v7eFHT22NPrylYU5f343RNStFI3Zcl4p+8f3ztCDBxfGXLs+N/f3rxK/2GkCCTvOqwDVtERdvDgp/sGDybnfv5cHN6wVghsYNf+ASMHfX/mx1642Rl04117w/192eNVSoZjNZ+Tz//2pirx4vjX62tWegv9/M30jJ/PFbz+jmPf/X0XYieM9sTdvdOb//pUTXL9aAGqcN2P4zL3CBX9+xkScPJEfeepkCdDAiJDq5UKRK45KF/77Exl6YH9O5JnT+cX///n4JM7kj1l7TKbw///w4F0782OvXs4s/PnTP7AWbiAwdpccFsv786st5trV2THXry0A2t4YUbFYOG7PJbXsXz+Xxty+tTLh6dP1Ob9/9QWGTeJPOnBZPfvPr0VA8VUJT5+sy/35c0JY8zqYl6UZIubsA3r5d0bE6VP14SdPtBb8/58cPWmzmE3oPD60lMPkWbmRzzl+IS+aOLNHyTpeJBceBUVKb9y9uzMTnz6ZBXRJe9y07eLgXAFMLj6HDzGF3LzJlA1kw/RkANnehw4whQLF86DiNlGLGBiCt5xncMtawYOeiN3z1/CC0iUo0XiXrWPwgmLv8nUMnqVrIXwgDWKD5H2A4iigCGhL2OOrTNEfHzEVI7kkddc5BlIAABBBcwQO3WkwAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;FilterChainProxy &quot;
+        title=&quot;&quot;
+        src=&quot;https://yusufunlu.github.io/blog//static/95561c170de539398957b14db5d3318a/fb8a0/security-filters-dispatch.png&quot;
+        srcset=&quot;https://yusufunlu.github.io/blog//static/95561c170de539398957b14db5d3318a/1a291/security-filters-dispatch.png 148w,https://yusufunlu.github.io/blog//static/95561c170de539398957b14db5d3318a/2bc4a/security-filters-dispatch.png 295w,https://yusufunlu.github.io/blog//static/95561c170de539398957b14db5d3318a/fb8a0/security-filters-dispatch.png 590w,https://yusufunlu.github.io/blog//static/95561c170de539398957b14db5d3318a/526de/security-filters-dispatch.png 885w,https://yusufunlu.github.io/blog//static/95561c170de539398957b14db5d3318a/fa2eb/security-filters-dispatch.png 1180w,https://yusufunlu.github.io/blog//static/95561c170de539398957b14db5d3318a/c283c/security-filters-dispatch.png 1190w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h2 id=&quot;creating-and-customizing-filter-chains&quot;&gt;&lt;a href=&quot;#creating-and-customizing-filter-chains&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Creating and Customizing Filter Chains&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;@Configuration
+@&lt;span class=&quot;token function&quot;&gt;Order&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;SecurityProperties&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;BASIC_AUTH_ORDER&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ApplicationConfigurerAdapter&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;WebSecurityConfigurerAdapter&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  @Override
+  &lt;span class=&quot;token keyword&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;configure&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;HttpSecurity http&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; throws Exception &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    http&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;antMatcher&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/foo/**&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+     &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Yukarıdaki örnekte gelen requesti basic auth filter’dan önce yakalamak için &lt;strong&gt;@Order&lt;/strong&gt; kullanılarak ondan daha düşük bir sıra verilmiştir .
+Diğer bir yöntem olarak da &lt;strong&gt;security.basic.enabled=false&lt;/strong&gt; yapılabilirdik. &lt;/p&gt;
+&lt;p&gt;Many applications have completely different access rules for one set of resources compared to another. For example an application that hosts a UI and a backing API might support cookie-based authentication with a redirect to a login page for the UI parts, and token-based authentication with a 401 response to unauthenticated requests for the API parts. Each set of resources has its own WebSecurityConfigurerAdapter with a unique order and a its own request matcher. If the matching rules overlap the earliest ordered filter chain will win.
+Çoğu uygulama farklı kaynaklara erişim için farklı kurallara sahiptir. Mesela bir UI backend cookie tabanlı authentication destekleyip login sayfasına yönlendirme yapmak isterken , API kısımları token temelli authentication http 401 response verebilir.  &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;@Configuration
+@&lt;span class=&quot;token function&quot;&gt;Order&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;SecurityProperties&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;BASIC_AUTH_ORDER&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ApplicationConfigurerAdapter&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;WebSecurityConfigurerAdapter&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  @Override
+  &lt;span class=&quot;token keyword&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;configure&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;HttpSecurity http&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; throws Exception &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    http&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;antMatcher&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/foo/**&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;authorizeRequests&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;antMatchers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/foo/bar&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;hasRole&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;BAR&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;antMatchers&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/foo/spam&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;hasRole&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;SPAM&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;anyRequest&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;isAuthenticated&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;request matcher vs filter chain ?
+One of the easiest mistakes to make with configuring Spring Security is to forget that these matchers apply to different processes, one is a request matcher for the whole filter chain, and the other is only to choose the access rule to apply.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Combining Application Security Rules with Actuator Rules
+Eğer projenizde endpoint’leri yönetmek için Spring Boot Actuator kullanıyorsanız, onlar da secure de olur ve bunlar için yeni bir filter chain tanımlanır. Bu filter chain’in order’ı yani sırası **ManagementServerProperties.BASIC&lt;em&gt;AUTH&lt;/em&gt;ORDER ** ile tanımlıdır ve sıra numarası **SecurityProperties **‘dan 5 düşüktür.
+Eğer defalt security rullarının actuator için de geçerli olmasını isterseniz actuator’e daha yüksek bir order verin.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;@Configuration
+@&lt;span class=&quot;token function&quot;&gt;Order&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ManagementServerProperties&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;BASIC_AUTH_ORDER&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;ApplicationConfigurerAdapter&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;WebSecurityConfigurerAdapter&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  @Override
+  &lt;span class=&quot;token keyword&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;configure&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;HttpSecurity http&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; throws Exception &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    http&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;antMatcher&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/foo/**&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+     &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
                 &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog//Spring Security Architecture/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
               </content:encoded></item><item><title><![CDATA[First post and this blog]]></title><description><![CDATA[Gatsby and Github Pages]]></description><link>https://yusufunlu.github.io/blog//ilk-post/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//ilk-post/</guid><pubDate>Fri, 24 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This blog is being hosted on &lt;a href=&quot;https://github.com/yusufunlu/blog&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/yusufunlu/blog&lt;/a&gt; adress I guess :) It can be move to somewhere else though. The blog infrastructure has been taken from Dan Abramov’s this project : &lt;a href=&quot;https://github.com/gaearon/overreacted.io&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/gaearon/overreacted.io&lt;/a&gt;&lt;br&gt;
 Bu blog şu anda &lt;a href=&quot;https://github.com/yusufunlu/blog&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/yusufunlu/blog&lt;/a&gt; adresinde host ediliyor. Bloğu oluşuturan kod altyapısı Dan Abramov’un şu kütüphanesinden alındı : &lt;a href=&quot;https://github.com/gaearon/overreacted.io&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/gaearon/overreacted.io&lt;/a&gt;&lt;/p&gt;
                 &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog//ilk-post/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
+              </content:encoded></item><item><title><![CDATA[Temel Spring Frameworks]]></title><description><![CDATA[Spring'in temel kavramları ve nasıl çalıştıkları]]></description><link>https://yusufunlu.github.io/blog//Temel Spring Framework/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//Temel Spring Framework/</guid><pubDate>Fri, 24 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;scope&quot;&gt;&lt;a href=&quot;#scope&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Scope&lt;/h2&gt;
+&lt;p&gt;Spring daha yokken de bildiğim bir kavram scope. Bir değişkenin etki alanıdır. Java’da bir değişken class için yaratılmışsa etki alanı yani scope’u o class’tır. Eğer değişken method içinde yaratılmışsa. Aynen bu şekilde Spring’in bean’i de bir session için yaratılmış da olabilir sadece tek bir http request için de yaratılmış da olabilir. Bu durumda gelecek 2. request için farklı bir bean yaratılır. &lt;/p&gt;
+&lt;p&gt;Bu şekilde 5 scope seçeneğimiz vardır. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Singleton&lt;/strong&gt;: Default yani özel bir ayar yapmazsak bean’ler singleton çalışır. Her bir Spring container veya context(application context) içinde o bean’den bir tane olmasını sağlar. Eğer JVM üzerinde birden fazla Spring container olursa singleton itemler da çoklanır.  &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prototype&lt;/strong&gt;: Spring container’dan bu bean’i her istediğimizde bize bean’i yeniden üretir ve uniq(eşsiz) olur.&lt;/li&gt;
+&lt;li&gt;Session&lt;/li&gt;
+&lt;li&gt;Request&lt;/li&gt;
+&lt;li&gt;Global&lt;/li&gt;
+&lt;/ul&gt;
+                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog//Temel Spring Framework/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
               </content:encoded></item><item><title><![CDATA[Writing Resilient Components]]></title><description><![CDATA[Four principles to set you on the right path.]]></description><link>https://yusufunlu.github.io/blog//writing-resilient-components/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//writing-resilient-components/</guid><pubDate>Sat, 16 Mar 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;When people start learning React, they often ask for a style guide. While it’s a good idea to have some consistent rules applied across a project, a lot of them are arbitrary — and so React doesn’t have a strong opinion about them.&lt;/p&gt;
 &lt;p&gt;You can use different type systems, prefer function declarations or arrow functions, sort your props in alphabetical order or in an order you find pleasing.&lt;/p&gt;
 &lt;p&gt;This flexibility allows &lt;a href=&quot;https://reactjs.org/docs/add-react-to-a-website.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;integrating React&lt;/a&gt; into projects with existing conventions. But it also invites endless debates.&lt;/p&gt;
@@ -386,7 +554,7 @@ Bu blog şu anda &lt;a href=&quot;https://github.com/yusufunlu/blog&quot; target
 &lt;p&gt;&lt;strong&gt;Wouldn’t it be nice if we could somehow automatically catch these mistakes?&lt;/strong&gt; Isn’t that something a linter could help us with?&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Unfortunately, automatically checking a class component for consistency is too difficult. Any method can call any other method. Statically analyzing calls from &lt;code class=&quot;language-text&quot;&gt;componentDidMount&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;componentDidUpdate&lt;/code&gt; is fraught with false positives.&lt;/p&gt;
-&lt;p&gt;However, one &lt;em&gt;could&lt;/em&gt; design an API that &lt;em&gt;can&lt;/em&gt; be statically analyzed for consistency. The &lt;a href=&quot;https://yusufunlu.github.io/blog//blog/a-complete-guide-to-useeffect/&quot;&gt;React &lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt; Hook&lt;/a&gt; is an example of such API:&lt;/p&gt;
+&lt;p&gt;However, one &lt;em&gt;could&lt;/em&gt; design an API that &lt;em&gt;can&lt;/em&gt; be statically analyzed for consistency. The &lt;a href=&quot;https://yusufunlu.github.io/blog//a-complete-guide-to-useeffect/&quot;&gt;React &lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt; Hook&lt;/a&gt; is an example of such API:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;SearchResults&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; query &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setData&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;currentPage&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; setCurrentPage&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -409,11 +577,11 @@ Bu blog şu anda &lt;a href=&quot;https://github.com/yusufunlu/blog&quot; target
 &lt;p&gt;We put the logic &lt;em&gt;inside&lt;/em&gt; of the effect, and that makes it easier to see &lt;em&gt;which values from the React data flow&lt;/em&gt; it depends on. These values are called “dependencies”, and in our example they are &lt;code class=&quot;language-text&quot;&gt;[currentPage, query]&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Note how this array of “effect dependencies” isn’t really a new concept. In a class, we had to search for these “dependencies” through all the method calls. The &lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt; API just makes the same concept explicit.&lt;/p&gt;
 &lt;p&gt;This, in turn, lets us validate them automatically:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://yusufunlu.github.io/blog//blog/useeffect-bc7a074c528f3b0be1b7e509b6a8683b.gif&quot; alt=&quot;Demo of exhaustive-deps lint rule&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://yusufunlu.github.io/blog//useeffect-bc7a074c528f3b0be1b7e509b6a8683b.gif&quot; alt=&quot;Demo of exhaustive-deps lint rule&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;(This is a demo of the new recommended &lt;code class=&quot;language-text&quot;&gt;exhaustive-deps&lt;/code&gt; lint rule which is a part of &lt;code class=&quot;language-text&quot;&gt;eslint-plugin-react-hooks&lt;/code&gt;. It will soon be included in Create React App.)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note that it is important to respect all prop and state updates for effects regardless of whether you’re writing component as a  class or a function.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;With the class API, you have to think about consistency yourself, and verify that changes to every relevant prop or state are handled by &lt;code class=&quot;language-text&quot;&gt;componentDidUpdate&lt;/code&gt;. Otherwise, your component is not resilient to prop and state changes. This is not even a React-specific problem. It applies to any UI library that lets you handle “creation” and “updates” separately.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;The &lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt; API flips the default by encouraging consistency.&lt;/strong&gt; This &lt;a href=&quot;https://yusufunlu.github.io/blog//blog/a-complete-guide-to-useeffect/&quot;&gt;might feel unfamiliar at first&lt;/a&gt;, but as a result your component becomes more resilient to changes in the logic. And since the “dependencies” are now explicit, we can &lt;em&gt;verify&lt;/em&gt; the effect is consistent using a lint rule. We’re using a linter to catch bugs!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The &lt;code class=&quot;language-text&quot;&gt;useEffect&lt;/code&gt; API flips the default by encouraging consistency.&lt;/strong&gt; This &lt;a href=&quot;https://yusufunlu.github.io/blog//a-complete-guide-to-useeffect/&quot;&gt;might feel unfamiliar at first&lt;/a&gt;, but as a result your component becomes more resilient to changes in the logic. And since the “dependencies” are now explicit, we can &lt;em&gt;verify&lt;/em&gt; the effect is consistent using a lint rule. We’re using a linter to catch bugs!&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3 id=&quot;dont-stop-the-data-flow-in-optimizations&quot;&gt;&lt;a href=&quot;#dont-stop-the-data-flow-in-optimizations&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Don’t Stop the Data Flow in Optimizations&lt;/h3&gt;
 &lt;p&gt;There’s one more case where you might accidentally ignore changes to props. This mistake can occur when you’re manually optimizing your components.&lt;/p&gt;
@@ -636,7 +804,7 @@ Bu blog şu anda &lt;a href=&quot;https://github.com/yusufunlu/blog&quot; target
 &lt;p&gt;&lt;em&gt;The value of new comment input.&lt;/em&gt; It would be odd if typing a comment in one input would also update an input in another tree. Unless inputs are clearly grouped together, usually people expect them to be independent. So the input value &lt;strong&gt;should&lt;/strong&gt; be a local state of the &lt;code class=&quot;language-text&quot;&gt;NewComment&lt;/code&gt; component.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;I don’t suggest a dogmatic interpretation of these rules. Of course, in a simpler app you might want to use local state for everything, including those “caches”. I’m only talking about the ideal user experience &lt;a href=&quot;https://yusufunlu.github.io/blog//blog/the-elements-of-ui-engineering/&quot;&gt;from the first principles&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I don’t suggest a dogmatic interpretation of these rules. Of course, in a simpler app you might want to use local state for everything, including those “caches”. I’m only talking about the ideal user experience &lt;a href=&quot;https://yusufunlu.github.io/blog//the-elements-of-ui-engineering/&quot;&gt;from the first principles&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Avoid making truly local state global.&lt;/strong&gt; This plays into our topic of “resilience”: there’s fewer surprising synchronization happening between components. As a bonus, this &lt;em&gt;also&lt;/em&gt; fixes a large class of performance issues. “Over-rendering” is much less of an issue when your state is in the right place.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;recap&quot;&gt;&lt;a href=&quot;#recap&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Recap&lt;/h2&gt;
@@ -647,7 +815,7 @@ Bu blog şu anda &lt;a href=&quot;https://github.com/yusufunlu/blog&quot; target
 &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;#principle-3-no-component-is-a-singleton&quot;&gt;No component is a singleton.&lt;/a&gt;&lt;/strong&gt; Even if a component is rendered just once, your design will improve if rendering twice doesn’t break it.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;#principle-4-keep-the-local-state-isolated&quot;&gt;Keep the local state isolated.&lt;/a&gt;&lt;/strong&gt; Think about which state is local to a particular UI representation — and don’t hoist that state higher than necessary.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;These principles help you write components that are &lt;a href=&quot;https://yusufunlu.github.io/blog//blog/optimized-for-change/&quot;&gt;optimized for change&lt;/a&gt;. It’s easy to add, change them, and delete them.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;These principles help you write components that are &lt;a href=&quot;https://yusufunlu.github.io/blog//optimized-for-change/&quot;&gt;optimized for change&lt;/a&gt;. It’s easy to add, change them, and delete them.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;And most importantly, once our components are resilient, we can come back to the pressing dilemma of whether or not props should be sorted by alphabet.&lt;/p&gt;
                 &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog//writing-resilient-components/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
               </content:encoded></item></channel></rss>
