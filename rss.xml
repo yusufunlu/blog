@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[yusufunlu]]></title><description><![CDATA[Personal blog is taken from Dan Abramov.]]></description><link>https://yusufunlu.github.io/blog/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 10 Aug 2020 01:50:00 GMT</lastBuildDate><item><title><![CDATA[Neo4J Graph Db nedir ve Spring ile örnek]]></title><description><![CDATA[Neo4J Graph Db nedir ve Spring ile örnek]]></description><link>https://yusufunlu.github.io/blog//Neo4J Graph Db/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//Neo4J Graph Db/</guid><pubDate>Mon, 15 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;graph-database-nedir&quot;&gt;&lt;a href=&quot;#graph-database-nedir&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Graph Database Nedir&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[yusufunlu]]></title><description><![CDATA[Personal blog is taken from Dan Abramov.]]></description><link>https://yusufunlu.github.io/blog/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 16 Aug 2020 03:54:41 GMT</lastBuildDate><item><title><![CDATA[Neo4J Graph Db nedir ve Spring ile örnek]]></title><description><![CDATA[Neo4J Graph Db nedir ve Spring ile örnek]]></description><link>https://yusufunlu.github.io/blog//Neo4J Graph Db/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//Neo4J Graph Db/</guid><pubDate>Mon, 15 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;graph-database-nedir&quot;&gt;&lt;a href=&quot;#graph-database-nedir&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Graph Database Nedir&lt;/h2&gt;
 &lt;p&gt;Graph veritablanları daha çok ilişki ve bağlantı odaklı veritabanlarıdır. Odakları burasıdır ve verilerin birbiri ile ilişkisi konusunda bize daha çok özellik(feature) sunarlar.  Graph veri yapısı kullanarak bunları bize sağlarlar. Genelde node ve edge 2 temel yapı üzerine kuruldur. Nodelar temel veri için iken edge’ler ise ilişkiler içindir. Graph veritabanları NoSql’dir ve Rdbms yani Sql(teoride yanlış bir kelime) tabanlı veritabanlarının problemlerini aşmak için oluşturuldu. Çünkü isminden (relational database management system - ilişkisel veritabanı yönetim sistemi) anlaşılacağı gibi onlarda da ilişkiler vardır.  Bazı graph db’ler relational engine yani ilişki motoru ve graph veri tutarken bazıları da key-value ve dokuman odaklıdır. Mesela OrientDB dokuman odaklı bir graph database’dir. Graph odaklı olanlarda bir döküman diğerine pointer içerir ki buna da edge denir, aslında ilişkidir bu pointer. Bu sayede retrieve yani veri getirme operasyonu hızlandırır.
 Graph databaselerden veri çekmek için SQL kullanılamaz. Bu işi görecek farklı query(sorgulama) dilleri vardır ama hiçbiri SQL’de olduğu tek bir standart hale gelememiştir. Bazıları : Gremlin, SPARQL ve Cypher. &lt;/p&gt;
 &lt;p&gt;coming soon…&lt;/p&gt;
@@ -334,10 +334,77 @@ GFS ve map-reduce geliştirmeler için makaleler yayınlar. Yahoo da buradan esi
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;Şimdi dönelim konumuza Google’ın yayınladığı GFS yani Google File System distributed bir alt yapıya sahip buradan esinlerek Hadoop Distributed File System yapılıyor. Google’ın diğer makalesi olan Map-Reduce ise gene Hadoop içindeki Map-Reduce için bir esin kaynağı oluyor. İsimler de aynı kalmış hemen hemen.&lt;/p&gt;
-&lt;p&gt;Flume — scalable real time framework, filter and aggregate yapabilir hadoopa data aktarırken &lt;/p&gt;
-&lt;p&gt;Pig , High-level data-flow language and execution framework for parallel computation
-Tez üzerinden çalışır genelde ama MR da kullanabilir
-interactive query&lt;br&gt;
+&lt;h2 id=&quot;apache-flume&quot;&gt;&lt;a href=&quot;#apache-flume&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Apache Flume&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;https://yusufunlu.github.io/blog//blog/static/8ce83c82f6393451937535094f1e2738/54f08/flume-logo.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 170px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAARlAAAEZQAGA43XUAAAFMklEQVQ4y51UW1BTVxQ9Nzj9KNoP+9Pxw8o4fdt2plOtM221TuugZbRVKkobBRVbFLHqh9gUKwUfCJRARVHUSBAIeQAJSMI7gQskkhjyIARCgJCEkARCQoIIIffuwqU6Y2f86Zq5c9fcs/e66+yzz0boPxi2TqLpwCzFbeM+zDnpo7mnfGGOCU+Y2eqkKTSjGEJrqHVxmwG9FL0DdmR3+ihuGvagSa8/7GWxmsGRsPxSOcWrWvQot0T6YkB+hR6NOrwUN1umMACS4opuxyrb+NQOh9uXYB33JBjM47vKRObVz/KYpQps6V1Y2Ynoqezlj3kcHVqYB4q3q8Zoz4JdE9NJXn/AFiTmIUjOwRzxFPxzfjDbbS6pyvTbs7jM4m5KdH969YsuDYNTz7nbN3sPFjEXDMDMvD80E/SHPAFXyO2zh6aeOMA7PwV1nbpFhbuUAcaNLiov+gJv2aFCN4MAArS4VOlqqyuQFpydgF6cv6BuLAn1dYlgZERHeue8pOepC4acesJol88bXVq4VibJpkpjkNG+PiNEe3/nLDuSKe3UnwSNQ1sHbB5iQIuDof42oaq5DlJOFtnISiWLsxKBV8UkcUMttBtFRJdRACyJYH5zYuVbS7nHciqprSNJpwXzBwKUoEpn+9HoDIKid2Shq6oADOICsoOTBn+nfAf87IMgvHMW+nr4ZJOcS7Zq+cFmTS0k5/POLeWmlwhX1A8udwliS8wry+uHNtbhIx14nx8apOoQXnGV5DOToaUoGaZNxQBOLsBYIYCVBU5tESlpLwm29Ioh/V7JjSWN4w94Kygx+SNLeH3b0PpSsfmnh7jFrh72QZvBTVSXc0kWYzfYlPlAmFLBp0wEb3ciPNWfBq/iDKlpylsQKnFIucPhowigtrt4juHo0aA7dvGpZLPErwllw3+ZJxegxTi5kFzQQgpYlwEsOTCtSgIHfhwcskPgaPsFRsRxYBYmkbnVTXBEYA7eVLqkV/ExEaPekoda1PYouXGco3F4NXVKq0usHiNyxAZi5yUZVEqqSU97MtiliaDlx4ChMgZ0/AMwKDpEqov2QFZ5NcmQ2YHRMALxNXagV5t6n/feqC8QXWN0ec/XW+FshQbuK+0kbrKAlnsCzNzvoZ8bDQbOHjCV7wLVrSjyYdlFMq2mBxKKFKHTVUY4cVfpYuudW5BmeIL22QMzVQMBwMoElvJaTJY0UPrYBlzFMCmSNkODMBta7xyCpsIjwC5lwu3WZsjucZDZXdYQs9MBFxtM0oSCrvtRKXXvoXB62bLFPaxVB5lt8Xki/fmj1/H+rRcaYHt6Q+gUW0PsK1SSsXlNZEJRJ7kts5M4LOgnfuZqiZM8bWj/7W6IKegYoN+SqyPTG6+g6kej1FRhlD2+Bv+Co3BDq94J9PwO4HVa4BKvhxQqx8icun7A+1xQq7SDzjoN15uHQG6aICtVboj6U6LLe6B+Y+moqabOremtChAAzAqZPiGnVtTe65jP5quelLUaPZLHVihvNUC+sAd4MqNP1DXo48r6fTdqND5cb5+9zFHMHMmtS2sanH4ffZJUTNXv41+5azYdzT2MXln7NlWCDfHvrNu4+wP0+vY3N9Eztq2PPLVtQ2zmF4j26ToUviUCrfwyAoVvXosi9r77YWTcR/Ih/NVFc8vXb0dG4wuT5/nC/0Fc3vK0jc5qweKZzWFb953CIj7fh2LP3cR2xqVguxKvYPQ/2LSYs/m0GAab9k3cBezbYxlY5NE07Cs6A/shORuLPpmBZQqa0QIA+geHW1kAqWoH2AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Flume Logo :D&quot;
+        title=&quot;&quot;
+        src=&quot;https://yusufunlu.github.io/blog//blog/static/8ce83c82f6393451937535094f1e2738/54f08/flume-logo.png&quot;
+        srcset=&quot;/blog/static/8ce83c82f6393451937535094f1e2738/e7d75/flume-logo.png 148w,
+/blog/static/8ce83c82f6393451937535094f1e2738/54f08/flume-logo.png 170w&quot;
+        sizes=&quot;(max-width: 170px) 100vw, 170px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Genelde farklı konumlardan logları toplayıp Hadoop’un HDFS’ine yazmak için kullanılır. Bu işlem sırası loglar üzerinde filtreleme ve aggregation(birleştirme) yapılabilir. Farklı veri kaynakları kullanılıp, log dışında farklı veriler de taşınabilir:  email veya network trafik verileri.
+Mesela Avro client’larından veri çekmek için Avro Flume source kullanılıp Flume’a yazılır yani işlem başka connectorler ile başlatılıp tetikletiliyor.&lt;/p&gt;
+&lt;p&gt;3 kavramı vardır. &lt;strong&gt;source&lt;/strong&gt;: verinin geldiği yer, &lt;strong&gt;channel&lt;/strong&gt;: veri üzerinde işlem yapılabilen yer, &lt;strong&gt;sink&lt;/strong&gt;: verinin gideceği yer. Kafka ve Storm beraber kullanılarak Flume’un yaptığı iş yapılabilir.  Flume’da source’dan veriyi alıp HDFS’e hiç kod yazmadan gönderebilirsiniz. &lt;/p&gt;
+&lt;h2 id=&quot;pig&quot;&gt;&lt;a href=&quot;#pig&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pig&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;https://yusufunlu.github.io/blog//blog/static/5afb66a1b0469b0885fe4f08e7c81f3a/73653/pig-logo.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 269px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 59.479553903345725%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAACsElEQVQoz2NY0pLCMLc2mAEEptVEcaxsjhJ6urDI5eSUTMtlDdFiIPF1zVFgeVc7SwYzMzMGcyg2A2NTMA0CYLq3MJzh2IQEJpDAprYYx9tzsp++XFz0/+r09P/zykOdQeKXpyUxMzCwMlhbmjOamZqCDGO0MLNgMDcFGWzKYGVlDDbQwhxo4P8ddQzFvlZgASMJIdbHszOeXJ8U//94e+T/kx0hDQxEAg93AQTn2ZIisAtn1yRLXO4Je3esMfz/msKg/5PTIj5fnJr25MqMHA+QvIOtkbO5mYkD0FWuZqbm5hbmxvqWlnrORkb2bCB5kGsZrszKZgRxdnUnqd2fm3v3/pSo/1uKg/4GmGX8MVSv+z9vypI3/8/VyILU6OmGmRkZOsgBNcpbWeorGhk6ympqhDrZ2ykxg31o6Ag0cGY22HUnp+SaXp4Q/+vK3mX/pzZO/8fAUPaHibn3f2HR8uMQf/QpCfBPWcTPN6Wcj3daBh/vdDcgu5Gfb2qfAP8kLZAKIA12HMOx9WvBNgT7d8/98uX9/7jElb8YGEr+CfL3/NfVaARHjKDARH1BgQk7gHgCENcC8TpBgf4AIPYEsnMgaiYwMkxLamWQVtkCNlBNfUGjjfWq//y8Hb8ZmLr/c/J2boSFM1CxvgD/xEVQdjoQVwFxMxDPB4q3QFw4EexbBgPpGrCB8mLpzqwsrf8VJBu2qgjm/040aPzc7dLWDZKTEZ7OIyQwQRRqoDRQMxuQVge63A3JUgaGWM1EsL+95IMky00r7xcaV//3knbPTFNLnFppWn230LisAjl5wF2BBgT4J0AYcVoQA93k3USrzOvPNlg0nY1VT5FB1yAjWcHAwwcJdFBYgVwDoScywQwTEJgIUZyok8qIbkC8ci7YJS1WHUxiKiJgsVTTdIIJHAAiP99NUMqlHQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Pig Logo :D&quot;
+        title=&quot;&quot;
+        src=&quot;https://yusufunlu.github.io/blog//blog/static/5afb66a1b0469b0885fe4f08e7c81f3a/73653/pig-logo.png&quot;
+        srcset=&quot;/blog/static/5afb66a1b0469b0885fe4f08e7c81f3a/0bae6/pig-logo.png 148w,
+/blog/static/5afb66a1b0469b0885fe4f08e7c81f3a/73653/pig-logo.png 269w&quot;
+        sizes=&quot;(max-width: 269px) 100vw, 269px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Bütük verileri analiz etmek için kullanılan platform’dur ve pig latin isimli dile yazılır. Pig latin ile yazılan query’ler Map Reduce joblarına dönüşür.
+Genelde Tez üzerinden çalışır.
 Pre structured data kullanır ve analyzing and transforming datasets
 ETL ile farklı kaynaklardan data çıkarır HDFS’e kaydeder.&lt;br&gt;
 Shell, UI veya java server classları aracılığı kullanılabilir &lt;/p&gt;
