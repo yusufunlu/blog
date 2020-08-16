@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'yusufunlu',
     author: 'Yusuf Unlu',
-    description: 'Personal blog is taken from Dan Abramov.',
+    description: 'Yusuf Unlu Sw Blog',
     siteUrl: 'https://yusufunlu.github.io/blog/',
     social: {
       twitter: '@yufusunlu',
