@@ -1,6 +1,6 @@
 ---
 title: Hadoop Nedir
-date: '2020-04-24'
+date: '2020-07-25'
 spoiler: Hadoop temel elemanları ve opsiyonel elemanlarının görevleri
 ---
 
