@@ -1,4 +1,231 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[yusufunlu]]></title><description><![CDATA[Yusuf Unlu Sw Blog]]></description><link>https://yusufunlu.github.io/blog/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 16 Aug 2020 12:05:24 GMT</lastBuildDate><item><title><![CDATA[Neo4J Graph Db nedir ve Spring ile örnek]]></title><description><![CDATA[Neo4J Graph Db nedir ve Spring ile örnek]]></description><link>https://yusufunlu.github.io/blog//Neo4J Graph Db/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//Neo4J Graph Db/</guid><pubDate>Mon, 15 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;graph-database-nedir&quot;&gt;&lt;a href=&quot;#graph-database-nedir&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Graph Database Nedir&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[yusufunlu]]></title><description><![CDATA[Yusuf Unlu Sw Blog]]></description><link>https://yusufunlu.github.io/blog/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 20 Oct 2020 21:04:49 GMT</lastBuildDate><item><title><![CDATA[Jhipster ile Spring best practice şablon proje]]></title><description><![CDATA[Spring Cloud ve Microservice proje]]></description><link>https://yusufunlu.github.io/blog//Jhipster/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//Jhipster/</guid><pubDate>Thu, 27 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;jhipster-nedir-ve-neden-kullanalım&quot;&gt;&lt;a href=&quot;#jhipster-nedir-ve-neden-kullanal%C4%B1m&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jhipster Nedir ve neden kullanalım&lt;/h2&gt;
+&lt;p&gt;Jhipster basit birşey aslında. Sadece bize popüler Java , frontend ve database teknolojileri modern proje şablonu oluşturan bir araç.
+Mesela Spring projesi kendiniz Jhipster olmadan yapmak isterseniz bunun database bağlantılarını kod içinde, properties dosyasında veya yml dosyalarında veya çok daha sofistike olarak ayrı bir config serverda tutabilirsiniz. Burada en modern ve esnek yöntem Spring cloud üstünde tutmaktır. Faydası ise kodu görenler sizin development, test veya production ortamında database şifrelerinizi görmemiş olur. &lt;/p&gt;
+&lt;p&gt;Gelelim Jhipster’a tekrar. Bu yapı medium veya farklı yerlerde anlatılıyor ancak çoğu bilgi birbiri ile uyumsuz makaleler arasında birinin kullandığını diğeri kullanmıyor veya fazladan birşey kullanıyor. Bu durumda okuyucu hangisi ayar veya araç zorunlu toparlamakta güçlük çekiyor. Yani ihtiyacımız olan eksiksiz ve fazlalıksız amacımıza uygun bir yapı kurmak. Gerisinde ise biz projemize göre business logic yani iş mantığı kodlayacağız yani asıl işimize odaklanacağız.&lt;/p&gt;
+&lt;p&gt;İşte Jhipster bize eksiksiz ve fazlalıksız bir “best practice” bir yapı sunabiliyor. Bunu yaparken CLI (command line interface) yani komut satırında basit soru veya cevaplarla bize opsiyon sunuyor.&lt;/p&gt;
+&lt;p&gt;Şimdi kurulumu öyle kendi resmi faydasındaki komutları tekrarlayarak yapmayacağım. Hangi yöntemi neden seçtik yazacağım:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Jhipster online : internetten bir arayüzle projenizi oluşturup onu gitlab veya githuba atıyor. Ben bunu seçmezdim çünkü bu tarz arayüzler çok sık değiiyor. Geliştirme tecrübesi değil de arayüz tecrübesi veriyor ki bir değişiklik veya problem olması durumunda arayüzün el verdiği kadar yapabilirim. &lt;/li&gt;
+&lt;li&gt;En popüler yöntem: npm ile generator-jhipster yüklenir bu komut satırından çalıştırılır. Basitçe şöyle çalışıyor.  Npm nodejs paketlerini yöneten bir araç olduğunu biliyoruz. Bu paketler gelip bilgisayarın ana node&lt;em&gt;modules klasörü veya projenin node&lt;/em&gt;modules klasörü altında tutuluyor. Burada ana node_modules klasöründe bazı node paketlerini &lt;/li&gt;
+&lt;li&gt;Yarn ile node paketi yükleme : üsttekinin aynısı sadece node paketlerini npm değil de yarn ile yüklüyor. Yarn ile Npm arasında birkaç fark var. Npm ile yüklerseniz node_modules klasörü çok büyüyebiliyor. Nasıl yapıyor ayrıntılı bilmiyorum ama bunu özellikle geliştirmiş facebook Yarn ekibi.  Son uyarım da npm ile yarn aynı anda kullanılmamalı bir proje için paketleri yarn ile yükledi iseniz daha sonra npm ile sakın yüklemeyin uyumsuzluk problemi olabilir.&lt;/li&gt;
+&lt;li&gt;Son yöntem de docker container: yani JHipster generator içeren bir docker container çalıştırırsınız ve bu docker içine girdiğinizde bir JHipster generator  vardır. Bu sayede projeyi docker container içinde &lt;/li&gt;
+&lt;/ol&gt;
+                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog//Jhipster/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
+              </content:encoded></item><item><title><![CDATA[AWS ile CI/CD süreçleri]]></title><description><![CDATA[AWS Codecommit, Codepipeline, Codebuild, Cloudformation, CodeDeploy, SAM CLI, AWS CLI, AWS Toolkit]]></description><link>https://yusufunlu.github.io/blog//AWS Deploy/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//AWS Deploy/</guid><pubDate>Thu, 27 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;sam-cli-vs-intellij-aws-toolkit&quot;&gt;&lt;a href=&quot;#sam-cli-vs-intellij-aws-toolkit&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SAM CLI vs Intellij AWS Toolkit&lt;/h2&gt;
+&lt;p&gt;Birkaç fark arada
+SAM-CLI , Gatewayresponse tipinde return ediyor, IDE ise pom.xml dosyasına aws-lambda-java-events da ekledi.
+Bunun dışında kodun mantığı aynı. event.json dosyası tamamen aynı. template.yml dosyasında da sadece CLI proje ismini tamamen doğru yazmış.&lt;/p&gt;
+&lt;h2 id=&quot;aws-toolkit&quot;&gt;&lt;a href=&quot;#aws-toolkit&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;AWS Toolkit&lt;/h2&gt;
+&lt;p&gt;IDE’den lambda class üstünde çıkan işarete tıklayıp crate lambda deyip ayarları yapınca şu komut ile derleme yaptı
+“C:\Program Files\Amazon\AWSSAMCLI\bin\sam.cmd” build Function —template C:\Users\yusufu\Projects\BACKEND\AWS-Lambda-Example-IDE\HelloWorldFunction.aws-sam\build\template.yaml —build-dir C:\Users\yusufu\Projects\BACKEND\AWS-Lambda-Example-IDE\HelloWorldFunction.aws-sam\build&lt;/p&gt;
+&lt;p&gt;SAM build Function —template .aws-sam\build\template.yaml —build-dir .aws-sam\build
+aws-sam klasörü helloworld klasörü altında oluşmuş.&lt;/p&gt;
+&lt;p&gt;Yukarıda oluşuna template.yaml içindeki configler yanlış ama bu sırada deployu yapmış bile ve doğru timeout ve ram ile.
+S3 bucket’ına da helloworldfunctionbyide.zip ismi ile .aws-sam altındaki helloworld ve lib klasörlerini atmış.&lt;/p&gt;
+&lt;h2 id=&quot;sam-cli&quot;&gt;&lt;a href=&quot;#sam-cli&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SAM CLI&lt;/h2&gt;
+&lt;p&gt;SAMCLI ile sam build yapınca tek fark .aws-sam folder’ını bir üst dizine yerleştirdi
+Aslında Aws toolkit SAM komutlarını kullanıyor her işlemdde bu sebeple Aws toolkit için SAM CLI da kurulu olması lazım bilgisayarda&lt;/p&gt;
+&lt;h2 id=&quot;aws-cli&quot;&gt;&lt;a href=&quot;#aws-cli&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;AWS CLI&lt;/h2&gt;
+&lt;p&gt;aws lambda update-function-code —function-name my-lambda-name —zip-file fileb://./target/my-lambda-jar.1.0-SNAPSHOT.jar&lt;/p&gt;
+&lt;h2 id=&quot;aws-codebuild-vs-jenkins&quot;&gt;&lt;a href=&quot;#aws-codebuild-vs-jenkins&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;AWS Codebuild vs Jenkins&lt;/h2&gt;
+&lt;p&gt;CodePipeline is a continuous “deployment” tool, while Jenkins is more of a continuous “integration” tool.
+Jenkinsde amaç build alıp testleri çalıştırmak ve koddaki her bir commit ile jobları trigger etmek
+AWS Codepipeline managed yani sağlığını bizim takip etmemize gerek yok&lt;/p&gt;
+&lt;p&gt;Jenkins arayüzü kötü
+Jenkins hostingini kendimiz yapmalıyız
+Jenkins plugin versionlarına çok bağımlı ve pluginler çok hızlı update olmuyor
+Beraber de kullanılabilirler : AWS code build için mesela Jenkins kullanabilir
+Yapılan deployu kademeli olarak mesela her gün %10 daha fazla kullanıcıya aç gibi bir özellik yok Jenkinsde
+Ama AWS Codedeploy’da var&lt;/p&gt;
+&lt;p&gt;teams pricing nasıl
+onlarca event var aynı anda 40 sandalye 1to1 meetıng olabılır
+1 account ıle kac paralel sessıon ızın verıyor prıcıng nasıl nerede ucretlı
+1 sessıon nasıl baslatılabılır lınk ıle acma team acılınc a tekrar ad soyad almasın&lt;/p&gt;
+                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog//AWS Deploy/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
+              </content:encoded></item><item><title><![CDATA[Spring Circuit Breaker]]></title><description><![CDATA[Netfix Hystrix, Resilience4J, Sentinel ve istio]]></description><link>https://yusufunlu.github.io/blog//Spring Circuit Breaker/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//Spring Circuit Breaker/</guid><pubDate>Thu, 27 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;circuit-breaker-nedir&quot;&gt;&lt;a href=&quot;#circuit-breaker-nedir&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Circuit Breaker Nedir&lt;/h2&gt;
+                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog//Spring Circuit Breaker/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
+              </content:encoded></item><item><title><![CDATA[Windows Pro ve Home Docker]]></title><description><![CDATA[Docker kurulumu ve Windows 10 Pro ve Home versionları arasındaki farklar]]></description><link>https://yusufunlu.github.io/blog//Windows Docker/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//Windows Docker/</guid><pubDate>Thu, 27 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;jhipster-nedir-ve-neden-kullanalım&quot;&gt;&lt;a href=&quot;#jhipster-nedir-ve-neden-kullanal%C4%B1m&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jhipster Nedir ve neden kullanalım&lt;/h2&gt;
+&lt;p&gt;Jhipster basit birşey aslında. Sadece bize popüler Java , frontend ve database teknolojileri modern proje şablonu oluşturan bir araç.
+Mesela Spring projesi kendiniz Jhipster olmadan yapmak isterseniz bunun database bağlantılarını kod içinde, properties dosyasında veya yml dosyalarında veya çok daha sofistike olarak ayrı bir config serverda tutabilirsiniz. Burada en modern ve esnek yöntem Spring cloud üstünde tutmaktır. Faydası ise kodu görenler sizin development, test veya production ortamında database şifrelerinizi görmemiş olur. &lt;/p&gt;
+&lt;p&gt;Gelelim Jhipster’a tekrar. Bu yapı medium veya farklı yerlerde anlatılıyor ancak çoğu bilgi birbiri ile uyumsuz makaleler arasında birinin kullandığını diğeri kullanmıyor veya fazladan birşey kullanıyor. Bu durumda okuyucu hangisi ayar veya araç zorunlu toparlamakta güçlük çekiyor. Yani ihtiyacımız olan eksiksiz ve fazlalıksız amacımıza uygun bir yapı kurmak. Gerisinde ise biz projemize göre business logic yani iş mantığı kodlayacağız yani asıl işimize odaklanacağız.&lt;/p&gt;
+&lt;p&gt;İşte Jhipster bize eksiksiz ve fazlalıksız bir “best practice” bir yapı sunabiliyor. Bunu yaparken CLI (command line interface) yani komut satırında basit soru veya cevaplarla bize opsiyon sunuyor.&lt;/p&gt;
+&lt;p&gt;Şimdi kurulumu öyle kendi resmi faydasındaki komutları tekrarlayarak yapmayacağım. Hangi yöntemi neden seçtik yazacağım:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Jhipster online : internetten bir arayüzle projenizi oluşturup onu gitlab veya githuba atıyor. Ben bunu seçmezdim çünkü bu tarz arayüzler çok sık değiiyor. Geliştirme tecrübesi değil de arayüz tecrübesi veriyor ki bir değişiklik veya problem olması durumunda arayüzün el verdiği kadar yapabilirim. &lt;/li&gt;
+&lt;li&gt;En popüler yöntem: npm ile generator-jhipster yüklenir bu komut satırından çalıştırılır. Basitçe şöyle çalışıyor.  Npm nodejs paketlerini yöneten bir araç olduğunu biliyoruz. Bu paketler gelip bilgisayarın ana node&lt;em&gt;modules klasörü veya projenin node&lt;/em&gt;modules klasörü altında tutuluyor. Burada ana node_modules klasöründe bazı node paketlerini &lt;/li&gt;
+&lt;li&gt;Yarn ile node paketi yükleme : üsttekinin aynısı sadece node paketlerini npm değil de yarn ile yüklüyor. Yarn ile Npm arasında birkaç fark var. Npm ile yüklerseniz node_modules klasörü çok büyüyebiliyor. Nasıl yapıyor ayrıntılı bilmiyorum ama bunu özellikle geliştirmiş facebook Yarn ekibi.  Son uyarım da npm ile yarn aynı anda kullanılmamalı bir proje için paketleri yarn ile yükledi iseniz daha sonra npm ile sakın yüklemeyin uyumsuzluk problemi olabilir.&lt;/li&gt;
+&lt;li&gt;Son yöntem de docker container: yani JHipster generator içeren bir docker container çalıştırırsınız ve bu docker içine girdiğinizde bir JHipster generator  vardır. Bu sayede projeyi docker container içinde &lt;/li&gt;
+&lt;/ol&gt;
+                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog//Windows Docker/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
+              </content:encoded></item><item><title><![CDATA[Hadoop Nedir]]></title><description><![CDATA[Hadoop temel elemanları ve opsiyonel elemanlarının görevleri]]></description><link>https://yusufunlu.github.io/blog//hadoop/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//hadoop/</guid><pubDate>Sat, 25 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hadoop bilgisayar tarlalarında çok büyük veri setleri için dağıtık depolama ve işleme yeteneği sunan bir açık kaynak yazılımdır.
+İki bin yıllarının başında Yahoo Apache Nutch açık kaynak web crawler üzerine çalışırken(tabi o zaman nutch apache miydi emin değilim) Google 2003-2004
+GFS ve map-reduce geliştirmeler için makaleler yayınlar. Yahoo da buradan esinlenerek Hadoop’u yapar ve bunu open source olarak açar.&lt;/p&gt;
+&lt;p&gt;Burada ilginç bir detay var: Hadoop’a en çok katkıda bulunan Doug Cutting(kendisi o zamanlar Yahoo’da çalışıyor) aynı zamanda Apache Nutch’u ve Lucene’i yapan kişi. Lucene de açık kaynak ve Apache altında konumlanıyor ve aynı zamanda Elestic Search ve Solr’ın core kısmı oluyor. Hadoop de Doug Cutting’in oğlunun oyuncak filinin ismi ve rengi de sarı , Hadoop’un sembolü ve maskotu da biraz da şans ile buradan geliyor.&lt;/p&gt;
+&lt;p&gt;Aynı kişi bu Lucene, Nutch, Solr, Elastic Search ve Hadoop ile çalışmıssa aslında bu araçlar da benzer altyapı veya teknik yaklaşımlar ile çalışıyordur. &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;https://yusufunlu.github.io/blog//blog/static/10852cd060ddde3764719343760e6d88/c1266/apache_lucene.jpeg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAWT8aMZoplMTzWjJH//EABwQAAEFAQEBAAAAAAAAAAAAAAEAAgMREhMhIv/aAAgBAQABBQIyWMuvoqoHQlfH92pAej/TZW3Lbl//xAAZEQACAwEAAAAAAAAAAAAAAAAAEQECECH/2gAIAQMBAT8BSOlpz//EABYRAAMAAAAAAAAAAAAAAAAAAAAQIf/aAAgBAgEBPwEj/8QAHxAAAgECBwAAAAAAAAAAAAAAAAEQAhEgITEyQWGR/9oACAEBAAY/AujY/TSEVZ8wrMvg/8QAHRABAAIBBQEAAAAAAAAAAAAAAQARMSFBYYGhUf/aAAgBAQABPyF0AuE9KdIgUWMaI6PEfQAu8+chsxSAPPEKdMkuyxuz5LMvk//aAAwDAQACAAMAAAAQf8z8/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAEREEH/2gAIAQMBAT8Qck+4pIKn/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAQEf/aAAgBAgEBPxDuCQv/xAAdEAEAAgIDAQEAAAAAAAAAAAABABEhMUFR0WFx/9oACAEBAAE/ECsoqWAxpWcVkIEINJZERIYTSGoKnQDuNdQKQrhzKkXFxRQLOjBhRWp91HVGk4JmK33XyBLFfx5P/9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Ben de bu sıralar Lucene kitabı okuyordum :D&quot;
+        title=&quot;&quot;
+        src=&quot;https://yusufunlu.github.io/blog//blog/static/10852cd060ddde3764719343760e6d88/f8fb9/apache_lucene.jpeg&quot;
+        srcset=&quot;/blog/static/10852cd060ddde3764719343760e6d88/e8976/apache_lucene.jpeg 148w,
+/blog/static/10852cd060ddde3764719343760e6d88/63df2/apache_lucene.jpeg 295w,
+/blog/static/10852cd060ddde3764719343760e6d88/f8fb9/apache_lucene.jpeg 590w,
+/blog/static/10852cd060ddde3764719343760e6d88/85e3d/apache_lucene.jpeg 885w,
+/blog/static/10852cd060ddde3764719343760e6d88/d1924/apache_lucene.jpeg 1180w,
+/blog/static/10852cd060ddde3764719343760e6d88/c1266/apache_lucene.jpeg 1200w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Şimdi dönelim konumuza Google’ın yayınladığı GFS yani Google File System distributed bir alt yapıya sahip buradan esinlerek Hadoop Distributed File System yapılıyor. Google’ın diğer makalesi olan Map-Reduce ise gene Hadoop içindeki Map-Reduce için bir esin kaynağı oluyor. İsimler de aynı kalmış hemen hemen.&lt;/p&gt;
+&lt;h2 id=&quot;apache-flume&quot;&gt;&lt;a href=&quot;#apache-flume&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Apache Flume&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;https://yusufunlu.github.io/blog//blog/static/8ce83c82f6393451937535094f1e2738/54f08/flume-logo.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 170px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAARlAAAEZQAGA43XUAAAFMklEQVQ4y51UW1BTVxQ9Nzj9KNoP+9Pxw8o4fdt2plOtM221TuugZbRVKkobBRVbFLHqh9gUKwUfCJRARVHUSBAIeQAJSMI7gQskkhjyIARCgJCEkARCQoIIIffuwqU6Y2f86Zq5c9fcs/e66+yzz0boPxi2TqLpwCzFbeM+zDnpo7mnfGGOCU+Y2eqkKTSjGEJrqHVxmwG9FL0DdmR3+ihuGvagSa8/7GWxmsGRsPxSOcWrWvQot0T6YkB+hR6NOrwUN1umMACS4opuxyrb+NQOh9uXYB33JBjM47vKRObVz/KYpQps6V1Y2Ynoqezlj3kcHVqYB4q3q8Zoz4JdE9NJXn/AFiTmIUjOwRzxFPxzfjDbbS6pyvTbs7jM4m5KdH969YsuDYNTz7nbN3sPFjEXDMDMvD80E/SHPAFXyO2zh6aeOMA7PwV1nbpFhbuUAcaNLiov+gJv2aFCN4MAArS4VOlqqyuQFpydgF6cv6BuLAn1dYlgZERHeue8pOepC4acesJol88bXVq4VibJpkpjkNG+PiNEe3/nLDuSKe3UnwSNQ1sHbB5iQIuDof42oaq5DlJOFtnISiWLsxKBV8UkcUMttBtFRJdRACyJYH5zYuVbS7nHciqprSNJpwXzBwKUoEpn+9HoDIKid2Shq6oADOICsoOTBn+nfAf87IMgvHMW+nr4ZJOcS7Zq+cFmTS0k5/POLeWmlwhX1A8udwliS8wry+uHNtbhIx14nx8apOoQXnGV5DOToaUoGaZNxQBOLsBYIYCVBU5tESlpLwm29Ioh/V7JjSWN4w94Kygx+SNLeH3b0PpSsfmnh7jFrh72QZvBTVSXc0kWYzfYlPlAmFLBp0wEb3ciPNWfBq/iDKlpylsQKnFIucPhowigtrt4juHo0aA7dvGpZLPErwllw3+ZJxegxTi5kFzQQgpYlwEsOTCtSgIHfhwcskPgaPsFRsRxYBYmkbnVTXBEYA7eVLqkV/ExEaPekoda1PYouXGco3F4NXVKq0usHiNyxAZi5yUZVEqqSU97MtiliaDlx4ChMgZ0/AMwKDpEqov2QFZ5NcmQ2YHRMALxNXagV5t6n/feqC8QXWN0ec/XW+FshQbuK+0kbrKAlnsCzNzvoZ8bDQbOHjCV7wLVrSjyYdlFMq2mBxKKFKHTVUY4cVfpYuudW5BmeIL22QMzVQMBwMoElvJaTJY0UPrYBlzFMCmSNkODMBta7xyCpsIjwC5lwu3WZsjucZDZXdYQs9MBFxtM0oSCrvtRKXXvoXB62bLFPaxVB5lt8Xki/fmj1/H+rRcaYHt6Q+gUW0PsK1SSsXlNZEJRJ7kts5M4LOgnfuZqiZM8bWj/7W6IKegYoN+SqyPTG6+g6kej1FRhlD2+Bv+Co3BDq94J9PwO4HVa4BKvhxQqx8icun7A+1xQq7SDzjoN15uHQG6aICtVboj6U6LLe6B+Y+moqabOremtChAAzAqZPiGnVtTe65jP5quelLUaPZLHVihvNUC+sAd4MqNP1DXo48r6fTdqND5cb5+9zFHMHMmtS2sanH4ffZJUTNXv41+5azYdzT2MXln7NlWCDfHvrNu4+wP0+vY3N9Eztq2PPLVtQ2zmF4j26ToUviUCrfwyAoVvXosi9r77YWTcR/Ih/NVFc8vXb0dG4wuT5/nC/0Fc3vK0jc5qweKZzWFb953CIj7fh2LP3cR2xqVguxKvYPQ/2LSYs/m0GAab9k3cBezbYxlY5NE07Cs6A/shORuLPpmBZQqa0QIA+geHW1kAqWoH2AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Flume Logo :D&quot;
+        title=&quot;&quot;
+        src=&quot;https://yusufunlu.github.io/blog//blog/static/8ce83c82f6393451937535094f1e2738/54f08/flume-logo.png&quot;
+        srcset=&quot;/blog/static/8ce83c82f6393451937535094f1e2738/e7d75/flume-logo.png 148w,
+/blog/static/8ce83c82f6393451937535094f1e2738/54f08/flume-logo.png 170w&quot;
+        sizes=&quot;(max-width: 170px) 100vw, 170px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Genelde farklı konumlardan logları toplayıp Hadoop’un HDFS’ine yazmak için kullanılır. Bu işlem sırası loglar üzerinde filtreleme ve aggregation(birleştirme) yapılabilir. Farklı veri kaynakları kullanılıp, log dışında farklı veriler de taşınabilir:  email veya network trafik verileri.
+Mesela Avro client’larından veri çekmek için Avro Flume source kullanılıp Flume’a yazılır yani işlem başka connectorler ile başlatılıp tetikletiliyor.&lt;/p&gt;
+&lt;p&gt;3 kavramı vardır. &lt;strong&gt;source&lt;/strong&gt;: verinin geldiği yer, &lt;strong&gt;channel&lt;/strong&gt;: veri üzerinde işlem yapılabilen yer, &lt;strong&gt;sink&lt;/strong&gt;: verinin gideceği yer. Kafka ve Storm beraber kullanılarak Flume’un yaptığı iş yapılabilir.  Flume’da source’dan veriyi alıp HDFS’e hiç kod yazmadan gönderebilirsiniz. &lt;/p&gt;
+&lt;h2 id=&quot;pig&quot;&gt;&lt;a href=&quot;#pig&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pig&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;https://yusufunlu.github.io/blog//blog/static/5afb66a1b0469b0885fe4f08e7c81f3a/73653/pig-logo.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 269px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 59.479553903345725%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAACsElEQVQoz2NY0pLCMLc2mAEEptVEcaxsjhJ6urDI5eSUTMtlDdFiIPF1zVFgeVc7SwYzMzMGcyg2A2NTMA0CYLq3MJzh2IQEJpDAprYYx9tzsp++XFz0/+r09P/zykOdQeKXpyUxMzCwMlhbmjOamZqCDGO0MLNgMDcFGWzKYGVlDDbQwhxo4P8ddQzFvlZgASMJIdbHszOeXJ8U//94e+T/kx0hDQxEAg93AQTn2ZIisAtn1yRLXO4Je3esMfz/msKg/5PTIj5fnJr25MqMHA+QvIOtkbO5mYkD0FWuZqbm5hbmxvqWlnrORkb2bCB5kGsZrszKZgRxdnUnqd2fm3v3/pSo/1uKg/4GmGX8MVSv+z9vypI3/8/VyILU6OmGmRkZOsgBNcpbWeorGhk6ympqhDrZ2ykxg31o6Ag0cGY22HUnp+SaXp4Q/+vK3mX/pzZO/8fAUPaHibn3f2HR8uMQf/QpCfBPWcTPN6Wcj3daBh/vdDcgu5Gfb2qfAP8kLZAKIA12HMOx9WvBNgT7d8/98uX9/7jElb8YGEr+CfL3/NfVaARHjKDARH1BgQk7gHgCENcC8TpBgf4AIPYEsnMgaiYwMkxLamWQVtkCNlBNfUGjjfWq//y8Hb8ZmLr/c/J2boSFM1CxvgD/xEVQdjoQVwFxMxDPB4q3QFw4EexbBgPpGrCB8mLpzqwsrf8VJBu2qgjm/040aPzc7dLWDZKTEZ7OIyQwQRRqoDRQMxuQVge63A3JUgaGWM1EsL+95IMky00r7xcaV//3knbPTFNLnFppWn230LisAjl5wF2BBgT4J0AYcVoQA93k3USrzOvPNlg0nY1VT5FB1yAjWcHAwwcJdFBYgVwDoScywQwTEJgIUZyok8qIbkC8ci7YJS1WHUxiKiJgsVTTdIIJHAAiP99NUMqlHQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Pig Logo :D&quot;
+        title=&quot;&quot;
+        src=&quot;https://yusufunlu.github.io/blog//blog/static/5afb66a1b0469b0885fe4f08e7c81f3a/73653/pig-logo.png&quot;
+        srcset=&quot;/blog/static/5afb66a1b0469b0885fe4f08e7c81f3a/0bae6/pig-logo.png 148w,
+/blog/static/5afb66a1b0469b0885fe4f08e7c81f3a/73653/pig-logo.png 269w&quot;
+        sizes=&quot;(max-width: 269px) 100vw, 269px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+Bütük verileri analiz etmek için kullanılan platform’dur ve pig latin isimli dile yazılır. Pig latin ile yazılan query’ler Map Reduce joblarına dönüşür.
+Genelde Tez üzerinden çalışır.
+Pre structured data kullanır ve analyzing and transforming datasets
+ETL ile farklı kaynaklardan data çıkarır HDFS’e kaydeder.&lt;br&gt;
+Shell, UI veya java server classları aracılığı kullanılabilir &lt;/p&gt;
+&lt;h2 id=&quot;spark&quot;&gt;&lt;a href=&quot;#spark&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Spark&lt;/h2&gt;
+&lt;p&gt;genel amaclı ve hızlı compute engine dir ve HDFS’i kullanabilir
+Spark, ETL, Machine Learning, stream processing and graph analytics yapabilir
+Acyclic yani not looping sağlar
+Yarn veya HDFS kullanmadan da çalışabilir
+Yarnı kullanabilir
+Inmemory cache  &lt;/p&gt;
+&lt;h2 id=&quot;map-reduce&quot;&gt;&lt;a href=&quot;#map-reduce&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Map Reduce&lt;/h2&gt;
+&lt;p&gt;programming model&lt;br&gt;
+HAdoop Cluster üstünde dağıtık veri işleme yapar. Mapper ve reducer fonksiyonları veriyi map yani başka bir şeye çevirebilir, birleştirebilir ve azaltabilir.
+Hata durumuna karşı töleranslıdır ve hadoop tarafından monitör edilip hata durumunda application master tarafından restart edilir veya başa bir node üzerinde restar edilir.
+Hive and Pig relies on MapReduce ama çok tercih edilmez
+Batch Oriented &lt;/p&gt;
+&lt;h2 id=&quot;hive&quot;&gt;&lt;a href=&quot;#hive&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hive&lt;/h2&gt;
+&lt;p&gt;impala ya da hue ile datada query yapılabilir
+data warehouse infrastructure that provides data summarization and ad hoc querying.
+SQL-like engine that runs MapReduce jobs
+Tez üzerinden çalışır genelde
+interactive query  &lt;/p&gt;
+&lt;h2 id=&quot;tez&quot;&gt;&lt;a href=&quot;#tez&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tez&lt;/h2&gt;
+&lt;p&gt;execution management
+Pig ve hive gibi toollar için map reduce sağlar
+Acyclic yani not looping sağlar
+Yarnı kullanabilir
+Inmemory cache&lt;br&gt;
+Distributed process
+multiple reduce phases without map phases and effective use of HDFS &lt;/p&gt;
+&lt;h2 id=&quot;hbase&quot;&gt;&lt;a href=&quot;#hbase&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hbase&lt;/h2&gt;
+&lt;p&gt;scalable data warehouse with support for large tables
+HBase is a NoSQL key/value database on Hadoop.
+Yarn üzerinde çalışır &lt;/p&gt;
+&lt;h2 id=&quot;yarn&quot;&gt;&lt;a href=&quot;#yarn&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Yarn&lt;/h2&gt;
+&lt;p&gt;framework for job scheduling 
+cluster resource management
+Klasik mapreduce de barındrır
+Storm ve Impala doğrudan YARN kullanır
+Inmemory cache&lt;br&gt;
+Application master node veya clusterdaki bir bilgisayar hata alırsa yarn onu tekrar başlatmayı dener.
+Yarn çökerse Zookeper HA(High available) yarn kullanarak yani Hot Standby kullanarak yeni bir yarn ayağa kaldırır.&lt;/p&gt;
+&lt;h2 id=&quot;kafka&quot;&gt;&lt;a href=&quot;#kafka&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Kafka&lt;/h2&gt;
+&lt;h2 id=&quot;flink&quot;&gt;&lt;a href=&quot;#flink&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Flink&lt;/h2&gt;
+&lt;h2 id=&quot;sqoop&quot;&gt;&lt;a href=&quot;#sqoop&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sqoop&lt;/h2&gt;
+&lt;h2 id=&quot;zookeeper&quot;&gt;&lt;a href=&quot;#zookeeper&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Zookeeper&lt;/h2&gt;
+&lt;h2 id=&quot;nifi&quot;&gt;&lt;a href=&quot;#nifi&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nifi&lt;/h2&gt;
+&lt;h2 id=&quot;storm&quot;&gt;&lt;a href=&quot;#storm&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Storm&lt;/h2&gt;
+&lt;h2 id=&quot;hive-1&quot;&gt;&lt;a href=&quot;#hive-1&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hive&lt;/h2&gt;
+&lt;h2 id=&quot;hbase-1&quot;&gt;&lt;a href=&quot;#hbase-1&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hbase&lt;/h2&gt;
+&lt;h2 id=&quot;drill&quot;&gt;&lt;a href=&quot;#drill&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Drill&lt;/h2&gt;
+&lt;h2 id=&quot;presto&quot;&gt;&lt;a href=&quot;#presto&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Presto&lt;/h2&gt;
+&lt;h2 id=&quot;druid&quot;&gt;&lt;a href=&quot;#druid&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Druid&lt;/h2&gt;
+&lt;h2 id=&quot;apex&quot;&gt;&lt;a href=&quot;#apex&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Apex&lt;/h2&gt;
+                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog//hadoop/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
+              </content:encoded></item><item><title><![CDATA[Neo4J Graph Db nedir ve Spring ile örnek]]></title><description><![CDATA[Neo4J Graph Db nedir ve Spring ile örnek]]></description><link>https://yusufunlu.github.io/blog//Neo4J Graph Db/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//Neo4J Graph Db/</guid><pubDate>Mon, 15 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;graph-database-nedir&quot;&gt;&lt;a href=&quot;#graph-database-nedir&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Graph Database Nedir&lt;/h2&gt;
 &lt;p&gt;Graph veritablanları daha çok ilişki ve bağlantı odaklı veritabanlarıdır. Odakları burasıdır ve verilerin birbiri ile ilişkisi konusunda bize daha çok özellik(feature) sunarlar.  Graph veri yapısı kullanarak bunları bize sağlarlar. Genelde node ve edge 2 temel yapı üzerine kuruldur. Nodelar temel veri için iken edge’ler ise ilişkiler içindir. Graph veritabanları NoSql’dir ve Rdbms yani Sql(teoride yanlış bir kelime) tabanlı veritabanlarının problemlerini aşmak için oluşturuldu. Çünkü isminden (relational database management system - ilişkisel veritabanı yönetim sistemi) anlaşılacağı gibi onlarda da ilişkiler vardır.  Bazı graph db’ler relational engine yani ilişki motoru ve graph veri tutarken bazıları da key-value ve dokuman odaklıdır. Mesela OrientDB dokuman odaklı bir graph database’dir. Graph odaklı olanlarda bir döküman diğerine pointer içerir ki buna da edge denir, aslında ilişkidir bu pointer. Bu sayede retrieve yani veri getirme operasyonu hızlandırır.
 Graph databaselerden veri çekmek için SQL kullanılamaz. Bu işi görecek farklı query(sorgulama) dilleri vardır ama hiçbiri SQL’de olduğu tek bir standart hale gelememiştir. Bazıları : Gremlin, SPARQL ve Cypher. &lt;/p&gt;
 &lt;p&gt;coming soon…&lt;/p&gt;
@@ -289,174 +516,6 @@ Eğer defalt security rullarının actuator için de geçerli olmasını isterse
 &lt;li&gt;Global&lt;/li&gt;
 &lt;/ul&gt;
                 &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog//Temel Spring Framework/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
-              </content:encoded></item><item><title><![CDATA[Hadoop Nedir]]></title><description><![CDATA[Hadoop temel elemanları ve opsiyonel elemanlarının görevleri]]></description><link>https://yusufunlu.github.io/blog//hadoop/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//hadoop/</guid><pubDate>Fri, 24 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hadoop bilgisayar tarlalarında çok büyük veri setleri için dağıtık depolama ve işleme yeteneği sunan bir açık kaynak yazılımdır.
-İki bin yıllarının başında Yahoo Apache Nutch açık kaynak web crawler üzerine çalışırken(tabi o zaman nutch apache miydi emin değilim) Google 2003-2004
-GFS ve map-reduce geliştirmeler için makaleler yayınlar. Yahoo da buradan esinlenerek Hadoop’u yapar ve bunu open source olarak açar.&lt;/p&gt;
-&lt;p&gt;Burada ilginç bir detay var: Hadoop’a en çok katkıda bulunan Doug Cutting(kendisi o zamanlar Yahoo’da çalışıyor) aynı zamanda Apache Nutch’u ve Lucene’i yapan kişi. Lucene de açık kaynak ve Apache altında konumlanıyor ve aynı zamanda Elestic Search ve Solr’ın core kısmı oluyor. Hadoop de Doug Cutting’in oğlunun oyuncak filinin ismi ve rengi de sarı , Hadoop’un sembolü ve maskotu da biraz da şans ile buradan geliyor.&lt;/p&gt;
-&lt;p&gt;Aynı kişi bu Lucene, Nutch, Solr, Elastic Search ve Hadoop ile çalışmıssa aslında bu araçlar da benzer altyapı veya teknik yaklaşımlar ile çalışıyordur. &lt;/p&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;https://yusufunlu.github.io/blog//blog/static/10852cd060ddde3764719343760e6d88/c1266/apache_lucene.jpeg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAWT8aMZoplMTzWjJH//EABwQAAEFAQEBAAAAAAAAAAAAAAEAAgMREhMhIv/aAAgBAQABBQIyWMuvoqoHQlfH92pAej/TZW3Lbl//xAAZEQACAwEAAAAAAAAAAAAAAAAAEQECECH/2gAIAQMBAT8BSOlpz//EABYRAAMAAAAAAAAAAAAAAAAAAAAQIf/aAAgBAgEBPwEj/8QAHxAAAgECBwAAAAAAAAAAAAAAAAEQAhEgITEyQWGR/9oACAEBAAY/AujY/TSEVZ8wrMvg/8QAHRABAAIBBQEAAAAAAAAAAAAAAQARMSFBYYGhUf/aAAgBAQABPyF0AuE9KdIgUWMaI6PEfQAu8+chsxSAPPEKdMkuyxuz5LMvk//aAAwDAQACAAMAAAAQf8z8/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAEREEH/2gAIAQMBAT8Qck+4pIKn/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAQEf/aAAgBAgEBPxDuCQv/xAAdEAEAAgIDAQEAAAAAAAAAAAABABEhMUFR0WFx/9oACAEBAAE/ECsoqWAxpWcVkIEINJZERIYTSGoKnQDuNdQKQrhzKkXFxRQLOjBhRWp91HVGk4JmK33XyBLFfx5P/9k=&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;Ben de bu sıralar Lucene kitabı okuyordum :D&quot;
-        title=&quot;&quot;
-        src=&quot;https://yusufunlu.github.io/blog//blog/static/10852cd060ddde3764719343760e6d88/f8fb9/apache_lucene.jpeg&quot;
-        srcset=&quot;/blog/static/10852cd060ddde3764719343760e6d88/e8976/apache_lucene.jpeg 148w,
-/blog/static/10852cd060ddde3764719343760e6d88/63df2/apache_lucene.jpeg 295w,
-/blog/static/10852cd060ddde3764719343760e6d88/f8fb9/apache_lucene.jpeg 590w,
-/blog/static/10852cd060ddde3764719343760e6d88/85e3d/apache_lucene.jpeg 885w,
-/blog/static/10852cd060ddde3764719343760e6d88/d1924/apache_lucene.jpeg 1180w,
-/blog/static/10852cd060ddde3764719343760e6d88/c1266/apache_lucene.jpeg 1200w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;Şimdi dönelim konumuza Google’ın yayınladığı GFS yani Google File System distributed bir alt yapıya sahip buradan esinlerek Hadoop Distributed File System yapılıyor. Google’ın diğer makalesi olan Map-Reduce ise gene Hadoop içindeki Map-Reduce için bir esin kaynağı oluyor. İsimler de aynı kalmış hemen hemen.&lt;/p&gt;
-&lt;h2 id=&quot;apache-flume&quot;&gt;&lt;a href=&quot;#apache-flume&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Apache Flume&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;https://yusufunlu.github.io/blog//blog/static/8ce83c82f6393451937535094f1e2738/54f08/flume-logo.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 170px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAARlAAAEZQAGA43XUAAAFMklEQVQ4y51UW1BTVxQ9Nzj9KNoP+9Pxw8o4fdt2plOtM221TuugZbRVKkobBRVbFLHqh9gUKwUfCJRARVHUSBAIeQAJSMI7gQskkhjyIARCgJCEkARCQoIIIffuwqU6Y2f86Zq5c9fcs/e66+yzz0boPxi2TqLpwCzFbeM+zDnpo7mnfGGOCU+Y2eqkKTSjGEJrqHVxmwG9FL0DdmR3+ihuGvagSa8/7GWxmsGRsPxSOcWrWvQot0T6YkB+hR6NOrwUN1umMACS4opuxyrb+NQOh9uXYB33JBjM47vKRObVz/KYpQps6V1Y2Ynoqezlj3kcHVqYB4q3q8Zoz4JdE9NJXn/AFiTmIUjOwRzxFPxzfjDbbS6pyvTbs7jM4m5KdH969YsuDYNTz7nbN3sPFjEXDMDMvD80E/SHPAFXyO2zh6aeOMA7PwV1nbpFhbuUAcaNLiov+gJv2aFCN4MAArS4VOlqqyuQFpydgF6cv6BuLAn1dYlgZERHeue8pOepC4acesJol88bXVq4VibJpkpjkNG+PiNEe3/nLDuSKe3UnwSNQ1sHbB5iQIuDof42oaq5DlJOFtnISiWLsxKBV8UkcUMttBtFRJdRACyJYH5zYuVbS7nHciqprSNJpwXzBwKUoEpn+9HoDIKid2Shq6oADOICsoOTBn+nfAf87IMgvHMW+nr4ZJOcS7Zq+cFmTS0k5/POLeWmlwhX1A8udwliS8wry+uHNtbhIx14nx8apOoQXnGV5DOToaUoGaZNxQBOLsBYIYCVBU5tESlpLwm29Ioh/V7JjSWN4w94Kygx+SNLeH3b0PpSsfmnh7jFrh72QZvBTVSXc0kWYzfYlPlAmFLBp0wEb3ciPNWfBq/iDKlpylsQKnFIucPhowigtrt4juHo0aA7dvGpZLPErwllw3+ZJxegxTi5kFzQQgpYlwEsOTCtSgIHfhwcskPgaPsFRsRxYBYmkbnVTXBEYA7eVLqkV/ExEaPekoda1PYouXGco3F4NXVKq0usHiNyxAZi5yUZVEqqSU97MtiliaDlx4ChMgZ0/AMwKDpEqov2QFZ5NcmQ2YHRMALxNXagV5t6n/feqC8QXWN0ec/XW+FshQbuK+0kbrKAlnsCzNzvoZ8bDQbOHjCV7wLVrSjyYdlFMq2mBxKKFKHTVUY4cVfpYuudW5BmeIL22QMzVQMBwMoElvJaTJY0UPrYBlzFMCmSNkODMBta7xyCpsIjwC5lwu3WZsjucZDZXdYQs9MBFxtM0oSCrvtRKXXvoXB62bLFPaxVB5lt8Xki/fmj1/H+rRcaYHt6Q+gUW0PsK1SSsXlNZEJRJ7kts5M4LOgnfuZqiZM8bWj/7W6IKegYoN+SqyPTG6+g6kej1FRhlD2+Bv+Co3BDq94J9PwO4HVa4BKvhxQqx8icun7A+1xQq7SDzjoN15uHQG6aICtVboj6U6LLe6B+Y+moqabOremtChAAzAqZPiGnVtTe65jP5quelLUaPZLHVihvNUC+sAd4MqNP1DXo48r6fTdqND5cb5+9zFHMHMmtS2sanH4ffZJUTNXv41+5azYdzT2MXln7NlWCDfHvrNu4+wP0+vY3N9Eztq2PPLVtQ2zmF4j26ToUviUCrfwyAoVvXosi9r77YWTcR/Ih/NVFc8vXb0dG4wuT5/nC/0Fc3vK0jc5qweKZzWFb953CIj7fh2LP3cR2xqVguxKvYPQ/2LSYs/m0GAab9k3cBezbYxlY5NE07Cs6A/shORuLPpmBZQqa0QIA+geHW1kAqWoH2AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;Flume Logo :D&quot;
-        title=&quot;&quot;
-        src=&quot;https://yusufunlu.github.io/blog//blog/static/8ce83c82f6393451937535094f1e2738/54f08/flume-logo.png&quot;
-        srcset=&quot;/blog/static/8ce83c82f6393451937535094f1e2738/e7d75/flume-logo.png 148w,
-/blog/static/8ce83c82f6393451937535094f1e2738/54f08/flume-logo.png 170w&quot;
-        sizes=&quot;(max-width: 170px) 100vw, 170px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    
-Genelde farklı konumlardan logları toplayıp Hadoop’un HDFS’ine yazmak için kullanılır. Bu işlem sırası loglar üzerinde filtreleme ve aggregation(birleştirme) yapılabilir. Farklı veri kaynakları kullanılıp, log dışında farklı veriler de taşınabilir:  email veya network trafik verileri.
-Mesela Avro client’larından veri çekmek için Avro Flume source kullanılıp Flume’a yazılır yani işlem başka connectorler ile başlatılıp tetikletiliyor.&lt;/p&gt;
-&lt;p&gt;3 kavramı vardır. &lt;strong&gt;source&lt;/strong&gt;: verinin geldiği yer, &lt;strong&gt;channel&lt;/strong&gt;: veri üzerinde işlem yapılabilen yer, &lt;strong&gt;sink&lt;/strong&gt;: verinin gideceği yer. Kafka ve Storm beraber kullanılarak Flume’un yaptığı iş yapılabilir.  Flume’da source’dan veriyi alıp HDFS’e hiç kod yazmadan gönderebilirsiniz. &lt;/p&gt;
-&lt;h2 id=&quot;pig&quot;&gt;&lt;a href=&quot;#pig&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Pig&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;https://yusufunlu.github.io/blog//blog/static/5afb66a1b0469b0885fe4f08e7c81f3a/73653/pig-logo.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 269px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 59.479553903345725%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAACsElEQVQoz2NY0pLCMLc2mAEEptVEcaxsjhJ6urDI5eSUTMtlDdFiIPF1zVFgeVc7SwYzMzMGcyg2A2NTMA0CYLq3MJzh2IQEJpDAprYYx9tzsp++XFz0/+r09P/zykOdQeKXpyUxMzCwMlhbmjOamZqCDGO0MLNgMDcFGWzKYGVlDDbQwhxo4P8ddQzFvlZgASMJIdbHszOeXJ8U//94e+T/kx0hDQxEAg93AQTn2ZIisAtn1yRLXO4Je3esMfz/msKg/5PTIj5fnJr25MqMHA+QvIOtkbO5mYkD0FWuZqbm5hbmxvqWlnrORkb2bCB5kGsZrszKZgRxdnUnqd2fm3v3/pSo/1uKg/4GmGX8MVSv+z9vypI3/8/VyILU6OmGmRkZOsgBNcpbWeorGhk6ympqhDrZ2ykxg31o6Ag0cGY22HUnp+SaXp4Q/+vK3mX/pzZO/8fAUPaHibn3f2HR8uMQf/QpCfBPWcTPN6Wcj3daBh/vdDcgu5Gfb2qfAP8kLZAKIA12HMOx9WvBNgT7d8/98uX9/7jElb8YGEr+CfL3/NfVaARHjKDARH1BgQk7gHgCENcC8TpBgf4AIPYEsnMgaiYwMkxLamWQVtkCNlBNfUGjjfWq//y8Hb8ZmLr/c/J2boSFM1CxvgD/xEVQdjoQVwFxMxDPB4q3QFw4EexbBgPpGrCB8mLpzqwsrf8VJBu2qgjm/040aPzc7dLWDZKTEZ7OIyQwQRRqoDRQMxuQVge63A3JUgaGWM1EsL+95IMky00r7xcaV//3knbPTFNLnFppWn230LisAjl5wF2BBgT4J0AYcVoQA93k3USrzOvPNlg0nY1VT5FB1yAjWcHAwwcJdFBYgVwDoScywQwTEJgIUZyok8qIbkC8ci7YJS1WHUxiKiJgsVTTdIIJHAAiP99NUMqlHQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;Pig Logo :D&quot;
-        title=&quot;&quot;
-        src=&quot;https://yusufunlu.github.io/blog//blog/static/5afb66a1b0469b0885fe4f08e7c81f3a/73653/pig-logo.png&quot;
-        srcset=&quot;/blog/static/5afb66a1b0469b0885fe4f08e7c81f3a/0bae6/pig-logo.png 148w,
-/blog/static/5afb66a1b0469b0885fe4f08e7c81f3a/73653/pig-logo.png 269w&quot;
-        sizes=&quot;(max-width: 269px) 100vw, 269px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    
-Bütük verileri analiz etmek için kullanılan platform’dur ve pig latin isimli dile yazılır. Pig latin ile yazılan query’ler Map Reduce joblarına dönüşür.
-Genelde Tez üzerinden çalışır.
-Pre structured data kullanır ve analyzing and transforming datasets
-ETL ile farklı kaynaklardan data çıkarır HDFS’e kaydeder.&lt;br&gt;
-Shell, UI veya java server classları aracılığı kullanılabilir &lt;/p&gt;
-&lt;h2 id=&quot;spark&quot;&gt;&lt;a href=&quot;#spark&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Spark&lt;/h2&gt;
-&lt;p&gt;genel amaclı ve hızlı compute engine dir ve HDFS’i kullanabilir
-Spark, ETL, Machine Learning, stream processing and graph analytics yapabilir
-Acyclic yani not looping sağlar
-Yarn veya HDFS kullanmadan da çalışabilir
-Yarnı kullanabilir
-Inmemory cache  &lt;/p&gt;
-&lt;h2 id=&quot;map-reduce&quot;&gt;&lt;a href=&quot;#map-reduce&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Map Reduce&lt;/h2&gt;
-&lt;p&gt;programming model&lt;br&gt;
-HAdoop Cluster üstünde dağıtık veri işleme yapar. Mapper ve reducer fonksiyonları veriyi map yani başka bir şeye çevirebilir, birleştirebilir ve azaltabilir.
-Hata durumuna karşı töleranslıdır ve hadoop tarafından monitör edilip hata durumunda application master tarafından restart edilir veya başa bir node üzerinde restar edilir.
-Hive and Pig relies on MapReduce ama çok tercih edilmez
-Batch Oriented &lt;/p&gt;
-&lt;h2 id=&quot;hive&quot;&gt;&lt;a href=&quot;#hive&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hive&lt;/h2&gt;
-&lt;p&gt;impala ya da hue ile datada query yapılabilir
-data warehouse infrastructure that provides data summarization and ad hoc querying.
-SQL-like engine that runs MapReduce jobs
-Tez üzerinden çalışır genelde
-interactive query  &lt;/p&gt;
-&lt;h2 id=&quot;tez&quot;&gt;&lt;a href=&quot;#tez&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Tez&lt;/h2&gt;
-&lt;p&gt;execution management
-Pig ve hive gibi toollar için map reduce sağlar
-Acyclic yani not looping sağlar
-Yarnı kullanabilir
-Inmemory cache&lt;br&gt;
-Distributed process
-multiple reduce phases without map phases and effective use of HDFS &lt;/p&gt;
-&lt;h2 id=&quot;hbase&quot;&gt;&lt;a href=&quot;#hbase&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hbase&lt;/h2&gt;
-&lt;p&gt;scalable data warehouse with support for large tables
-HBase is a NoSQL key/value database on Hadoop.
-Yarn üzerinde çalışır &lt;/p&gt;
-&lt;h2 id=&quot;yarn&quot;&gt;&lt;a href=&quot;#yarn&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Yarn&lt;/h2&gt;
-&lt;p&gt;framework for job scheduling 
-cluster resource management
-Klasik mapreduce de barındrır
-Storm ve Impala doğrudan YARN kullanır
-Inmemory cache&lt;br&gt;
-Application master node veya clusterdaki bir bilgisayar hata alırsa yarn onu tekrar başlatmayı dener.
-Yarn çökerse Zookeper HA(High available) yarn kullanarak yani Hot Standby kullanarak yeni bir yarn ayağa kaldırır.&lt;/p&gt;
-&lt;h2 id=&quot;kafka&quot;&gt;&lt;a href=&quot;#kafka&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Kafka&lt;/h2&gt;
-&lt;h2 id=&quot;flink&quot;&gt;&lt;a href=&quot;#flink&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Flink&lt;/h2&gt;
-&lt;h2 id=&quot;sqoop&quot;&gt;&lt;a href=&quot;#sqoop&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sqoop&lt;/h2&gt;
-&lt;h2 id=&quot;zookeeper&quot;&gt;&lt;a href=&quot;#zookeeper&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Zookeeper&lt;/h2&gt;
-&lt;h2 id=&quot;nifi&quot;&gt;&lt;a href=&quot;#nifi&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Nifi&lt;/h2&gt;
-&lt;h2 id=&quot;storm&quot;&gt;&lt;a href=&quot;#storm&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Storm&lt;/h2&gt;
-&lt;h2 id=&quot;hive-1&quot;&gt;&lt;a href=&quot;#hive-1&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hive&lt;/h2&gt;
-&lt;h2 id=&quot;hbase-1&quot;&gt;&lt;a href=&quot;#hbase-1&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hbase&lt;/h2&gt;
-&lt;h2 id=&quot;drill&quot;&gt;&lt;a href=&quot;#drill&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Drill&lt;/h2&gt;
-&lt;h2 id=&quot;presto&quot;&gt;&lt;a href=&quot;#presto&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Presto&lt;/h2&gt;
-&lt;h2 id=&quot;druid&quot;&gt;&lt;a href=&quot;#druid&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Druid&lt;/h2&gt;
-&lt;h2 id=&quot;apex&quot;&gt;&lt;a href=&quot;#apex&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Apex&lt;/h2&gt;
-                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog//hadoop/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
               </content:encoded></item><item><title><![CDATA[First post and this blog]]></title><description><![CDATA[Gatsby and Github Pages]]></description><link>https://yusufunlu.github.io/blog//ilk-post/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog//ilk-post/</guid><pubDate>Fri, 24 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This blog is being hosted on &lt;a href=&quot;https://github.com/yusufunlu/blog&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/yusufunlu/blog&lt;/a&gt; adress I guess :) It can be move to somewhere else though. The blog infrastructure has been taken from Dan Abramov’s this project : &lt;a href=&quot;https://github.com/gaearon/overreacted.io&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/gaearon/overreacted.io&lt;/a&gt;&lt;br&gt;
 Bu blog şu anda &lt;a href=&quot;https://github.com/yusufunlu/blog&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/yusufunlu/blog&lt;/a&gt; adresinde host ediliyor. Bloğu oluşuturan kod altyapısı Dan Abramov’un şu kütüphanesinden alındı : &lt;a href=&quot;https://github.com/gaearon/overreacted.io&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/gaearon/overreacted.io&lt;/a&gt;&lt;/p&gt;
                 &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog//ilk-post/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
