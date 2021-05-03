@@ -51,7 +51,7 @@
     "format": "prettier --write '{gatsby-*.js,src/**/*.{js,jsx,json,css}}'",
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "build": "rm -rf public && rm -rf .cache && gatsby build",
+    "build": "gatsby build",
     "now-build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "dry": "yarn build && cp now.json public/ && cd public && now"

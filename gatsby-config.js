@@ -11,17 +11,6 @@ module.exports = {
   pathPrefix: '/blog',
   plugins: [
     {
-      resolve: 'gatsby-source-graphql',
-      options: {
-        // Arbitrary name for the remote schema Query type
-        typeName: 'segments',
-        // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
-        fieldName: 'segments',
-        // Url to query from
-        url: 'http://0.0.0.0:5000/graphql',
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
