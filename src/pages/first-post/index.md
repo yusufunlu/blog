@@ -1,5 +1,5 @@
 ---
-title: First post and this blog
+title: First post
 date: '2020-04-24'
 spoiler: Gatsby and Github Pages
 cta: 'react'
