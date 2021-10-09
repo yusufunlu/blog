@@ -72,3 +72,4 @@ yarn-error.log
 
 # Webstorm
 .idea
+*.Identifier
