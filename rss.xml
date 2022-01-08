@@ -1,4 +1,169 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Yusuf Unlu's Personal Blog RSS Feed]]></title><description><![CDATA[Yusuf Unlu Sw Blog]]></description><link>https://yusufunlu.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 09 Oct 2021 14:40:20 GMT</lastBuildDate><item><title><![CDATA[From gravity to Javascript how technology works]]></title><description><![CDATA[It is all physics]]></description><link>https://yusufunlu.github.io/blog/From gravity to javascript how technology works/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/From gravity to javascript how technology works/</guid><pubDate>Thu, 06 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I am going to try to tell how technology works from Gravity to Javascript as someone who has an Electrical-Electronics Engineering Bachelor Degree, a non-completed master degree in Computer Science and 10 years of software development experience.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Yusuf Unlu's Personal Blog RSS Feed]]></title><description><![CDATA[Yusuf Unlu Sw Blog]]></description><link>https://yusufunlu.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 08 Jan 2022 19:00:57 GMT</lastBuildDate><item><title><![CDATA[Blockchain and Ethereum]]></title><description><![CDATA[Blockchain, smart contract, web3js, solidity, rust]]></description><link>https://yusufunlu.github.io/blog/Blockchain and ethereum/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/Blockchain and ethereum/</guid><pubDate>Sat, 08 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;blockchain&quot;&gt;&lt;a href=&quot;#blockchain&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Blockchain&lt;/h1&gt;
+&lt;p&gt;Blockchain is like term based game. If you played Rome Total Ware before you got it :)
+We can say that there terms everybody put their transaction into blocks. Some guys has computers and softwares to verify those blocks. Those blocks need verifying and verify process is like solving puzzle. But you have no idea what is this puzzle like and so you just brute force. Those verifiers are miners who just throw and puzzle part(a hashed number) and try if it seems good.
+A blockchain is a public database that is updated and shared across many computers in a network.&lt;/p&gt;
+&lt;h1 id=&quot;ethereum&quot;&gt;&lt;a href=&quot;#ethereum&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ethereum&lt;/h1&gt;
+&lt;p&gt;Ethereum currently uses proof of work which means solving the hard puzzles requires a lot of computer power. &lt;/p&gt;
+&lt;h1 id=&quot;interactive-game-tutorial--openzeppelin&quot;&gt;&lt;a href=&quot;#interactive-game-tutorial--openzeppelin&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Interactive game tutorial : openzeppelin&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://ethernaut.openzeppelin.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://ethernaut.openzeppelin.com/&lt;/a&gt;
+The Ethernaut is a Web3/Solidity based wargame inspired on overthewire.org, played in the Ethereum Virtual Machine. Each level is a smart contract that needs to be ‘hacked’.&lt;/p&gt;
+&lt;p&gt;Open developer tools
+&lt;strong&gt;player&lt;/strong&gt;:  print player’s address
+&lt;strong&gt;await getplayer(player)&lt;/strong&gt; : print balance of the player
+ethernaut is a TruffleContract object that wraps the Ethernaut.sol contract that has been deployed to the blockchain.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ethernaut&lt;/strong&gt;:  ABI(Application Binary Interface) exposes all of Ethernaut.sol’s public methods, such as owner.
+&lt;strong&gt;await ethernaut.owner()&lt;/strong&gt;:  &lt;/p&gt;
+                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog/Blockchain and ethereum/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
+              </content:encoded></item><item><title><![CDATA[Spring Database Initialization]]></title><description><![CDATA[Hibernate, JDBC and Flyway examples and their external configurations]]></description><link>https://yusufunlu.github.io/blog/Spring Data Init/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/Spring Data Init/</guid><pubDate>Tue, 04 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This article will give you examples of how to use Data Definition Language(DDL) and Data Manipulation Language(DML) files and differences&lt;/p&gt;
+&lt;p&gt;Here is the official Spring Doc about it : &lt;a href=&quot;https://docs.spring.io/spring-boot/docs/2.5.6/reference/htmlsingle/#howto.data-initialization.using-jpa&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://docs.spring.io/spring-boot/docs/2.5.6/reference/htmlsingle/#howto.data-initialization.using-jpa&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you search with “Spring Database Initialization” it mostly forward us to older Spring releases&lt;/p&gt;
+&lt;p&gt;I like yml format than .properties which is equal actually&lt;/p&gt;
+&lt;p&gt;I will refer this below application.yml in this blog post mostly.
+&lt;code class=&quot;language-text&quot;&gt;#&lt;/code&gt; is for comments&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;spring:
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    defer-datasource-initialization: true
+    #database: h2 #same as database-platform, it doesn&amp;#39;t effect schema-{platform}.sql and data-{platform}.sql names
+    #database-platform: org.hibernate.dialect.H2Dialect
+  datasource:
+    url: jdbc:h2:mem:testdb #ALWAYS, EMBEDDED or NEVER will be calculated from h2
+    username: h2-user
+    password: h2-pass
+    driverClassName: org.h2.Driver
+    #initialization-mode: always # deprecated, moved to under sql.init, DON&amp;#39;T USE
+    #platform: h2 #deprecated, moved to under sql.init, , DON&amp;#39;T USE
+  sql:
+    init:
+      #continue-on-error: true
+      mode: ALWAYS
+      platform: h2 #it effect schema-{platform}.sql and data-{platform}.sql names
+
+  h2:
+    console:
+      enabled: true
+      path: /h2
+
+logging:
+  level:
+    #root: INFO
+    #org.hibernate.SQL: TRACE
+    #spring.sql: TRACE
+    #javax.sql: TRACE
+    #org.h2.jdbc: TRACE
+    org.springframework.jdbc: TRACE
+debug: false&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;In Spring Boot 2.5. spring.datasource.* properties related to DataSource initialization have been deprecated and migrated to new spring.sql.init.* properties. &lt;a href=&quot;https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.5-Release-Notes#sql-script-datasource-initialization&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.5-Release-Notes#sql-script-datasource-initialization&lt;/a&gt;
+spring.datasource is being mapped to DataSourceProperties beans automaticially and some fieds are deprecated in Java and yml sides.&lt;/p&gt;
+&lt;p&gt;You can use below code to see the Spring bean by below code&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;    @Autowired
+    JpaProperties jpaProperties;
+
+    @Autowired
+    HibernateProperties hibernateProperties;
+
+    @Autowired
+    DataSourceProperties dataSourceProperties;
+
+    @Autowired
+    SqlInitializationProperties sqlInitializationProperties;
+
+    @PersistenceContext
+    EntityManager em;
+
+    @Autowired
+    EntityManagerFactory entityManagerFactory;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can check it out what fields deprecated from &lt;a href=&quot;https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/autoconfigure/jdbc/DataSourceProperties.html&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/autoconfigure/jdbc/DataSourceProperties.html&lt;/a&gt;
+Some of them&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;spring.datasource.initialization-mode ==&gt; spring.sql.init.mode&lt;/li&gt;
+&lt;li&gt;spring.datasource.platform ==&gt; spring.sql.init.platform&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are 3 types of database schema creating(DDL) and importing data(DML): Hibernate and JDBC SQL scripts and high level tools like Flywaydb or Liquibase. We will talk about Hibernate and JDBC SQL scripts methods here.&lt;/p&gt;
+&lt;p&gt;SQL scripts method means that &lt;strong&gt;schema.sql&lt;/strong&gt; is for schema and &lt;strong&gt;data.sql&lt;/strong&gt; is for putting data. &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;spring.jpa.hibernate.ddl-auto&lt;/strong&gt; default value is &lt;strong&gt;create-drop&lt;/strong&gt; if it is embedded by looking at JDBC url &lt;strong&gt;spring.datasource.url&lt;/strong&gt;   &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;import.sql&lt;/strong&gt; is executed by Hibernate if &lt;strong&gt;hibernate.ddl-auto&lt;/strong&gt; is create or create-drop&lt;/li&gt;
+&lt;li&gt;if &lt;strong&gt;sql.init.mode&lt;/strong&gt; is embedded it execute import.sql&lt;/li&gt;
+&lt;li&gt;creation schema from Jpa entities is managed by &lt;strong&gt;generate-ddl&lt;/strong&gt; is true or &lt;strong&gt;hibernate.ddl-auto&lt;/strong&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The below table indicate that when schema.sql,data.sql, import.sql and schema from entities are working.
+initialization-mode, generate-ddl and hibernate.ddl-auto are inputs&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code class=&quot;language-text&quot;&gt;initialization-mode&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code class=&quot;language-text&quot;&gt;generate-ddl&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;&lt;code class=&quot;language-text&quot;&gt;hibernate.ddl-auto&lt;/code&gt;&lt;/th&gt;
+&lt;th&gt;schema.sql&lt;/th&gt;
+&lt;th&gt;data.sql&lt;/th&gt;
+&lt;th&gt;create schema from entities&lt;/th&gt;
+&lt;th&gt;import.sql&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;never&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;create&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;never&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;none&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;never&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;create&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;td&gt;true&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;never&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;none&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;td&gt;false&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;While multiple data source initialization technologies is not recommendded you can still use JDBC init and hibernate together.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;spring.jpa.defer-datasource-initialization&lt;/strong&gt; defer &lt;strong&gt;schema.sql&lt;/strong&gt; and &lt;strong&gt;data.sql&lt;/strong&gt; after hibernate schema&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When &lt;strong&gt;defer-datasource-initialization: false&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;schema.sql&lt;/strong&gt;-&gt; &lt;strong&gt;data.sql&lt;/strong&gt;-&gt; &lt;code class=&quot;language-text&quot;&gt;JPA schema create from Entities&lt;/code&gt; -&gt; &lt;strong&gt;import.sql&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;When &lt;strong&gt;defer-datasource-initialization: true&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;JPA schema create from Entities&lt;/code&gt; -&gt; &lt;strong&gt;import.sql&lt;/strong&gt; -&gt; &lt;strong&gt;schema.sql&lt;/strong&gt;-&gt; &lt;strong&gt;data.sql&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;sql.init.platform manage the name of data-{platform}.sql and schema-{platform}.sql with some bugs. Default is all and it means schema.sql and data.sql&lt;/p&gt;
+&lt;p&gt;Spring Boot chooses a default value for you based on whether it thinks your database is embedded. It defaults to create-drop if no schema manager has been detected or none in all other cases. An embedded database is detected by looking at the Connection type and JDBC url. hsqldb, h2, and derby are candidates, and others are not. &lt;/p&gt;
+&lt;p&gt;Sometimes calculating default values are incorrect for DDL and DML. So I am planning to move all those to Flyway.&lt;/p&gt;
+                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog/Spring Data Init/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
+              </content:encoded></item><item><title><![CDATA[From gravity to Javascript how technology works]]></title><description><![CDATA[It is all physics]]></description><link>https://yusufunlu.github.io/blog/From gravity to javascript how technology works/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/From gravity to javascript how technology works/</guid><pubDate>Thu, 06 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I am going to try to tell how technology works from Gravity to Javascript as someone who has an Electrical-Electronics Engineering Bachelor Degree, a non-completed master degree in Computer Science and 10 years of software development experience.&lt;/p&gt;
 &lt;h1 id=&quot;ingretients&quot;&gt;&lt;a href=&quot;#ingretients&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Ingretients&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;How gravity and other natural forces shape an electron&lt;/li&gt;
@@ -112,6 +277,205 @@ If Heisenberg uncertainty principle didn’t exist which means determism and Lap
 &lt;li&gt;&lt;a href=&quot;https://www.wtamu.edu/~cbaird/sq/2013/08/08/why-dont-electrons-in-the-atom-enter-the-nucleus/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.wtamu.edu/~cbaird/sq/2013/08/08/why-dont-electrons-in-the-atom-enter-the-nucleus/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
                 &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog/From gravity to javascript how technology works/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
+              </content:encoded></item><item><title><![CDATA[React Hooks And Context]]></title><description><![CDATA[Over the Redux and React Hooks]]></description><link>https://yusufunlu.github.io/blog/React Hooks And Context/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/React Hooks And Context/</guid><pubDate>Thu, 06 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;React hook kullanmanız için React dependancy en az 16.8 olmalıdır.
+Kendi hook’larımızı yazabileceğimiz gibi React bize hazır hook’lar da sunar. &lt;strong&gt;useState&lt;/strong&gt;, &lt;strong&gt;useEffect&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hooks döngüler ve if gibi koşullardan çağrılmamalı&lt;/li&gt;
+&lt;li&gt;Hooks sadece function react component’lerden veya kendi yazdığımız hook’lardan çağrılmalı. Düz javascript kodlarından çağrılmamalı&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;usestate&quot;&gt;&lt;a href=&quot;#usestate&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;useState&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React, { useState } from &amp;#39;react&amp;#39;;
+
+function Example() {
+  // &amp;quot;count&amp;quot; diyeceğimiz yeni bir state değişkeni tanımlayın
+  const [count, setCount] = useState(0);
+
+  return (
+    &amp;lt;div&amp;gt;
+      &amp;lt;p&amp;gt;You clicked {count} times&amp;lt;/p&amp;gt;
+      &amp;lt;button onClick={() =&amp;gt; setCount(count + 1)}&amp;gt;
+        Click me
+      &amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+  );
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;useState&lt;/strong&gt; bir hook’tur ve geriye bir çift döner. İlki oluşturulan state alanınının değeridir, ikincisi de bu state’i set etmek için gereken fonksiyondur. &lt;/li&gt;
+&lt;li&gt;Hook’lardan önce function component’ler state’e sahip olamıyordu ama artık olabiliyor&lt;/li&gt;
+&lt;li&gt;Artık react hook’ları kullanıyorsak react class component kullanmak zorunda değiliz.&lt;/li&gt;
+&lt;li&gt;Artık function component ile her işi yapabildiğimize göre &lt;strong&gt;this&lt;/strong&gt; de kullanamayız ve gerek de yoktur.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Hook kullanmadan, class component ile yukarıdaki kodu şöyle yazabilirdik.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;class Example extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+  }
+
+  render() {
+    return (
+      &amp;lt;div&amp;gt;
+        &amp;lt;p&amp;gt;You clicked {this.state.count} times&amp;lt;/p&amp;gt;
+        &amp;lt;button onClick={() =&amp;gt; this.setState({ count: this.state.count + 1 })}&amp;gt;
+          Click me
+        &amp;lt;/button&amp;gt;
+      &amp;lt;/div&amp;gt;
+    );
+  }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;this.state.count =&gt; count &lt;/li&gt;
+&lt;li&gt;this.setState({ count: this.state.count + 1 }) =&gt; setCount(count + 1)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;useeffect&quot;&gt;&lt;a href=&quot;#useeffect&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;useEffect&lt;/h2&gt;
+&lt;p&gt;Mutasyonlar, abonelikler, zamanlayıcılar, loglama, ve diğer yan etkisi olan işlemler bir fonksiyon bileşenin render aşamasında bulunmazlar.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React, { useState, useEffect } from &amp;#39;react&amp;#39;;
+
+function Example() {
+  const [count, setCount] = useState(0);
+
+  // componentDidMount ve componentDidUpdate kullanımına benzer bir kullanım sunar:
+  useEffect(() =&amp;gt; {
+    // tarayıcının başlık bölümünü değiştirmemizi sağlar
+    document.title = `You clicked ${count} times`;
+  });
+
+  return (
+    &amp;lt;div&amp;gt;
+      &amp;lt;p&amp;gt;You clicked {count} times&amp;lt;/p&amp;gt;
+      &amp;lt;button onClick={() =&amp;gt; setCount(count + 1)}&amp;gt;
+        Click me
+      &amp;lt;/button&amp;gt;
+    &amp;lt;/div&amp;gt;
+  );
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;useEffect component her render tamamlandıktan sonra çalışır. &lt;/li&gt;
+&lt;li&gt;amacı render tamamlandıktan sonra yen etkileri uygulamaktır&lt;/li&gt;
+&lt;li&gt;useEffect geriye bir function döndürürse o da component DOM’dan unmount olduğunda ve bir sonraki useEffect hesaplamadan önce çalıştırır&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function FriendStatusWithCounter(props) {
+  const [count, setCount] = useState(0);
+  useEffect(() =&amp;gt; {
+    document.title = `You clicked ${count} times`;
+  });
+
+  const [isOnline, setIsOnline] = useState(null);
+  useEffect(() =&amp;gt; {
+    function handleStatusChange(status) {
+      setIsOnline(status.isOnline);
+    }
+
+    ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
+    return () =&amp;gt; {
+      ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
+    };
+  });
+
+  return (
+    &amp;lt;div&amp;gt;
+      &amp;lt;p&amp;gt;You clicked {count} times&amp;lt;/p&amp;gt;
+      &amp;lt;button onClick={() =&amp;gt; setCount(count + 1)}&amp;gt;
+        Click me
+      &amp;lt;/button&amp;gt;
+      isOnline ? &amp;#39;Online&amp;#39; : &amp;#39;Offline&amp;#39;;
+    &amp;lt;/div&amp;gt;
+  );
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;useEffect return unmount sırasında çalıştığını gösterene akış aşağıdadır.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// Mount with { friend: { id: 100 } } props
+ChatAPI.subscribeToFriendStatus(100, handleStatusChange);     // Run first effect&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;// Update with { friend: { id: 200 } } props
+ChatAPI.unsubscribeFromFriendStatus(100, handleStatusChange); // Clean up previous effect
+ChatAPI.subscribeToFriendStatus(200, handleStatusChange);     // Run next effect&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Her sefereinde component re render olmasını istemiyorsak 2. parametre veririz&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;useEffect(() =&gt; {
+document.title = &lt;code class=&quot;language-text&quot;&gt;You clicked ${count} times&lt;/code&gt;;
+}, [count]); // Only re-run the effect if count changes&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;* ``npm install eslint-plugin-react-hooks --save-dev`` ile hooklar yalnızca function component ve diğer hooklardan çağrıldığı denetlebilir
+
+* useState yalnızca ilk renderda çalışır 
+* ağır hesaplar için lazy initial state aşağıdaki yapılabilir&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;const [state, setState] = useState(() =&gt; {
+const initialState = someExpensiveComputation(props);
+return initialState;
+});&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;## useContext
+* iç içe componentlerden context verilerine erişimi sağlar&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;const themes = {
+light: {
+foreground: “#000000”,
+background: “#eeeeee”
+},
+dark: {
+foreground: “#ffffff”,
+background: “#222222”
+}
+};&lt;/p&gt;
+&lt;p&gt;const ThemeContext = React.createContext(themes.light);&lt;/p&gt;
+&lt;p&gt;function App() {
+return (
+&amp;#x3C;ThemeContext.Provider value={themes.dark}&gt;
+&lt;Toolbar /&gt;
+&amp;#x3C;/ThemeContext.Provider&gt;
+);
+}&lt;/p&gt;
+&lt;p&gt;function Toolbar(props) {
+return (
+&lt;div&gt;
+&lt;ThemedButton /&gt;
+&lt;/div&gt;
+);
+}&lt;/p&gt;
+&lt;p&gt;function ThemedButton() {
+const theme = useContext(ThemeContext);
+return (
+&amp;#x3C;button style={{ background: theme.background, color: theme.foreground }}&gt;
+I am styled by theme context!
+&lt;/button&gt;
+);
+}&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;## useReducer
+* useState‘e bir alternatiftir
+* karmaşık bir state mantığı varsa useState&amp;#39;e göre avantajlıdır
+imzası aşağıdaki gibidir
+``const [state, dispatch] = useReducer(reducer, initialArg, init);``
+* callback göndermeye gerek yoktur bunun yerine dispatch methodu döner zaten
+
+Temel bir örnek aşağıdaki gibidir.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;const initialState = {count: 0};&lt;/p&gt;
+&lt;p&gt;function reducer(state, action) {
+switch (action.type) {
+case ‘increment’:
+return {count: state.count + 1};
+case ‘decrement’:
+return {count: state.count - 1};
+default:
+throw new Error();
+}
+}&lt;/p&gt;
+&lt;p&gt;function Counter() {
+const [state, dispatch] = useReducer(reducer, initialState);
+return (
+&amp;#x3C;&gt;
+Count: {state.count}
+&amp;#x3C;button onClick={() =&gt; dispatch({type: ‘decrement’})}&gt;-&lt;/button&gt;
+&amp;#x3C;button onClick={() =&gt; dispatch({type: ‘increment’})}&gt;+&lt;/button&gt;
+&amp;#x3C;/&gt;
+);
+}&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;* State başlangıç değerlerini hesaplamak ağırsa aşağıdaki gibi yapılabilir&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;function init(initialCount) {
+return {count: initialCount};
+}&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog/React Hooks And Context/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
               </content:encoded></item><item><title><![CDATA[Windows Pro ve Home Docker]]></title><description><![CDATA[Docker kurulumu ve Windows 10 Pro ve Home versionları arasındaki farklar]]></description><link>https://yusufunlu.github.io/blog/Windows Docker/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/Windows Docker/</guid><pubDate>Thu, 27 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;jhipster-nedir-ve-neden-kullanalım&quot;&gt;&lt;a href=&quot;#jhipster-nedir-ve-neden-kullanal%C4%B1m&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jhipster Nedir ve neden kullanalım&lt;/h2&gt;
 &lt;p&gt;Jhipster basit birşey aslında. Sadece bize popüler Java , frontend ve database teknolojileri modern proje şablonu oluşturan bir araç.
 Mesela Spring projesi kendiniz Jhipster olmadan yapmak isterseniz bunun database bağlantılarını kod içinde, properties dosyasında veya yml dosyalarında veya çok daha sofistike olarak ayrı bir config serverda tutabilirsiniz. Burada en modern ve esnek yöntem Spring cloud üstünde tutmaktır. Faydası ise kodu görenler sizin development, test veya production ortamında database şifrelerinizi görmemiş olur. &lt;/p&gt;
