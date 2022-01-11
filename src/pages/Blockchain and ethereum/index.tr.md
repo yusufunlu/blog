@@ -1,3 +1,10 @@
+---
+title: Blockchain and Ethereum
+date: '2022-01-08'
+spoiler: Blockchain, smart contract, web3js, solidity, rust
+---
+
+
 Şu kaynakları sırayla özetleyeceğim
 - https://ethereum.org/en/developers/docs/ 
     - Foundational topics

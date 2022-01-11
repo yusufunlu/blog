@@ -1,6 +1,6 @@
 ---
 title: Spring Database Initialization
-date: '2020-06-15'
+date: '2022-01-04'
 spoiler: Hibernate, JDBC and Flyway examples and their external configurations
 ---
 
@@ -91,6 +91,9 @@ SQL scripts method means that **schema.sql** is for schema and **data.sql** is f
 - **import.sql** is executed by Hibernate if **hibernate.ddl-auto** is create or create-drop
 - if **sql.init.mode** is embedded it execute import.sql
 - creation schema from Jpa entities is managed by **generate-ddl** is true or **hibernate.ddl-auto** 
+  
+The below table indicate that when schema.sql,data.sql, import.sql and schema from entities are working.
+initialization-mode, generate-ddl and hibernate.ddl-auto are inputs
 
 | ``initialization-mode`` | ``generate-ddl`` | ``hibernate.ddl-auto`` | schema.sql | data.sql | create schema from entities | import.sql |
 | ----------------------- | ---------------- | ---------------------- | ---------- | -------- | --------------------------- | ---------- |
@@ -111,3 +114,5 @@ While multiple data source initialization technologies is not recommendded you c
 sql.init.platform manage the name of data-{platform}.sql and schema-{platform}.sql with some bugs. Default is all and it means schema.sql and data.sql
 
 Spring Boot chooses a default value for you based on whether it thinks your database is embedded. It defaults to create-drop if no schema manager has been detected or none in all other cases. An embedded database is detected by looking at the Connection type and JDBC url. hsqldb, h2, and derby are candidates, and others are not. 
+
+Sometimes calculating default values are incorrect for DDL and DML. So I am planning to move all those to Flyway.

@@ -1,3 +1,10 @@
+---
+title: Blockchain and Ethereum
+date: '2022-01-08'
+spoiler: Blockchain, smart contract, web3js, solidity, rust
+---
+
+
 # Blockchain
 Blockchain is like term based game. If you played Rome Total Ware before you got it :)
 We can say that there terms everybody put their transaction into blocks. Some guys has computers and softwares to verify those blocks. Those blocks need verifying and verify process is like solving puzzle. But you have no idea what is this puzzle like and so you just brute force. Those verifiers are miners who just throw and puzzle part(a hashed number) and try if it seems good.
