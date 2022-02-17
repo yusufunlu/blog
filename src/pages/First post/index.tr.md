@@ -6,4 +6,5 @@ cta: 'react'
 ---
 
 Bu blog şu anda https://github.com/yusufunlu/blog adresinde host ediliyor. Bloğu oluşuturan kod altyapısı Dan Abramov'un şu kütüphanesinden alındı : https://github.com/gaearon/overreacted.io
+ (I [sth](/test/) test.)
 
