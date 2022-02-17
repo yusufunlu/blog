@@ -5,7 +5,4 @@ spoiler: Gatsby and Github Pages
 cta: 'react'
 ---
 
-This blog is being hosted on https://github.com/yusufunlu/blog adress. The blog infrastructure has been taken from Dan Abramov's this project : https://github.com/gaearon/overreacted.io  
-
-
- (I [sth](/test/) test.)
+The blog infrastructure has been forked from Dan Abramov's project : https://github.com/gaearon/overreacted.io with my changes hosted on https://yusufunlu.github.io/blog/

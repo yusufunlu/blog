@@ -52,7 +52,6 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build",
-    "now-build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "dry": "yarn build && cp now.json public/ && cd public && now"
   },
