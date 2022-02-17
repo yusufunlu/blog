@@ -3,7 +3,7 @@
   "private": true,
   "description": "https://yusufunlu.github.io/blog/",
   "version": "1.0.0",
-  "author": "Dan Abramov <dan.abramov@me.com>",
+  "author": "Yusuf Unlu <unlu.yusuf.sw@gmail.com>",
   "dependencies": {
     "gatsby": "^2.0.76",
     "gatsby-plugin-catch-links": "^2.0.9",
@@ -52,7 +52,6 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "build": "gatsby build",
-    "now-build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "dry": "yarn build && cp now.json public/ && cd public && now"
   },
