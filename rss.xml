@@ -1,4 +1,117 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Yusuf Unlu's Personal Blog RSS Feed]]></title><description><![CDATA[Yusuf Unlu Sw Blog]]></description><link>https://yusufunlu.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 04 Feb 2022 20:20:23 GMT</lastBuildDate><item><title><![CDATA[Deep Learning]]></title><description><![CDATA[Artificial Neuron Models, Perceptron Learning, Neural Nets versus Biological Networks,Feed-Forward Architectures. Gradient Descent Learning, Stochastic Gradient Descent, GD With Momentum, Nesterov Accelerated Gradient (NAG), Activation Functions, Learning Rate, Optimization; Issues of Convergence, Overfitting, Generalization.]]></description><link>https://yusufunlu.github.io/blog/Deep Learning-1/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/Deep Learning-1/</guid><pubDate>Sun, 30 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Convolutional Neural Networks(CNN): Good for image recognition
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Yusuf Unlu's Personal Blog RSS Feed]]></title><description><![CDATA[Yusuf Unlu Sw Blog]]></description><link>https://yusufunlu.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 17 Feb 2022 05:22:24 GMT</lastBuildDate><item><title><![CDATA[Solidity and Ethereum]]></title><description><![CDATA[Wallets, Public/Private Key, Address, Contract, Solidity, Compiler, Development Enviroment, Transaction, Gas]]></description><link>https://yusufunlu.github.io/blog/Solidity/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/Solidity/</guid><pubDate>Fri, 04 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Solidity is a mix of C nad Javascript which use curly brackets.
+It is also an object oriented language
+We can make development for Solidity &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;on online remix ide : remix.ethereum.org&lt;/li&gt;
+&lt;li&gt;by having Solidity compiler or an Ethereum network on our local machine&lt;/li&gt;
+&lt;li&gt;by hardhat&lt;/li&gt;
+&lt;li&gt;by truffle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After writing smart contract by Solidity and deploying it we or somebody else can communicate with it.
+We need to have an id in order to do someting on network.
+We can use metamask.io to have id which is public key. Eventually we will have private key too for managing and having rights on this public id. Once we setup a metamask wallet it we &lt;/p&gt;
+&lt;h1 id=&quot;deep-dive-bits-to-recap&quot;&gt;&lt;a href=&quot;#deep-dive-bits-to-recap&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Deep dive bits to recap&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Bit: 0 or 1, Voltage exist or not, 5V or 0V in TTL electronic levels.&lt;/li&gt;
+&lt;li&gt;Byte: 8 bits, 2^8(256) different combinations, &lt;strong&gt;char&lt;/strong&gt; in most programming languages is this one&lt;/li&gt;
+&lt;li&gt;Hex: 4 bits, 2^4(16) combinations =&gt; 0…A,B,C,D,E,F
+To address the all(256) characters in ASCII we need 2 hex characters&lt;/li&gt;
+&lt;li&gt;Example : N character in ASCII table is 1 &lt;strong&gt;byte&lt;/strong&gt; and &lt;strong&gt;01001101&lt;/strong&gt; as bits &lt;strong&gt;4E&lt;/strong&gt; as 2 hex, &lt;strong&gt;78&lt;/strong&gt; as decimal&lt;/li&gt;
+&lt;li&gt;1 byte is 8 bits which means 2^8 different char and 2 hex which means 2^4 * 2^4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;continue&quot;&gt;&lt;a href=&quot;#continue&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Continue&lt;/h1&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Ethereum Private Keys are 64 random hex characters or 32 random bytes.&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;64 hex is 64 * 4 bits equal to 32 bytes is 32 * 8 bits &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If we send a transaction on Ethereum Network we need tell gas limit and gas price for miners attraction.
+If Gas limit is less than calculated the transaction is going to accomplish and gas will not be refunded.
+If Gas limit is enough then gas limit * gas price in gwei make it slower or faster
+1 Ether = 10^9 Gwei = 10^18 Wei
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;https://yusufunlu.github.io/blog/blog/static/a98c1899f8a005237e74ba058f0226f5/bb2fd/gas_fee.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 29.72972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAwklEQVQY012QCwvCMAyE/f8/USeCE13tI+lDbbt2emsVhscIx0eT3LJblqWUUmvt9d20hfAd1o063IUQrLXaGCKGyTmDwhBRgwQPMs+z1gAGVSkFszY751KM9+uVtUYnaIwREx2znERwznsPghFCCDLmPk1SSvi12Xpfn6+0H8pNpJyZCCPQUaRKh+OsNDzSh8fjyZyHUx4v+Tw64m9sLMcelG1syLXMPTbmYi1+zxrD8he736br72Bd24OV9Wvv2ssPKipZzGUSHjIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Gas Fee&quot;
+        title=&quot;&quot;
+        src=&quot;https://yusufunlu.github.io/blog/blog/static/a98c1899f8a005237e74ba058f0226f5/fcda8/gas_fee.png&quot;
+        srcset=&quot;/blog/static/a98c1899f8a005237e74ba058f0226f5/12f09/gas_fee.png 148w,
+/blog/static/a98c1899f8a005237e74ba058f0226f5/e4a3f/gas_fee.png 295w,
+/blog/static/a98c1899f8a005237e74ba058f0226f5/fcda8/gas_fee.png 590w,
+/blog/static/a98c1899f8a005237e74ba058f0226f5/efc66/gas_fee.png 885w,
+/blog/static/a98c1899f8a005237e74ba058f0226f5/bb2fd/gas_fee.png 1058w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+50*10^3 * 20 gwei = 1000 * 10^3 gwei = 10^6 gwei = 10^-3 Ether = 0.001 Ether
+EVM Architecture ?&lt;/p&gt;
+&lt;p&gt;We need to setup a wallet can provide a private key and public key to us. &lt;/p&gt;
+&lt;h2 id=&quot;solidity&quot;&gt;&lt;a href=&quot;#solidity&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Solidity&lt;/h2&gt;
+&lt;p&gt;Contract code copied from &lt;a href=&quot;https://github.com/itublockchain/solidity-bootcamp21/blob/master/00_Introduction/Names.sol&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/itublockchain/solidity-bootcamp21/blob/master/00_Introduction/Names.sol&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// SPDX-License-Identifier: Unlicensed
+pragma solidity ^0.8.2;
+
+import &amp;quot;@openzeppelin/contracts/access/Ownable.sol&amp;quot;;
+
+contract Names is Ownable {
+    string public ownerName;
+    string[] public names;
+    int256 private luckyNumber;
+
+    constructor(string memory _ownerName, int256 _luckyNumber) {
+        ownerName = _ownerName;
+        names.push(_ownerName);
+        luckyNumber = _luckyNumber;
+    }
+
+    function addMyName(string memory _myName) public {
+        names.push(_myName);
+    }
+
+    function isAdded(string memory _name) public view returns (bool) {
+        for (uint256 i = 0; i &amp;lt; names.length; i++) {
+            if (
+                keccak256(abi.encodePacked((_name))) ==
+                keccak256(abi.encodePacked((names[i])))
+            ) return true;
+        }
+        return false;
+    }
+
+    function getNames() public view returns (string[] memory) {
+        return names;
+    }
+
+    function nameCount() public view returns (uint256) {
+        return names.length;
+    }
+
+    function changeOwnersName(string memory _ownerName) public onlyOwner {
+        ownerName = _ownerName;
+    }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog/Solidity/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
+              </content:encoded></item><item><title><![CDATA[Deep Learning]]></title><description><![CDATA[Artificial Neuron Models, Perceptron Learning, Neural Nets versus Biological Networks,Feed-Forward Architectures. Gradient Descent Learning, Stochastic Gradient Descent, GD With Momentum, Nesterov Accelerated Gradient (NAG), Activation Functions, Learning Rate, Optimization; Issues of Convergence, Overfitting, Generalization.]]></description><link>https://yusufunlu.github.io/blog/Deep Learning-1/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/Deep Learning-1/</guid><pubDate>Sun, 30 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Convolutional Neural Networks(CNN): Good for image recognition
 Long Short-term memory network(LSTM): Good for speech recognition&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Neuron&lt;/strong&gt;: holds a number between 0-1.
 Sigmoid Function or σ(x) or sig(x)= 1/(1+e^-x) = 1/(1+exp(-x)) When x goes to +etheral f(x) goes to 1, in contrast when x goes to - etheral f(x) goes to 0
@@ -500,32 +613,8 @@ If Heisenberg uncertainty principle didn’t exist which means determism and Lap
 &lt;li&gt;&lt;a href=&quot;https://www.wtamu.edu/~cbaird/sq/2013/08/08/why-dont-electrons-in-the-atom-enter-the-nucleus/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.wtamu.edu/~cbaird/sq/2013/08/08/why-dont-electrons-in-the-atom-enter-the-nucleus/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
                 &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog/From gravity to javascript how technology works/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
-              </content:encoded></item><item><title><![CDATA[Windows Pro ve Home Docker]]></title><description><![CDATA[Docker kurulumu ve Windows 10 Pro ve Home versionları arasındaki farklar]]></description><link>https://yusufunlu.github.io/blog/Windows Docker/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/Windows Docker/</guid><pubDate>Thu, 27 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;jhipster-nedir-ve-neden-kullanalım&quot;&gt;&lt;a href=&quot;#jhipster-nedir-ve-neden-kullanal%C4%B1m&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jhipster Nedir ve neden kullanalım&lt;/h2&gt;
-&lt;p&gt;Jhipster basit birşey aslında. Sadece bize popüler Java , frontend ve database teknolojileri modern proje şablonu oluşturan bir araç.
-Mesela Spring projesi kendiniz Jhipster olmadan yapmak isterseniz bunun database bağlantılarını kod içinde, properties dosyasında veya yml dosyalarında veya çok daha sofistike olarak ayrı bir config serverda tutabilirsiniz. Burada en modern ve esnek yöntem Spring cloud üstünde tutmaktır. Faydası ise kodu görenler sizin development, test veya production ortamında database şifrelerinizi görmemiş olur. &lt;/p&gt;
-&lt;p&gt;Gelelim Jhipster’a tekrar. Bu yapı medium veya farklı yerlerde anlatılıyor ancak çoğu bilgi birbiri ile uyumsuz makaleler arasında birinin kullandığını diğeri kullanmıyor veya fazladan birşey kullanıyor. Bu durumda okuyucu hangisi ayar veya araç zorunlu toparlamakta güçlük çekiyor. Yani ihtiyacımız olan eksiksiz ve fazlalıksız amacımıza uygun bir yapı kurmak. Gerisinde ise biz projemize göre business logic yani iş mantığı kodlayacağız yani asıl işimize odaklanacağız.&lt;/p&gt;
-&lt;p&gt;İşte Jhipster bize eksiksiz ve fazlalıksız bir “best practice” bir yapı sunabiliyor. Bunu yaparken CLI (command line interface) yani komut satırında basit soru veya cevaplarla bize opsiyon sunuyor.&lt;/p&gt;
-&lt;p&gt;Şimdi kurulumu öyle kendi resmi faydasındaki komutları tekrarlayarak yapmayacağım. Hangi yöntemi neden seçtik yazacağım:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Jhipster online : internetten bir arayüzle projenizi oluşturup onu gitlab veya githuba atıyor. Ben bunu seçmezdim çünkü bu tarz arayüzler çok sık değiiyor. Geliştirme tecrübesi değil de arayüz tecrübesi veriyor ki bir değişiklik veya problem olması durumunda arayüzün el verdiği kadar yapabilirim. &lt;/li&gt;
-&lt;li&gt;En popüler yöntem: npm ile generator-jhipster yüklenir bu komut satırından çalıştırılır. Basitçe şöyle çalışıyor.  Npm nodejs paketlerini yöneten bir araç olduğunu biliyoruz. Bu paketler gelip bilgisayarın ana node&lt;em&gt;modules klasörü veya projenin node&lt;/em&gt;modules klasörü altında tutuluyor. Burada ana node_modules klasöründe bazı node paketlerini &lt;/li&gt;
-&lt;li&gt;Yarn ile node paketi yükleme : üsttekinin aynısı sadece node paketlerini npm değil de yarn ile yüklüyor. Yarn ile Npm arasında birkaç fark var. Npm ile yüklerseniz node_modules klasörü çok büyüyebiliyor. Nasıl yapıyor ayrıntılı bilmiyorum ama bunu özellikle geliştirmiş facebook Yarn ekibi.  Son uyarım da npm ile yarn aynı anda kullanılmamalı bir proje için paketleri yarn ile yükledi iseniz daha sonra npm ile sakın yüklemeyin uyumsuzluk problemi olabilir.&lt;/li&gt;
-&lt;li&gt;Son yöntem de docker container: yani JHipster generator içeren bir docker container çalıştırırsınız ve bu docker içine girdiğinizde bir JHipster generator  vardır. Bu sayede projeyi docker container içinde &lt;/li&gt;
-&lt;/ol&gt;
-                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog/Windows Docker/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
-              </content:encoded></item><item><title><![CDATA[Jhipster ile Spring best practice şablon proje]]></title><description><![CDATA[Spring Cloud ve Microservice proje]]></description><link>https://yusufunlu.github.io/blog/Jhipster/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/Jhipster/</guid><pubDate>Thu, 27 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;jhipster-nedir-ve-neden-kullanalım&quot;&gt;&lt;a href=&quot;#jhipster-nedir-ve-neden-kullanal%C4%B1m&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jhipster Nedir ve neden kullanalım&lt;/h2&gt;
-&lt;p&gt;Jhipster basit birşey aslında. Sadece bize popüler Java , frontend ve database teknolojileri modern proje şablonu oluşturan bir araç.
-Mesela Spring projesi kendiniz Jhipster olmadan yapmak isterseniz bunun database bağlantılarını kod içinde, properties dosyasında veya yml dosyalarında veya çok daha sofistike olarak ayrı bir config serverda tutabilirsiniz. Burada en modern ve esnek yöntem Spring cloud üstünde tutmaktır. Faydası ise kodu görenler sizin development, test veya production ortamında database şifrelerinizi görmemiş olur. &lt;/p&gt;
-&lt;p&gt;Gelelim Jhipster’a tekrar. Bu yapı medium veya farklı yerlerde anlatılıyor ancak çoğu bilgi birbiri ile uyumsuz makaleler arasında birinin kullandığını diğeri kullanmıyor veya fazladan birşey kullanıyor. Bu durumda okuyucu hangisi ayar veya araç zorunlu toparlamakta güçlük çekiyor. Yani ihtiyacımız olan eksiksiz ve fazlalıksız amacımıza uygun bir yapı kurmak. Gerisinde ise biz projemize göre business logic yani iş mantığı kodlayacağız yani asıl işimize odaklanacağız.&lt;/p&gt;
-&lt;p&gt;İşte Jhipster bize eksiksiz ve fazlalıksız bir “best practice” bir yapı sunabiliyor. Bunu yaparken CLI (command line interface) yani komut satırında basit soru veya cevaplarla bize opsiyon sunuyor.&lt;/p&gt;
-&lt;p&gt;Şimdi kurulumu öyle kendi resmi faydasındaki komutları tekrarlayarak yapmayacağım. Hangi yöntemi neden seçtik yazacağım:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Jhipster online : internetten bir arayüzle projenizi oluşturup onu gitlab veya githuba atıyor. Ben bunu seçmezdim çünkü bu tarz arayüzler çok sık değiiyor. Geliştirme tecrübesi değil de arayüz tecrübesi veriyor ki bir değişiklik veya problem olması durumunda arayüzün el verdiği kadar yapabilirim. &lt;/li&gt;
-&lt;li&gt;En popüler yöntem: npm ile generator-jhipster yüklenir bu komut satırından çalıştırılır. Basitçe şöyle çalışıyor.  Npm nodejs paketlerini yöneten bir araç olduğunu biliyoruz. Bu paketler gelip bilgisayarın ana node&lt;em&gt;modules klasörü veya projenin node&lt;/em&gt;modules klasörü altında tutuluyor. Burada ana node_modules klasöründe bazı node paketlerini &lt;/li&gt;
-&lt;li&gt;Yarn ile node paketi yükleme : üsttekinin aynısı sadece node paketlerini npm değil de yarn ile yüklüyor. Yarn ile Npm arasında birkaç fark var. Npm ile yüklerseniz node_modules klasörü çok büyüyebiliyor. Nasıl yapıyor ayrıntılı bilmiyorum ama bunu özellikle geliştirmiş facebook Yarn ekibi.  Son uyarım da npm ile yarn aynı anda kullanılmamalı bir proje için paketleri yarn ile yükledi iseniz daha sonra npm ile sakın yüklemeyin uyumsuzluk problemi olabilir.&lt;/li&gt;
-&lt;li&gt;Son yöntem de docker container: yani JHipster generator içeren bir docker container çalıştırırsınız ve bu docker içine girdiğinizde bir JHipster generator  vardır. Bu sayede projeyi docker container içinde &lt;/li&gt;
-&lt;/ol&gt;
-                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog/Jhipster/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
+              </content:encoded></item><item><title><![CDATA[Spring Circuit Breaker]]></title><description><![CDATA[Netfix Hystrix, Resilience4J, Sentinel ve istio]]></description><link>https://yusufunlu.github.io/blog/Spring Circuit Breaker/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/Spring Circuit Breaker/</guid><pubDate>Thu, 27 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;circuit-breaker-nedir&quot;&gt;&lt;a href=&quot;#circuit-breaker-nedir&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Circuit Breaker Nedir&lt;/h2&gt;
+                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog/Spring Circuit Breaker/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
               </content:encoded></item><item><title><![CDATA[Linux Subsystem in Windows]]></title><description><![CDATA[Kurduğum uygulamalar ve Windows Mount]]></description><link>https://yusufunlu.github.io/blog/Linux Subsystem in Windows/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/Linux Subsystem in Windows/</guid><pubDate>Thu, 27 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Wsl yani Windows Subsystem for Linux başladığı yeri görmek için pwd komutu ile yazdırdım.
 
   &lt;a
@@ -673,9 +762,20 @@ Yukarıda göründüğü gibi benim user’ımın bulunduğu path’dir bu. Az s
 &lt;p&gt;&lt;strong&gt;apt list —installed &gt;history$(date +“%b-%d-%Y-%H-%M-%S”).txt&lt;/strong&gt;
 &lt;strong&gt;grep install /var/log/dpkg.log &gt; dpkg-$(date +“%b-%d-%Y-%H-%M-%S”).log&lt;/strong&gt;&lt;/p&gt;
                 &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog/Linux Subsystem in Windows/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
-              </content:encoded></item><item><title><![CDATA[Spring Circuit Breaker]]></title><description><![CDATA[Netfix Hystrix, Resilience4J, Sentinel ve istio]]></description><link>https://yusufunlu.github.io/blog/Spring Circuit Breaker/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/Spring Circuit Breaker/</guid><pubDate>Thu, 27 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;circuit-breaker-nedir&quot;&gt;&lt;a href=&quot;#circuit-breaker-nedir&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Circuit Breaker Nedir&lt;/h2&gt;
-                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog/Spring Circuit Breaker/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
-              </content:encoded></item><item><title><![CDATA[Hadoop Nedir]]></title><description><![CDATA[Hadoop temel elemanları ve opsiyonel elemanlarının görevleri]]></description><link>https://yusufunlu.github.io/blog/hadoop/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/hadoop/</guid><pubDate>Sat, 25 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hadoop bilgisayar tarlalarında çok büyük veri setleri için dağıtık depolama ve işleme yeteneği sunan bir açık kaynak yazılımdır.
+              </content:encoded></item><item><title><![CDATA[Jhipster ile Spring best practice şablon proje]]></title><description><![CDATA[Spring Cloud ve Microservice proje]]></description><link>https://yusufunlu.github.io/blog/JHipster/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/JHipster/</guid><pubDate>Thu, 27 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;jhipster-nedir-ve-neden-kullanalım&quot;&gt;&lt;a href=&quot;#jhipster-nedir-ve-neden-kullanal%C4%B1m&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jhipster Nedir ve neden kullanalım&lt;/h2&gt;
+&lt;p&gt;Jhipster basit birşey aslında. Sadece bize popüler Java , frontend ve database teknolojileri modern proje şablonu oluşturan bir araç.
+Mesela Spring projesi kendiniz Jhipster olmadan yapmak isterseniz bunun database bağlantılarını kod içinde, properties dosyasında veya yml dosyalarında veya çok daha sofistike olarak ayrı bir config serverda tutabilirsiniz. Burada en modern ve esnek yöntem Spring cloud üstünde tutmaktır. Faydası ise kodu görenler sizin development, test veya production ortamında database şifrelerinizi görmemiş olur. &lt;/p&gt;
+&lt;p&gt;Gelelim Jhipster’a tekrar. Bu yapı medium veya farklı yerlerde anlatılıyor ancak çoğu bilgi birbiri ile uyumsuz makaleler arasında birinin kullandığını diğeri kullanmıyor veya fazladan birşey kullanıyor. Bu durumda okuyucu hangisi ayar veya araç zorunlu toparlamakta güçlük çekiyor. Yani ihtiyacımız olan eksiksiz ve fazlalıksız amacımıza uygun bir yapı kurmak. Gerisinde ise biz projemize göre business logic yani iş mantığı kodlayacağız yani asıl işimize odaklanacağız.&lt;/p&gt;
+&lt;p&gt;İşte Jhipster bize eksiksiz ve fazlalıksız bir “best practice” bir yapı sunabiliyor. Bunu yaparken CLI (command line interface) yani komut satırında basit soru veya cevaplarla bize opsiyon sunuyor.&lt;/p&gt;
+&lt;p&gt;Şimdi kurulumu öyle kendi resmi faydasındaki komutları tekrarlayarak yapmayacağım. Hangi yöntemi neden seçtik yazacağım:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Jhipster online : internetten bir arayüzle projenizi oluşturup onu gitlab veya githuba atıyor. Ben bunu seçmezdim çünkü bu tarz arayüzler çok sık değiiyor. Geliştirme tecrübesi değil de arayüz tecrübesi veriyor ki bir değişiklik veya problem olması durumunda arayüzün el verdiği kadar yapabilirim. &lt;/li&gt;
+&lt;li&gt;En popüler yöntem: npm ile generator-jhipster yüklenir bu komut satırından çalıştırılır. Basitçe şöyle çalışıyor.  Npm nodejs paketlerini yöneten bir araç olduğunu biliyoruz. Bu paketler gelip bilgisayarın ana node&lt;em&gt;modules klasörü veya projenin node&lt;/em&gt;modules klasörü altında tutuluyor. Burada ana node_modules klasöründe bazı node paketlerini &lt;/li&gt;
+&lt;li&gt;Yarn ile node paketi yükleme : üsttekinin aynısı sadece node paketlerini npm değil de yarn ile yüklüyor. Yarn ile Npm arasında birkaç fark var. Npm ile yüklerseniz node_modules klasörü çok büyüyebiliyor. Nasıl yapıyor ayrıntılı bilmiyorum ama bunu özellikle geliştirmiş facebook Yarn ekibi.  Son uyarım da npm ile yarn aynı anda kullanılmamalı bir proje için paketleri yarn ile yükledi iseniz daha sonra npm ile sakın yüklemeyin uyumsuzluk problemi olabilir.&lt;/li&gt;
+&lt;li&gt;Son yöntem de docker container: yani JHipster generator içeren bir docker container çalıştırırsınız ve bu docker içine girdiğinizde bir JHipster generator  vardır. Bu sayede projeyi docker container içinde &lt;/li&gt;
+&lt;/ol&gt;
+                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog/JHipster/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
+              </content:encoded></item><item><title><![CDATA[Hadoop Nedir]]></title><description><![CDATA[Hadoop temel elemanları ve opsiyonel elemanlarının görevleri]]></description><link>https://yusufunlu.github.io/blog/Hadoop/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/Hadoop/</guid><pubDate>Sat, 25 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hadoop bilgisayar tarlalarında çok büyük veri setleri için dağıtık depolama ve işleme yeteneği sunan bir açık kaynak yazılımdır.
 İki bin yıllarının başında Yahoo Apache Nutch açık kaynak web crawler üzerine çalışırken(tabi o zaman nutch apache miydi emin değilim) Google 2003-2004
 GFS ve map-reduce geliştirmeler için makaleler yayınlar. Yahoo da buradan esinlenerek Hadoop’u yapar ve bunu open source olarak açar.&lt;/p&gt;
 &lt;p&gt;Burada ilginç bir detay var: Hadoop’a en çok katkıda bulunan Doug Cutting(kendisi o zamanlar Yahoo’da çalışıyor) aynı zamanda Apache Nutch’u ve Lucene’i yapan kişi. Lucene de açık kaynak ve Apache altında konumlanıyor ve aynı zamanda Elestic Search ve Solr’ın core kısmı oluyor. Hadoop de Doug Cutting’in oğlunun oyuncak filinin ismi ve rengi de sarı , Hadoop’un sembolü ve maskotu da biraz da şans ile buradan geliyor.&lt;/p&gt;
@@ -842,7 +942,7 @@ Yarn çökerse Zookeper HA(High available) yarn kullanarak yani Hot Standby kull
 &lt;h2 id=&quot;presto&quot;&gt;&lt;a href=&quot;#presto&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Presto&lt;/h2&gt;
 &lt;h2 id=&quot;druid&quot;&gt;&lt;a href=&quot;#druid&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Druid&lt;/h2&gt;
 &lt;h2 id=&quot;apex&quot;&gt;&lt;a href=&quot;#apex&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Apex&lt;/h2&gt;
-                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog/hadoop/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
+                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog/Hadoop/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
               </content:encoded></item><item><title><![CDATA[Neo4J Graph Db nedir ve Spring ile örnek]]></title><description><![CDATA[Neo4J Graph Db nedir ve Spring ile örnek]]></description><link>https://yusufunlu.github.io/blog/Neo4J Graph Db/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/Neo4J Graph Db/</guid><pubDate>Mon, 15 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;graph-database-nedir&quot;&gt;&lt;a href=&quot;#graph-database-nedir&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Graph Database Nedir&lt;/h2&gt;
 &lt;p&gt;Graph veritablanları daha çok ilişki ve bağlantı odaklı veritabanlarıdır. Odakları burasıdır ve verilerin birbiri ile ilişkisi konusunda bize daha çok özellik(feature) sunarlar.  Graph veri yapısı kullanarak bunları bize sağlarlar. Genelde node ve edge 2 temel yapı üzerine kuruldur. Nodelar temel veri için iken edge’ler ise ilişkiler içindir. Graph veritabanları NoSql’dir ve Rdbms yani Sql(teoride yanlış bir kelime) tabanlı veritabanlarının problemlerini aşmak için oluşturuldu. Çünkü isminden (relational database management system - ilişkisel veritabanı yönetim sistemi) anlaşılacağı gibi onlarda da ilişkiler vardır.  Bazı graph db’ler relational engine yani ilişki motoru ve graph veri tutarken bazıları da key-value ve dokuman odaklıdır. Mesela OrientDB dokuman odaklı bir graph database’dir. Graph odaklı olanlarda bir döküman diğerine pointer içerir ki buna da edge denir, aslında ilişkidir bu pointer. Bu sayede retrieve yani veri getirme operasyonu hızlandırır.
 Graph databaselerden veri çekmek için SQL kullanılamaz. Bu işi görecek farklı query(sorgulama) dilleri vardır ama hiçbiri SQL’de olduğu tek bir standart hale gelememiştir. Bazıları : Gremlin, SPARQL ve Cypher. &lt;/p&gt;
@@ -1134,7 +1234,7 @@ Eğer defalt security rullarının actuator için de geçerli olmasını isterse
 &lt;li&gt;Global&lt;/li&gt;
 &lt;/ul&gt;
                 &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog/Temel Spring Framework/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
-              </content:encoded></item><item><title><![CDATA[First post]]></title><description><![CDATA[Gatsby and Github Pages]]></description><link>https://yusufunlu.github.io/blog/first-post/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/first-post/</guid><pubDate>Fri, 24 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This blog is being hosted on &lt;a href=&quot;https://github.com/yusufunlu/blog&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/yusufunlu/blog&lt;/a&gt; adress. The blog infrastructure has been taken from Dan Abramov’s this project : &lt;a href=&quot;https://github.com/gaearon/overreacted.io&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/gaearon/overreacted.io&lt;/a&gt;  &lt;/p&gt;
+              </content:encoded></item><item><title><![CDATA[First post]]></title><description><![CDATA[Gatsby and Github Pages]]></description><link>https://yusufunlu.github.io/blog/First post/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/First post/</guid><pubDate>Fri, 24 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;This blog is being hosted on &lt;a href=&quot;https://github.com/yusufunlu/blog&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/yusufunlu/blog&lt;/a&gt; adress. The blog infrastructure has been taken from Dan Abramov’s this project : &lt;a href=&quot;https://github.com/gaearon/overreacted.io&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/gaearon/overreacted.io&lt;/a&gt;  &lt;/p&gt;
 &lt;p&gt; (I &lt;a href=&quot;https://yusufunlu.github.io/blog/blog/test/&quot;&gt;sth&lt;/a&gt; test.)&lt;/p&gt;
-                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog/first-post/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
+                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog/First post/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
               </content:encoded></item></channel></rss>
