@@ -6,7 +6,8 @@ cta: 'Neural Network'
 ---
 
 Convolutional Neural Networks(CNN): Good for image recognition
-Long Short-term memory network(LSTM): Good for speech recognition
+Long Short-term memory network(LSTM): Good for sequential data such as speech recognition
+RNN: simpler version of LSTM
 
 **Neuron**: holds a number between 0-1.
 Sigmoid Function or σ(x) or sig(x)= 1/(1+e^-x) = 1/(1+exp(-x)) When x goes to +etheral f(x) goes to 1, in contrast when x goes to - etheral f(x) goes to 0
@@ -33,5 +34,7 @@ You can create enviroments so there are some commands to manage it
 ``conda install matplotlib numpy jupyter``
 ``conda deactivate``
 ``conda env list``
+
+
 
 
