@@ -1,0 +1,14 @@
+a) If a student has 3500 songs on her phone, and chooses songs to play at random, she should expect to play about 177 songs before hearing some song twice with probability at least 50%. This is because the probability of two people having the same birthday is about 50% when there are 23 people in a group. 
+ 
+b) HMAC is a message authentication code that uses a hash function in conjunction with a secret key. The hash function is used to generate a message digest, which is then combined with the secret key using an exclusive-or operation. The result is then hashed again, and the resulting message digest is used as the message authentication code.
+
+Explanationfor step 1
+
+1. The birthday paradox explains why the student should anticipate playing 177 songs before hearing a song twice with a probability of at least 50%. According to the birthday paradox, when there are 23 people in a group, there is a 50% chance that two people will share the same birthday. Given that there are only 365 possible birthdays, the likelihood that two persons will share the same birthday is 365/2, or roughly 50%.
+When a student plays music at random from her phone, the birthday paradox is applicable since the number of songs on her phone can be viewed as a group of people, with each song representing a different person. She has 3500 music on her phone, therefore the likelihood that she will hear any given song twice is 3500/2, or roughly 50%. She should therefore anticipate playing around 177 songs before she hears a song twice with a probability of at least 50%.
+It's important to note that the birthday paradox only holds true when there are more than 23 persons in the group. Less than 50% of the time, a group of less than 23 persons will have two people with the same birthday.
+
+2. HMAC is a message authentication code that combines a secret key and a hash function. The secret key is joined with the message digest, which is produced by the hash function, via an exclusive-or operation. The resulting message digest is used as the message authentication code once the result is hashed once more.
+Because the hash function is used to create a message digest, which is a condensed, fixed-size value that serves as a representation for a longer message, HMAC utilizes a secret key in addition to a hash function. The exclusive-or operation employs the secret key to make sure that the message digest cannot be easily deduced.
+HMAC has the benefit of being more secure than a hash function by itself. It is more challenging for an attacker to produce a message digest that matches the message that is being authenticated since HMAC employs a secret key.
+Since the message digest is shorter than the message being authenticated, HMAC is also more effective than employing a hash function alone. This is so that the message can be hashed more quickly as only a fixed-size variable is used to represent the message.
