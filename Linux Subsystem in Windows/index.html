@@ -40,7 +40,7 @@
         }
       }
     })
-  </script><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" title="Yusuf Unlu&#x27;s Personal Blog RSS Feed" href="/blog/rss.xml"/><link rel="icon" href="/blog/favicon-32x32.png?v=8c19a894ebc3f54d282a8f2418cf5398" type="image/png"/><link rel="manifest" href="/blog/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/blog/icons/icon-48x48.png?v=8c19a894ebc3f54d282a8f2418cf5398"/><link rel="apple-touch-icon" sizes="72x72" href="/blog/icons/icon-72x72.png?v=8c19a894ebc3f54d282a8f2418cf5398"/><link rel="apple-touch-icon" sizes="96x96" href="/blog/icons/icon-96x96.png?v=8c19a894ebc3f54d282a8f2418cf5398"/><link rel="apple-touch-icon" sizes="144x144" href="/blog/icons/icon-144x144.png?v=8c19a894ebc3f54d282a8f2418cf5398"/><link rel="apple-touch-icon" sizes="192x192" href="/blog/icons/icon-192x192.png?v=8c19a894ebc3f54d282a8f2418cf5398"/><link rel="apple-touch-icon" sizes="256x256" href="/blog/icons/icon-256x256.png?v=8c19a894ebc3f54d282a8f2418cf5398"/><link rel="apple-touch-icon" sizes="384x384" href="/blog/icons/icon-384x384.png?v=8c19a894ebc3f54d282a8f2418cf5398"/><link rel="apple-touch-icon" sizes="512x512" href="/blog/icons/icon-512x512.png?v=8c19a894ebc3f54d282a8f2418cf5398"/><title data-react-helmet="true">Linux Subsystem in Windows — yusufunlu</title><meta data-react-helmet="true" name="theme-color" content="#282c35"/><meta data-react-helmet="true" name="description" content="Kurduğum uygulamalar ve Windows Mount"/><meta data-react-helmet="true" property="og:url" content="https://yusufunlu.github.io/blog/Linux Subsystem in Windows/"/><meta data-react-helmet="true" property="og:title" content="Linux Subsystem in Windows"/><meta data-react-helmet="true" property="og:description" content="Kurduğum uygulamalar ve Windows Mount"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="@yufusunlu"/><meta data-react-helmet="true" name="twitter:title" content="Linux Subsystem in Windows"/><meta data-react-helmet="true" name="twitter:description" content="Kurduğum uygulamalar ve Windows Mount"/><link as="script" rel="preload" href="/blog/webpack-runtime-131cf9b02f70336c0569.js"/><link as="script" rel="preload" href="/blog/framework-acd7498685eeb36e39da.js"/><link as="script" rel="preload" href="/blog/app-1babf267d80e972b5639.js"/><link as="script" rel="preload" href="/blog/styles-407fe62976dc5310c43e.js"/><link as="script" rel="preload" href="/blog/commons-fd656ff67f1eb106b3e6.js"/><link as="script" rel="preload" href="/blog/5eaaf8e019eaa07a0f5219912d6541cafdf4b7b7-67b9dbee34e5849c496a.js"/><link as="script" rel="preload" href="/blog/component---src-templates-blog-post-js-079bf8714edbdde1fcc5.js"/><link as="fetch" rel="preload" href="/blog/page-data/Linux Subsystem in Windows/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/blog/page-data/sq/d/336482444.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/blog/page-data/app-data.json" crossorigin="anonymous"/></head><body class="light"><script>
+  </script><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" title="Yusuf Unlu&#x27;s Personal Blog RSS Feed" href="/blog/rss.xml"/><link rel="icon" href="/blog/favicon-32x32.png?v=8c19a894ebc3f54d282a8f2418cf5398" type="image/png"/><link rel="manifest" href="/blog/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/blog/icons/icon-48x48.png?v=8c19a894ebc3f54d282a8f2418cf5398"/><link rel="apple-touch-icon" sizes="72x72" href="/blog/icons/icon-72x72.png?v=8c19a894ebc3f54d282a8f2418cf5398"/><link rel="apple-touch-icon" sizes="96x96" href="/blog/icons/icon-96x96.png?v=8c19a894ebc3f54d282a8f2418cf5398"/><link rel="apple-touch-icon" sizes="144x144" href="/blog/icons/icon-144x144.png?v=8c19a894ebc3f54d282a8f2418cf5398"/><link rel="apple-touch-icon" sizes="192x192" href="/blog/icons/icon-192x192.png?v=8c19a894ebc3f54d282a8f2418cf5398"/><link rel="apple-touch-icon" sizes="256x256" href="/blog/icons/icon-256x256.png?v=8c19a894ebc3f54d282a8f2418cf5398"/><link rel="apple-touch-icon" sizes="384x384" href="/blog/icons/icon-384x384.png?v=8c19a894ebc3f54d282a8f2418cf5398"/><link rel="apple-touch-icon" sizes="512x512" href="/blog/icons/icon-512x512.png?v=8c19a894ebc3f54d282a8f2418cf5398"/><title data-react-helmet="true">Linux Subsystem in Windows — yusufunlu</title><meta data-react-helmet="true" name="theme-color" content="#282c35"/><meta data-react-helmet="true" name="description" content="Kurduğum uygulamalar ve Windows Mount"/><meta data-react-helmet="true" property="og:url" content="https://yusufunlu.github.io/blog/Linux Subsystem in Windows/"/><meta data-react-helmet="true" property="og:title" content="Linux Subsystem in Windows"/><meta data-react-helmet="true" property="og:description" content="Kurduğum uygulamalar ve Windows Mount"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="@yufusunlu"/><meta data-react-helmet="true" name="twitter:title" content="Linux Subsystem in Windows"/><meta data-react-helmet="true" name="twitter:description" content="Kurduğum uygulamalar ve Windows Mount"/><link as="script" rel="preload" href="/blog/webpack-runtime-131cf9b02f70336c0569.js"/><link as="script" rel="preload" href="/blog/framework-acd7498685eeb36e39da.js"/><link as="script" rel="preload" href="/blog/app-1babf267d80e972b5639.js"/><link as="script" rel="preload" href="/blog/styles-407fe62976dc5310c43e.js"/><link as="script" rel="preload" href="/blog/commons-fd656ff67f1eb106b3e6.js"/><link as="script" rel="preload" href="/blog/5eaaf8e019eaa07a0f5219912d6541cafdf4b7b7-67b9dbee34e5849c496a.js"/><link as="script" rel="preload" href="/blog/component---src-templates-blog-post-js-079bf8714edbdde1fcc5.js"/><link as="fetch" rel="preload" href="/blog/page-data\Linux Subsystem in Windows\page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/blog/page-data/sq/d/336482444.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/blog/page-data\app-data.json" crossorigin="anonymous"/></head><body class="light"><script>
               (function() {
                 window.__onThemeChange = function() {};
                 function setTheme(newTheme) {
@@ -73,7 +73,7 @@
 
   <a
     class="gatsby-resp-image-link"
-    href="/static/7d56ba4277ebc58d5bfc54111569d9d7/d587d/First_command.png"
+    href="/blog/static/7d56ba4277ebc58d5bfc54111569d9d7/d587d/First_command.png"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -92,10 +92,10 @@
         style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="Başlama noktası"
         title=""
-        src="/static/7d56ba4277ebc58d5bfc54111569d9d7/d587d/First_command.png"
-        srcset="/static/7d56ba4277ebc58d5bfc54111569d9d7/12f09/First_command.png 148w,
-/static/7d56ba4277ebc58d5bfc54111569d9d7/e4a3f/First_command.png 295w,
-/static/7d56ba4277ebc58d5bfc54111569d9d7/d587d/First_command.png 419w"
+        src="/blog/static/7d56ba4277ebc58d5bfc54111569d9d7/d587d/First_command.png"
+        srcset="/blog/static/7d56ba4277ebc58d5bfc54111569d9d7/12f09/First_command.png 148w,
+/blog/static/7d56ba4277ebc58d5bfc54111569d9d7/e4a3f/First_command.png 295w,
+/blog/static/7d56ba4277ebc58d5bfc54111569d9d7/d587d/First_command.png 419w"
         sizes="(max-width: 419px) 100vw, 419px"
       />
     </span>
@@ -109,7 +109,7 @@ Yukarıda göründüğü gibi benim user’ımın bulunduğu path’dir bu. Az s
 
   <a
     class="gatsby-resp-image-link"
-    href="/static/de795735852e24fea6cb28ff11a22227/c1724/WSL_mnt_ls.png"
+    href="/blog/static/de795735852e24fea6cb28ff11a22227/c1724/WSL_mnt_ls.png"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -128,10 +128,10 @@ Yukarıda göründüğü gibi benim user’ımın bulunduğu path’dir bu. Az s
         style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="Root Path"
         title=""
-        src="/static/de795735852e24fea6cb28ff11a22227/c1724/WSL_mnt_ls.png"
-        srcset="/static/de795735852e24fea6cb28ff11a22227/12f09/WSL_mnt_ls.png 148w,
-/static/de795735852e24fea6cb28ff11a22227/e4a3f/WSL_mnt_ls.png 295w,
-/static/de795735852e24fea6cb28ff11a22227/c1724/WSL_mnt_ls.png 304w"
+        src="/blog/static/de795735852e24fea6cb28ff11a22227/c1724/WSL_mnt_ls.png"
+        srcset="/blog/static/de795735852e24fea6cb28ff11a22227/12f09/WSL_mnt_ls.png 148w,
+/blog/static/de795735852e24fea6cb28ff11a22227/e4a3f/WSL_mnt_ls.png 295w,
+/blog/static/de795735852e24fea6cb28ff11a22227/c1724/WSL_mnt_ls.png 304w"
         sizes="(max-width: 304px) 100vw, 304px"
       />
     </span>
@@ -146,7 +146,7 @@ Yukarıda göründüğü gibi benim user’ımın bulunduğu path’dir bu. Az s
 
   <a
     class="gatsby-resp-image-link"
-    href="/static/830378d10ef3c4e5e9ba34b59a0bdf84/5754a/bashrc_edit.png"
+    href="/blog/static/830378d10ef3c4e5e9ba34b59a0bdf84/5754a/bashrc_edit.png"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -165,11 +165,11 @@ Yukarıda göründüğü gibi benim user’ımın bulunduğu path’dir bu. Az s
         style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="Root Path"
         title=""
-        src="/static/830378d10ef3c4e5e9ba34b59a0bdf84/fcda8/bashrc_edit.png"
-        srcset="/static/830378d10ef3c4e5e9ba34b59a0bdf84/12f09/bashrc_edit.png 148w,
-/static/830378d10ef3c4e5e9ba34b59a0bdf84/e4a3f/bashrc_edit.png 295w,
-/static/830378d10ef3c4e5e9ba34b59a0bdf84/fcda8/bashrc_edit.png 590w,
-/static/830378d10ef3c4e5e9ba34b59a0bdf84/5754a/bashrc_edit.png 613w"
+        src="/blog/static/830378d10ef3c4e5e9ba34b59a0bdf84/fcda8/bashrc_edit.png"
+        srcset="/blog/static/830378d10ef3c4e5e9ba34b59a0bdf84/12f09/bashrc_edit.png 148w,
+/blog/static/830378d10ef3c4e5e9ba34b59a0bdf84/e4a3f/bashrc_edit.png 295w,
+/blog/static/830378d10ef3c4e5e9ba34b59a0bdf84/fcda8/bashrc_edit.png 590w,
+/blog/static/830378d10ef3c4e5e9ba34b59a0bdf84/5754a/bashrc_edit.png 613w"
         sizes="(max-width: 590px) 100vw, 590px"
       />
     </span>
@@ -181,7 +181,7 @@ Yukarıda göründüğü gibi benim user’ımın bulunduğu path’dir bu. Az s
 <p>
   <a
     class="gatsby-resp-image-link"
-    href="/static/b5db8717550ced73edb82604d167ca2d/fcb94/source_bashrc.png"
+    href="/blog/static/b5db8717550ced73edb82604d167ca2d/fcb94/source_bashrc.png"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -200,10 +200,10 @@ Yukarıda göründüğü gibi benim user’ımın bulunduğu path’dir bu. Az s
         style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
         alt="Root Path"
         title=""
-        src="/static/b5db8717550ced73edb82604d167ca2d/fcb94/source_bashrc.png"
-        srcset="/static/b5db8717550ced73edb82604d167ca2d/12f09/source_bashrc.png 148w,
-/static/b5db8717550ced73edb82604d167ca2d/e4a3f/source_bashrc.png 295w,
-/static/b5db8717550ced73edb82604d167ca2d/fcb94/source_bashrc.png 452w"
+        src="/blog/static/b5db8717550ced73edb82604d167ca2d/fcb94/source_bashrc.png"
+        srcset="/blog/static/b5db8717550ced73edb82604d167ca2d/12f09/source_bashrc.png 148w,
+/blog/static/b5db8717550ced73edb82604d167ca2d/e4a3f/source_bashrc.png 295w,
+/blog/static/b5db8717550ced73edb82604d167ca2d/fcb94/source_bashrc.png 452w"
         sizes="(max-width: 452px) 100vw, 452px"
       />
     </span>
