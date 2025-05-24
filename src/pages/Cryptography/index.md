@@ -1,7 +1,7 @@
 ---
 title: Cryptography
 date: '2023-03-08'
-spoiler: Cryptography
+spoiler: My Notes from my master's Network Security Course
 ---
 
 A pseudorandom generator G is an efficient, deterministic algorithm for transforming a short, uniform string (called a seed) into a longer, “uniformlooking” (or “pseudorandom”) output string.

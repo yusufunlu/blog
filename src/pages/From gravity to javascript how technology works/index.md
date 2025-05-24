@@ -1,11 +1,11 @@
 ---
 title: From gravity to Javascript how technology works
 date: '2021-05-06'
-spoiler: It is all physics
+spoiler: First completeness then perfection
 cta: 'react'
 ---
 
-I am going to try to tell how technology works from Gravity to Javascript as someone who has an Electrical-Electronics Engineering Bachelor Degree, a non-completed master degree in Computer Science and 10 years of software development experience.
+First completeness, then perfection — grasp the whole before polishing the parts. This is about building a mental map that makes everything click
 
 # Ingretients
 

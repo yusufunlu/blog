@@ -1,7 +1,7 @@
 ---
 title: Interview Topics
 date: '2022-02-24'
-spoiler: Topics and concepts
+spoiler: Some of the topics and concepts may need attention 
 ---
 
 # Interview Topics
