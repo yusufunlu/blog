@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Yusuf Unlu's Personal Blog RSS Feed]]></title><description><![CDATA[Yusuf Unlu Sw Blog]]></description><link>https://yusufunlu.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 04 Sep 2023 19:12:48 GMT</lastBuildDate><item><title><![CDATA[Cryptography]]></title><description><![CDATA[Cryptography]]></description><link>https://yusufunlu.github.io/blog/Cryptography/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/Cryptography/</guid><pubDate>Wed, 08 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;A pseudorandom generator G is an efficient, deterministic algorithm for transforming a short, uniform string (called a seed) into a longer, “uniformlooking” (or “pseudorandom”) output string.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Yusuf Unlu's Personal Blog RSS Feed]]></title><description><![CDATA[Yusuf Unlu Sw Blog]]></description><link>https://yusufunlu.github.io/blog</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 24 May 2025 05:40:38 GMT</lastBuildDate><item><title><![CDATA[Hadoop(Yarn, HDFS) and Spark, Kerberos Setup]]></title><description><![CDATA[Hadoop(Yarn, HDFS) and Spark, Kerberos Setup]]></description><link>https://yusufunlu.github.io/blog/Hadoop Setup/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/Hadoop Setup/</guid><pubDate>Mon, 06 Nov 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;hadoop&quot;&gt;&lt;a href=&quot;#hadoop&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hadoop&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Download from &lt;a href=&quot;https://dlcdn.apache.org/hadoop/common/hadoop-3.3.1/hadoop-3.3.1.tar.gz&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://dlcdn.apache.org/hadoop/common/hadoop-3.3.1/hadoop-3.3.1.tar.gz&lt;/a&gt; and extract to a folder&lt;/li&gt;
+&lt;li&gt;Define Environment Variables
+HADOOP&lt;em&gt;HOME = C:\Users\yusufu\Downloads\hadoop-3.3.1
+add C:\Users\yusufu\Downloads\hadoop-3.3.1 to PATH
+![env&lt;/em&gt;variables.png](./env_variables.png)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For Windows there is no posix libraries to access file:// like filesystem, so we need to install winutils
+&lt;a href=&quot;https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://cwiki.apache.org/confluence/display/HADOOP2/WindowsProblems&lt;/a&gt;
+Download this &lt;a href=&quot;https://github.com/kontext-tech/winutils/tree/master/hadoop-3.3.1/bin&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://github.com/kontext-tech/winutils/tree/master/hadoop-3.3.1/bin&lt;/a&gt; and extract to C:\Users\yusufu\Downloads\hadoop-3.3.1\bin folder
+
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 101.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB10lEQVQ4y4VUi5arIAzs///nbq1aRXn7aJZBw6Jw93JOjrSBYWZIeGht6dmMpLQjjM/nEwNj33fati0G5oh1XWNgDefzfQ9jDDXPhsZhLACxcZ5nklLGjc65OMcXa5ZlIWtt2ofxQPL9fpMYRfozB1RKBvY6ARpzAGB478nZq7IAaKl9vahruwIQDKZpiiwBDjZKqQR4HGCuDL2c6fX1HVgOf0rGHAfgy6MqeQmnjMMQPaxLVqRPyZBoT4lJsnNXQDWO9Pp+Ut/18dbuksFwnmWYHwx9CM7b4GchWRl42NLwD4ZRcmAJhpAHT/MDC8k+UBaB5RBk1wDhnzoBnf1lxJILQHjStT01TUfrtv+3bOAnD4BVAdtOUD9I0ma5JPNO4c7gHOfvvj9wQt91F3M5CUnwcJqOOjxu1UfvsIZ9LToFrYeYw8Y7IDzkwmbP8MUafItbBuAkBIkQtbKBZ4h13dKjkBd2UYcuK2yA2luvHgx/O4UPjXnnU28nQBNOH8LjwL7s+9+SQYDXVusQHoBd3qN3yUrpxDAHxH+FZACCIQPml7KcDKVUJ6CPLKOXZ51W6jC82KGXtdLVsjkAZfWWq4BgGB9YIarvISRjDWoOvzEHCAMCPN/zAxD/IUtaa5QsAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;winutils_in_bin&quot;
+        title=&quot;&quot;
+        src=&quot;https://yusufunlu.github.io/blog/blog/static/9db9ba92b5f4e425a92cd881c26275ca/fcda8/winutils_in_bin.png&quot;
+        srcset=&quot;/blog/static/9db9ba92b5f4e425a92cd881c26275ca/12f09/winutils_in_bin.png 148w,
+/blog/static/9db9ba92b5f4e425a92cd881c26275ca/e4a3f/winutils_in_bin.png 295w,
+/blog/static/9db9ba92b5f4e425a92cd881c26275ca/fcda8/winutils_in_bin.png 590w,
+/blog/static/9db9ba92b5f4e425a92cd881c26275ca/0f2bc/winutils_in_bin.png 742w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;/p&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Configure Hadoop
+Edit C:\Users\yusufu\Downloads\hadoop-3.3.1\etc\hadoop\core-site.xml&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;configuration&amp;gt;
+   &amp;lt;property&amp;gt;
+     &amp;lt;name&amp;gt;fs.default.name&amp;lt;/name&amp;gt;
+     &amp;lt;value&amp;gt;hdfs://0.0.0.0:19000&amp;lt;/value&amp;gt;
+   &amp;lt;/property&amp;gt;
+&amp;lt;/configuration&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+                &lt;div style=&quot;margin-top=55px; font-style: italic;&quot;&gt;(This is an article posted to my blog at overreacted.io. You can read it online by &lt;a href=&quot;https://yusufunlu.github.io/blog/Hadoop Setup/&quot;&gt;clicking here&lt;/a&gt;.)&lt;/div&gt;
+              </content:encoded></item><item><title><![CDATA[Cryptography]]></title><description><![CDATA[Cryptography]]></description><link>https://yusufunlu.github.io/blog/Cryptography/</link><guid isPermaLink="false">https://yusufunlu.github.io/blog/Cryptography/</guid><pubDate>Wed, 08 Mar 2023 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;A pseudorandom generator G is an efficient, deterministic algorithm for transforming a short, uniform string (called a seed) into a longer, “uniformlooking” (or “pseudorandom”) output string.&lt;/p&gt;
 &lt;p&gt;That is, for any efficient statistical test (or distinguisher ) D, the probability that D returns 1 when given the output of the pseudorandom generator should be close to the probability that D returns 1 when given a uniform string of the same length. Informally, then, this means the output of a pseudorandom generator “looks like” a uniformly generated string to any efficient observer.
 Let Dist be a distribution on l-bit strings. This means that Dist assigns some probability to every string in {0, 1}^ℓ; sampling from Dist means that we choose an ℓ-bit string according to this probability distribution.)&lt;/p&gt;
 &lt;p&gt;Classical cryptography
