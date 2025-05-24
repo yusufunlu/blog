@@ -24,6 +24,7 @@ const systemFont = `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
 
 class Translations extends React.Component {
   render() {
+    return null; // disable translations
     let { translations, lang, languageLink, editUrl } = this.props;
 
     let readerTranslations = translations.filter(lang => lang !== 'ru');

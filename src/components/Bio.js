@@ -23,7 +23,7 @@ class Bio extends React.Component {
           }}
         />
         <p style={{ maxWidth: 310 }}>
-          Personal blog about tech and nerdy stuff of
+          Yusuf's blog about tech and science
           {'software, hardware and physics'}
           <a href={STATICS.ownerLinkedin} target="_blank">
             {STATICS.owner}
