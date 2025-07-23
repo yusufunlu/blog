@@ -76,7 +76,7 @@ YARN is a cluster resource manager and job scheduler. It supports fault toleranc
 
 ---
 
-## Other Technologies (To be expanded):
+## Other Technologies (content will be added):
 
 - **Kafka**: Distributed messaging system
 - **Flink**: Stream processing engine
