@@ -1,0 +1,16 @@
+{
+  "name": "yusuf-blog-chat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cloudflare Worker backend for the chatbot on yusufunlu.github.io/blog",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "build-context": "node scripts/build-context.js",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}

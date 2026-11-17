@@ -1,0 +1,22 @@
+name = "yusuf-blog-chat"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+# Allowed browser origins (comma-separated). Add http://localhost:8000 for local Gatsby dev.
+[vars]
+ALLOWED_ORIGINS = "https://yusufunlu.github.io,http://localhost:8000"
+MODEL = "claude-haiku-5-5"
+MAX_TOKENS = "600"
+# Daily usage caps. Edit these numbers to raise/lower limits without touching code.
+DAILY_GLOBAL_CAP = "100"
+DAILY_PER_IP_CAP = "10"
+
+# Persistent counters (daily per-IP + global). Create once with:
+#   npx wrangler kv namespace create CHAT_COUNTERS
+# then paste the printed id below.
+[[kv_namespaces]]
+binding = "CHAT_COUNTERS"
+id = "80cb3b8b683a4e6db9c3bcfd0f7ed758"
+
+# Secrets (set with `wrangler secret put <NAME>`):
+#   ANTHROPIC_API_KEY  -- your Anthropic console key (required)

@@ -1,0 +1,83 @@
+Yusuf Unlu
+Senior Software Engineer
+West New York, NJ, 07093, USA
+Phone: 201-312-1379
+Email: unlu.yusuf.sw@gmail.com
+Blog: yusufunlu.github.io/blog
+GitHub: yusufunlu
+LinkedIn: yusufunlu
+
+SUMMARY
+Senior Software Engineer with 14 years of experience in backend and full-stack development using Java, Spring, Python, JavaScript, and Linux. Specialized in scalable systems for finance, crypto, and media. Skilled in CI/CD, microservices, event-driven design, and big data tools like Spark and Hadoop. Proficient in real-time data handling, WebSocket streaming, and cloud infrastructure with AWS, Docker, and Terraform. Holds two master's degrees and has experience teaching software development with Python. Maintains open-source projects, including a Java trading advisor.
+
+EXPERIENCE
+
+Bank of America — Senior Software Engineer (July 2023 – Present, NJ, USA)
+- Contributed to the Self-Service Data Pipeline Builder, an internal orchestration platform enabling users to visually design, execute, and manage data workflows using Java and Spring, executed on Apache Spark over Hadoop.
+- Fixed batch processing inefficiency in the Impala JDBC driver, resulting in up to 100x performance improvement during large-scale data ingestion; also configured Hive integration and resolved charset issues in Teradata JDBC to ensure reliable platform integrity.
+- Managed and operated large-scale data workflows across Hive, PostgreSQL, Spark/HDFS, Oracle, Teradata, and Impala, focusing on charset handling and batch processing reliability.
+- Collaborated with analysts, users, QA, and the development team to implement features and resolve bugs.
+- Assisted backend developers with JavaScript/Angular UI setup on local environments and created onboarding and configuration documentation on Confluence.
+- Wrote unit tests and monitored SonarQube coverage and vulnerabilities, proactively fixing issues to ensure code quality and security compliance.
+- Led production deployment efforts including SQL schema scripts, Ansible automation scripts, and Jenkins builds.
+- Tech Stack: Java, Spring, Apache Spark, Hadoop, Parquet, CSV, Iceberg, Oracle, Teradata, Hive, Impala, FTP, HDFS, PostgreSQL, SQL, WebSocket, Ansible, Jenkins, JDBC, Spark APIs, UDFs, Angular, JavaScript, Confluence.
+
+Morgan Stanley — Senior Java Developer (April 2022 – May 2023, NYC, USA)
+- Contributed to building a highly scalable, resilient, event-driven system for real-time client balance calculations (e.g., spending power, cash available), replacing a legacy mainframe solution. The system processes 8M+ daily calls, supports 12M+ accounts, and is used by 30+ business-critical applications.
+- Contributed to backend microservices development using Java, Spring Boot, Kafka, MS SQL, Liquibase, MongoDB, and Avro in a microservice architecture, with unit tests ensuring reliability and maintainability.
+- Enhanced CI/CD workflows with Jenkins, Gradle, Python, Docker, and Cloudify, reducing manual effort and accelerating delivery cycles.
+- Built an MSSQL instance comparator to support database deployments, minimizing downtime and increasing release reliability; also supported a blue-green deployment setup with dual production environments and seamless traffic handoff.
+
+Bitlo — Lead Software Engineer (May 2021 – April 2022, Istanbul, Turkey)
+- Improved market maker bots and Order Management Services by integrating real-time ticker data, order book updates, and trade execution events using WebSocket and STOMP protocols at Bitlo, a crypto market startup.
+- Led the CRM team and implemented it from scratch using Java, Spring, ReactJS, Docker, and AWS (EC2, RDS, ECR), developing REST APIs and features for KYC/AML compliance and money transaction monitoring.
+- Managed setup and configuration of Solana and Dogecoin nodes for blockchain integration.
+- Maintained and supported main project DevOps using GitLab Pipeline, Terraform, and AWS.
+
+Deal Room Events — Senior Software Engineer (Sep 2020 – April 2021, Espoo, Finland)
+- Backend development and CI/CD for Deal Room online conference system startup using Java, Firebase, AWS Serverless (Lambda, Kinesis, SQS, SNS, S3, DynamoDB, CodePipeline, CloudFront, CloudWatch, Cognito, API Gateway) in event sourcing architecture.
+- Built stream-publish project from scratch using FFmpeg, Bash, CloudFormation, Terraform, Docker, Groovy, Video.js, Python, RTMP, AWS (ECS, Fargate, ECR, EC2, AWS Java SDK).
+
+Artiwise — Senior Software Engineer (Feb 2020 – July 2020, Istanbul, Turkey)
+- Implemented a Java/Spring application providing APIs that allow customers to define filters and retrieve customized data at Artiwise, a Customer Experience Management startup.
+- Designed and developed scheduled processes to fuse and filter crawled data based on customer-specific criteria before pushing it to AI services for further analysis.
+- Built data extraction and filtering logic using Java, Hibernate ORM, Spring, PostgreSQL, Solr (NoSQL), and Redis.
+- Utilized Kafka for streaming and message-driven communication.
+- Implemented centralized logging and monitoring with the ELK stack (Elasticsearch, Logstash, Kibana).
+- Containerized and deployed the solution using Docker and Kubernetes.
+
+Mobven — Full Stack Developer (Aug 2018 – Feb 2020, Istanbul, Turkey)
+- Developed Momentum Cloud Mobile Test Automation System using Spring Boot, PostgreSQL, ReactJS. Conducted device testing with Appium and adb scripts. Implemented video streaming via RTMP, FFmpeg, ActionScript and Nginx.
+- Contributed to Mobven Mobile Payment MVP using Spring, PostgreSQL, Android, and various hashing/encryption algorithms for data-over-sound.
+- Contributed to Turkishairlines.com using Spring, Eureka, OpenShift, Zuul, Knockout.js, CSS in microservice architecture.
+
+Bein Media — Software Engineer (April 2016 – July 2018, Istanbul, Turkey)
+- Worked on Spring Boot, Android, Java, SQLite, Chromecast, HLS, Widevine, Fairplay, MPEG-DASH, DRM technologies.
+- Contributed to Android and middleware of Mobile CRM app with over 200 screens.
+- Implemented video player in Android streaming platform using ExoPlayer.
+
+Vestel — C, C++ Developer (July 2011 – November 2014, Izmir, Turkey)
+- Developed cross-platform Linux kernel applications for embedded DVB devices using C and C++.
+- Improved nightly and commit builds with Python and Bash scripts.
+- Developed and integrated Android TV drivers working with Novatek platform engineers.
+- Strong knowledge of Linux OS and layered architecture.
+
+EDUCATION
+- Computer Science Master's Degree — CUNY, NY, USA.
+- Computer Engineering Master's — Ege University, Izmir, Turkey (not completed).
+- Electronics Engineering Bachelor's Degree — Ege University, Izmir, Turkey.
+
+CERTIFICATES
+- Hadoop Platform and Application Framework — UC San Diego (2019)
+- Spring Security — LinkedIn (2021)
+- React.js Essential — LinkedIn (2021)
+- Golang Complete Developer's Guide — Udemy
+- Video and Image Compression — Ozyegin University (2013)
+
+CORE SKILLS
+Languages: Java, Python, JavaScript/TypeScript, C, C++, Go, SQL, Bash
+Frameworks: Spring / Spring Boot, ReactJS, Angular, Hibernate, Node.js, Liquibase
+Data / Streaming: Apache Spark, Hadoop/HDFS, Kafka, Hive, Impala, PostgreSQL, Oracle, Teradata, MS SQL, MongoDB, Solr, Redis, Elasticsearch, Avro, Parquet, Iceberg
+Cloud / DevOps: AWS (Lambda, Kinesis, SQS, SNS, S3, DynamoDB, ECS/Fargate, EC2, RDS, ECR, CloudFront, CloudFormation, API Gateway, Cognito), Docker, Kubernetes, Terraform, Ansible, Jenkins, GitLab Pipeline, OpenShift
+Messaging / Protocols: WebSocket, STOMP, RTMP, REST, event-driven / event-sourcing architectures
+Other: FFmpeg, ELK stack, SonarQube, blockchain nodes (Solana, Dogecoin), Firebase

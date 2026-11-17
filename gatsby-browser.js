@@ -1,5 +1,15 @@
 // gatsby-browser.js
 import React from 'react';
+import ChatWidget from './src/components/ChatWidget';
+
+// Mount the chat widget at the root so its state (messages, remaining count)
+// survives client-side navigation between blog posts.
+export const wrapRootElement = ({ element }) => (
+  <>
+    {element}
+    <ChatWidget />
+  </>
+);
 
 // Forked Gatsby default to not remount on switches between
 // translated versions of the same page.
