@@ -6,6 +6,11 @@ export const RESUME = "Yusuf Unlu\nSenior Software Engineer\nWest New York, NJ, 
 
 export const POSTS = [
   {
+    "title": "Adding an AI Chatbot to a Static Blog",
+    "date": "2026-11-16",
+    "spoiler": "Cloudflare Workers, Claude Haiku, and the auth model when there's no auth"
+  },
+  {
     "title": "Hadoop(Yarn, HDFS) and Spark, Kerberos Setup",
     "date": "2023-11-06",
     "spoiler": "Hadoop(Yarn, HDFS) and Spark, Kerberos Setup"
